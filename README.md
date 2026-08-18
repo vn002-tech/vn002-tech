@@ -1,5 +1,51 @@
+```mermaid
+flowchart TD
+    %% 3D NODE STYLING WITH GLOWING BORDERS & DEPTH
+    classDef src fill:#0b192c,stroke:#00f5ff,stroke-width:3px,color:#ffffff,rx:10px,ry:10px;
+    classDef proc fill:#1e1b4b,stroke:#818cf8,stroke-width:3px,color:#ffffff,rx:10px,ry:10px;
+    classDef stor fill:#064e3b,stroke:#34d399,stroke-width:3px,color:#ffffff,rx:10px,ry:10px;
+    classDef serv fill:#451a03,stroke:#fbbf24,stroke-width:3px,color:#ffffff,rx:10px,ry:10px;
+
+    subgraph L1 ["📦 LAYER 1: DATA SOURCES & INGESTION"]
+        direction LR
+        A1["🗄️ Relational DBs (Postgres)"]:::src
+        A2["⚡ Kafka Streaming Events"]:::src
+        A3["📄 S3 Storage Logs"]:::src
+    end
+
+    subgraph L2 ["⚙️ LAYER 2: PROCESSING & ORCHESTRATION ENGINE"]
+        direction LR
+        B1["⚡ Apache Airflow Workflow"]:::proc
+        B2["🚀 PySpark Distributed Engine"]:::proc
+    end
+
+    subgraph L3 ["🗄️ LAYER 3: DATA LAKEHOUSE & TRANSFORMATIONS"]
+        direction LR
+        C1["❄️ Cloud Warehouse (Snowflake)"]:::stor
+        C2["🔧 dbt Data Modeling"]:::stor
+    end
+
+    subgraph L4 ["📊 LAYER 4: 3D SERVING & DATA PRODUCTS"]
+        direction LR
+        D1["📊 Streamlit BI Dashboards"]:::serv
+        D2["🤖 MLOps Predictive Models"]:::serv
+        D3["🔄 Reverse ETL APIs"]:::serv
+    end
+
+    %% ANIMATED/FLOWING HEAVY DATA STREAM CABLES
+    L1 == "🌊 [ RAW DATA STREAM: 100k events/sec ]" ==> L2
+    L2 == "⚡ [ TRANSFORMED ETL PIPELINE ]" ==> L3
+    L3 == "🚀 [ CURATED DATA SERVING ]" ==> L4
+```
+
+---
+
+### 📄 Kode `README.md` Terupdate Lengkap:
+
+```markdown
+<!-- HEADER BANNER UTAMA DENGAN ANIMASI FADE-IN -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,40:1e1b4b,80:0284c7,100:38bdf8&height=230&section=header&text=VN002-TECH%20%E2%9A%A1%20DATA%20ENGINEERING&fontSize=34&fontColor=ffffff&fontAlignY=36&animation=twinkling" width="100%"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,40:1e1b4b,80:0284c7,100:38bdf8&height=230&section=header&text=VN002-TECH%20%E2%9A%A1%20DATA%20ENGINEERING&fontSize=34&fontColor=ffffff&fontAlignY=36&animation=twinkling" width="100%"/>
   
   <br/>
 
@@ -10,9 +56,9 @@
 
   <br/><br/>
 
-  <!-- QUICK NAVIGATION BAR (TOMBOL PINTAS) -->
+  <!-- QUICK NAVIGATION BAR -->
   <a href="#-pipeline_configpy-about-me"><img src="https://img.shields.io/badge/⚡_About_Me-0A192F?style=for-the-badge&logo=python&logoColor=38bdf8" /></a>
-  <a href="#️-end-to-end-enterprise-data-architecture"><img src="https://img.shields.io/badge/🏗️_Architecture-0A192F?style=for-the-badge&logo=diagramsdotnet&logoColor=34d399" /></a>
+  <a href="#️-3d-enterprise-data-pipeline-architecture"><img src="https://img.shields.io/badge/🏗️_Architecture-0A192F?style=for-the-badge&logo=diagramsdotnet&logoColor=34d399" /></a>
   <a href="#️-data-engineering-tech-stack"><img src="https://img.shields.io/badge/🛠️_Tech_Stack-0A192F?style=for-the-badge&logo=apachespark&logoColor=fbbf24" /></a>
   <a href="#-featured-projects"><img src="https://img.shields.io/badge/🚀_Projects-0A192F?style=for-the-badge&logo=github&logoColor=818cf8" /></a>
 
@@ -57,72 +103,45 @@ if __name__ == "__main__":
 
 <br/>
 
-<!-- SECTION 2: EXTENDED ENTERPRISE DATA ARCHITECTURE -->
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0A192F&height=45&section=header&text=🏗️%20End-to-End%20Enterprise%20Data%20Architecture&fontSize=17&fontColor=38BDF8&fontAlignY=50&fontAlignX=4" width="100%"/>
+<!-- SECTION 2: 3D DATA PIPELINE ARCHITECTURE (NO OVERLAY CONTROLS + FLOWING DATA CABLES) -->
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0A192F&height=45&section=header&text=🏗️%203D%20Enterprise%20Data%20Pipeline%20Architecture&fontSize=17&fontColor=38BDF8&fontAlignY=50&fontAlignX=4" width="100%"/>
 
 ```mermaid
-flowchart LR
-    classDef src fill:#0f172a,stroke:#38bdf8,stroke-width:2px,color:#ffffff;
-    classDef ing fill:#1e1b4b,stroke:#818cf8,stroke-width:2px,color:#ffffff;
-    classDef proc fill:#311b92,stroke:#a78bfa,stroke-width:2px,color:#ffffff;
-    classDef stor fill:#064e3b,stroke:#34d399,stroke-width:2px,color:#ffffff;
-    classDef qual fill:#065f46,stroke:#6ee7b7,stroke-width:2px,color:#ffffff;
-    classDef serv fill:#451a03,stroke:#fbbf24,stroke-width:2px,color:#ffffff;
+flowchart TD
+    classDef src fill:#0b192c,stroke:#00f5ff,stroke-width:3px,color:#ffffff,rx:10px,ry:10px;
+    classDef proc fill:#1e1b4b,stroke:#818cf8,stroke-width:3px,color:#ffffff,rx:10px,ry:10px;
+    classDef stor fill:#064e3b,stroke:#34d399,stroke-width:3px,color:#ffffff,rx:10px,ry:10px;
+    classDef serv fill:#451a03,stroke:#fbbf24,stroke-width:3px,color:#ffffff,rx:10px,ry:10px;
 
-    subgraph SG1 ["📥 Data Sources"]
-        A1["🗄️ Relational DBs (Postgres/MySQL)"]:::src
-        A2["⚡ Real-Time Events (Kafka/RabbitMQ)"]:::src
-        A3["🌐 Third-Party APIs & SaaS"]:::src
-        A4["📄 Raw Logs (CSV/JSON/Parquet)"]:::src
+    subgraph L1 ["📦 LAYER 1: DATA SOURCES & INGESTION"]
+        direction LR
+        A1["🗄️ Relational DBs (Postgres)"]:::src
+        A2["⚡ Kafka Streaming Events"]:::src
+        A3["📄 S3 Storage Logs"]:::src
     end
 
-    subgraph SG2 ["⚙️ Ingestion & Orchestration"]
-        B1["🔄 CDC (Debezium / Fivetran)"]:::ing
-        B2["⚡ Airflow / Dagster Orchestrator"]:::ing
+    subgraph L2 ["⚙️ LAYER 2: PROCESSING & ORCHESTRATION ENGINE"]
+        direction LR
+        B1["⚡ Apache Airflow Workflow"]:::proc
+        B2["🚀 PySpark Distributed Engine"]:::proc
     end
 
-    subgraph SG3 ["🔥 Data Processing Engine"]
-        C1["🚀 PySpark Batch Engine"]:::proc
-        C2["🌊 Flink Stream Engine"]:::proc
+    subgraph L3 ["🗄️ LAYER 3: DATA LAKEHOUSE & TRANSFORMATIONS"]
+        direction LR
+        C1["❄️ Cloud Warehouse (Snowflake)"]:::stor
+        C2["🔧 dbt Data Modeling"]:::stor
     end
 
-    subgraph SG4 ["🗄️ Data Lakehouse Layer"]
-        D1["☁️ Raw Data Lake (S3 / GCS)"]:::stor
-        D2["❄️ Data Warehouse (Snowflake/BigQuery)"]:::stor
-        D3["🧬 Delta Lake / Feature Store"]:::stor
+    subgraph L4 ["📊 LAYER 4: 3D SERVING & DATA PRODUCTS"]
+        direction LR
+        D1["📊 Streamlit BI Dashboards"]:::serv
+        D2["🤖 MLOps Predictive Models"]:::serv
+        D3["🔄 Reverse ETL APIs"]:::serv
     end
 
-    subgraph SG5 ["🔧 Modeling & Data Quality"]
-        E1["🔧 dbt Transformations"]:::qual
-        E2["🛡️ Great Expectations Quality Checks"]:::qual
-    end
-
-    subgraph SG6 ["📊 Data Products & Serving"]
-        F1["📊 BI Dashboards (Streamlit / PowerBI)"]:::serv
-        F2["🤖 ML Pipelines & Predictive Models"]:::serv
-        F3["🔄 Reverse ETL to Operational APIs"]:::serv
-    end
-
-    A1 --> B1
-    A2 --> B2
-    A3 --> B2
-    A4 --> B2
-    
-    B1 --> C1
-    B2 --> C1
-    B2 --> C2
-
-    C1 --> D1
-    C2 --> D2
-    C1 --> D3
-
-    D1 --> E1
-    D2 --> E1
-    E1 --> E2
-
-    E2 --> F1
-    E2 --> F2
-    E2 --> F3
+    L1 == "🌊 [ RAW DATA STREAM: 100k events/sec ]" ==> L2
+    L2 == "⚡ [ TRANSFORMED ETL PIPELINE ]" ==> L3
+    L3 == "🚀 [ CURATED DATA SERVING ]" ==> L4
 ```
 
 <br/>
