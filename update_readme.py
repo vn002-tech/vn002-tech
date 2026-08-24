@@ -2,7 +2,7 @@
 """
 update_readme.py
 Programmatic generator for vn002-tech GitHub Profile README, Animated SVG Banner,
-and Comprehensive AI Engineering Architecture (Classical ML -> Deep Learning -> LLM & Automation).
+and AI Engineering Architecture & Tech Stack Matrix.
 """
 
 from pathlib import Path
@@ -118,10 +118,10 @@ def generate_svg_banner() -> str:
 
   <!-- Right Content Area -->
   <!-- Top Status Badge with Radar Ping -->
-  <rect x="360" y="32" width="230" height="24" rx="12" fill="#150E28" stroke="#581C87" stroke-width="1"/>
+  <rect x="360" y="32" width="260" height="24" rx="12" fill="#150E28" stroke="#581C87" stroke-width="1"/>
   <circle cx="376" cy="44" r="3.5" fill="#A855F7"/>
   <circle cx="376" cy="44" r="3.5" fill="#C084FC" class="anim-radar"/>
-  <text x="390" y="48" fill="#D8B4FE" class="font-mono" font-size="11" font-weight="600" letter-spacing="1">AI &amp; ML SYSTEMS ENGINEER</text>
+  <text x="390" y="48" fill="#D8B4FE" class="font-mono" font-size="10.5" font-weight="600" letter-spacing="1">AI ENGINEERING &amp; DATA SCIENCE</text>
 
   <!-- Name & Identifier -->
   <text x="360" y="94" fill="#F8FAFC" class="font-title" font-size="36" font-weight="800" letter-spacing="2">VAN</text>
@@ -130,7 +130,7 @@ def generate_svg_banner() -> str:
 
   <!-- Primary Role -->
   <text x="360" y="126" fill="#E2E8F0" class="font-title" font-size="17" font-weight="700" letter-spacing="1.5">AI ENGINEER</text>
-  <text x="360" y="150" fill="#94A3B8" class="font-title" font-size="13.5" font-weight="400">ML · Deep Learning · LLM &amp; Automation · Backend Systems</text>
+  <text x="360" y="150" fill="#94A3B8" class="font-title" font-size="13.5" font-weight="400">AI Engineering · Machine Learning &amp; Data Science · LLMs &amp; Automation</text>
 
   <!-- Tech Stack Pills -->
   <g transform="translate(360, 170)">
@@ -178,7 +178,7 @@ def generate_svg_banner() -> str:
 def generate_pipeline_svg() -> str:
     """
     Generates an animated, ultra-modern Multi-Tier AI Architecture SVG Diagram:
-    Classical ML -> Deep Learning -> LLM & AI Automation -> Serving & Observability.
+    Data Foundation -> ML & Data Science -> Deep Learning -> LLM & Automation -> Serving.
     """
     return """<svg width="1000" height="420" viewBox="0 0 1000 420" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
@@ -245,7 +245,7 @@ def generate_pipeline_svg() -> str:
 
   <!-- ================= SECTION LABELS ================= -->
   <text x="35" y="32" fill="#64748B" class="font-mono" font-size="10.5" font-weight="700" letter-spacing="1.5">TIER 1: DATA &amp; FEATURE FOUNDATION</text>
-  <text x="35" y="160" fill="#A855F7" class="font-mono" font-size="10.5" font-weight="700" letter-spacing="1.5">TIER 2: INTELLIGENCE &amp; MODELING BRANCHES (ML · DL · LLM)</text>
+  <text x="35" y="160" fill="#A855F7" class="font-mono" font-size="10.5" font-weight="700" letter-spacing="1.5">TIER 2: INTELLIGENCE &amp; MODELING BRANCHES (ML &amp; DATA SCIENCE · DL · LLM)</text>
   <text x="35" y="300" fill="#38BDF8" class="font-mono" font-size="10.5" font-weight="700" letter-spacing="1.5">TIER 3: SERVING, AGENTS &amp; AI AUTOMATION</text>
 
   <!-- ================= TIER 1: DATA FOUNDATION ================= -->
@@ -278,13 +278,13 @@ def generate_pipeline_svg() -> str:
 
   <!-- ================= TIER 2: 3 CORE INTELLIGENCE BRANCHES ================= -->
 
-  <!-- Branch A: Classical ML -->
+  <!-- Branch A: ML & Data Science -->
   <g transform="translate(35, 175)">
     <rect width="280" height="85" rx="10" fill="url(#card-grad)" stroke="#334155" stroke-width="1.2"/>
     <circle cx="20" cy="22" r="4" fill="#60A5FA" class="anim-pulse"/>
-    <text x="32" y="26" fill="#60A5FA" class="font-mono" font-size="10.5" font-weight="700">03A. CLASSICAL ML</text>
-    <text x="20" y="49" fill="#F8FAFC" class="font-sans" font-size="12.5" font-weight="600">Tabular &amp; Predictive Models</text>
-    <text x="20" y="68" fill="#94A3B8" class="font-sans" font-size="10.5">XGBoost · Decision Trees · Tuning</text>
+    <text x="32" y="26" fill="#60A5FA" class="font-mono" font-size="10.5" font-weight="700">03A. ML &amp; DATA SCIENCE</text>
+    <text x="20" y="49" fill="#F8FAFC" class="font-sans" font-size="12.5" font-weight="600">Statistical Modeling &amp; Prediction</text>
+    <text x="20" y="68" fill="#94A3B8" class="font-sans" font-size="10.5">XGBoost · Scikit-learn · EDA &amp; Analysis</text>
   </g>
 
   <!-- Branch B: Deep Learning -->
@@ -352,7 +352,7 @@ def generate_readme() -> str:
 
 <!-- Animated Typing SVG -->
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&pause=1200&color=C084FC&center=true&vCenter=true&width=760&lines=%E2%9A%A1+AI+Engineer+%7C+ML+%C2%B7+Deep+Learning+%C2%B7+LLMs;%F0%9F%A7%A0+Building+Practical+AI+Applications+%26+Automation;%F0%9F%9B%A0%EF%B8%8F+Python+%7C+PyTorch+%7C+Scikit-learn+%7C+FastAPI+%7C+Docker;%F0%9F%93%8A+From+Data+Pipelines+to+Production+Model+Serving" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&pause=1200&color=C084FC&center=true&vCenter=true&width=760&lines=%E2%9A%A1+AI+Engineering+%7C+Machine+Learning+%26+Data+Science;%F0%9F%A7%A0+LLMs+%C2%B7+RAG+%C2%B7+Deep+Learning+%26+AI+Automation;%F0%9F%9B%A0%EF%B8%8F+Python+%7C+PyTorch+%7C+Scikit-learn+%7C+FastAPI+%7C+Docker;%F0%9F%93%8A+From+Data+Pipelines+to+Production-Ready+AI+Systems" alt="Typing SVG" />
 </a>
 
 <br/><br/>
@@ -370,7 +370,7 @@ def generate_readme() -> str:
 <table width="100%">
   <thead>
     <tr>
-      <th width="25%" align="center">🧠 Classical ML</th>
+      <th width="25%" align="center">🧠 ML &amp; Data Science</th>
       <th width="25%" align="center">⚡ Deep Learning</th>
       <th width="25%" align="center">🤖 LLMs &amp; Automation</th>
       <th width="25%" align="center">⚙️ MLOps &amp; Systems</th>
@@ -379,8 +379,8 @@ def generate_readme() -> str:
   <tbody>
     <tr>
       <td align="center" style="padding: 12px 8px;">
-        <b>Predictive Modeling</b><br/>
-        <sub>Feature Pipelines · XGBoost<br/>Classification &amp; Metrics</sub>
+        <b>Predictive &amp; Analytics</b><br/>
+        <sub>Feature Pipelines · XGBoost<br/>Statistical EDA &amp; Metrics</sub>
       </td>
       <td align="center" style="padding: 12px 8px;">
         <b>Neural Systems</b><br/>
@@ -410,50 +410,70 @@ def generate_readme() -> str:
 
 <br/><br/>
 
-> **Data Foundation → Feature &amp; Embedding Engine → [ML · Deep Learning · LLM &amp; Automation] → FastAPI Serving → Autonomous Client**
+> **Data Foundation → Feature &amp; Embedding Engine → [ML &amp; Data Science · Deep Learning · LLM &amp; Automation] → FastAPI Serving → Autonomous Client**
 
 </div>
 
 ---
 
-### 🛠️ AI Engineering Tech Stack & Tooling
+### 🛠️ AI Engineering Tech Stack &amp; Tooling
 
-<div align="center">
+<table width="100%">
+<tr>
+<td width="50%" valign="top" style="padding: 14px;">
 
-<p><b>🧠 Machine Learning &amp; Deep Learning</b></p>
-<img src="https://skillicons.dev/icons?i=python,pytorch,scikitlearn&theme=dark" height="40" />
+<h4>🧠 Machine Learning &amp; Data Science</h4>
+<img src="https://skillicons.dev/icons?i=python,scikitlearn&theme=dark" height="36" />
 &nbsp;
-<img src="https://img.shields.io/badge/XGBoost-0B0F17?style=for-the-badge&logo=xgboost&logoColor=C084FC" height="40" />
-<img src="https://img.shields.io/badge/Pandas-0B0F17?style=for-the-badge&logo=pandas&logoColor=C084FC" height="40" />
-<img src="https://img.shields.io/badge/NumPy-0B0F17?style=for-the-badge&logo=numpy&logoColor=C084FC" height="40" />
+<img src="https://img.shields.io/badge/XGBoost-0B0F17?style=for-the-badge&logo=xgboost&logoColor=C084FC" height="36" />
+<img src="https://img.shields.io/badge/Pandas-0B0F17?style=for-the-badge&logo=pandas&logoColor=C084FC" height="36" />
+<img src="https://img.shields.io/badge/NumPy-0B0F17?style=for-the-badge&logo=numpy&logoColor=C084FC" height="36" />
 
-<br/><br/>
+</td>
+<td width="50%" valign="top" style="padding: 14px;">
 
-<p><b>🤖 LLM, RAG &amp; AI Automation</b></p>
-<img src="https://img.shields.io/badge/RAG_Architecture-140D24?style=for-the-badge&logo=openai&logoColor=C084FC" height="40" />
-<img src="https://img.shields.io/badge/Vector_Search-140D24?style=for-the-badge&logo=supabase&logoColor=A855F7" height="40" />
-<img src="https://img.shields.io/badge/Agentic_Workflows-140D24?style=for-the-badge&logo=githubactions&logoColor=38BDF8" height="40" />
-<img src="https://img.shields.io/badge/Embeddings-140D24?style=for-the-badge&logo=huggingface&logoColor=FBBF24" height="40" />
-
-<br/><br/>
-
-<p><b>⚡ Model Serving &amp; AI Application Backends</b></p>
-<img src="https://skillicons.dev/icons?i=fastapi,postman&theme=dark" height="40" />
+<h4>⚡ Deep Learning &amp; Neural Tensors</h4>
+<img src="https://skillicons.dev/icons?i=pytorch&theme=dark" height="36" />
 &nbsp;
-<img src="https://img.shields.io/badge/Streamlit-0B0F17?style=for-the-badge&logo=streamlit&logoColor=C084FC" height="40" />
-<img src="https://img.shields.io/badge/REST_API-0B0F17?style=for-the-badge&logo=fastapi&logoColor=A855F7" height="40" />
+<img src="https://img.shields.io/badge/Embeddings-0B0F17?style=for-the-badge&logo=huggingface&logoColor=FBBF24" height="36" />
+<img src="https://img.shields.io/badge/Neural_Tensors-0B0F17?style=for-the-badge&logo=pytorch&logoColor=C084FC" height="36" />
 
-<br/><br/>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top" style="padding: 14px;">
 
-<p><b>📊 Data Pipelines &amp; Storage</b></p>
-<img src="https://skillicons.dev/icons?i=postgres,mysql,sqlite,prisma&theme=dark" height="40" />
+<h4>🤖 LLMs, RAG &amp; AI Automation</h4>
+<img src="https://img.shields.io/badge/RAG_Pipelines-140D24?style=for-the-badge&logo=openai&logoColor=C084FC" height="36" />
+<img src="https://img.shields.io/badge/Vector_Search-140D24?style=for-the-badge&logo=supabase&logoColor=A855F7" height="36" />
+<img src="https://img.shields.io/badge/Agentic_AI-140D24?style=for-the-badge&logo=githubactions&logoColor=38BDF8" height="36" />
 
-<br/><br/>
+</td>
+<td width="50%" valign="top" style="padding: 14px;">
 
-<p><b>⚙️ MLOps, Containerization &amp; Infrastructure</b></p>
-<img src="https://skillicons.dev/icons?i=docker,git,githubactions,linux,bash&theme=dark" height="40" />
+<h4>🔌 Model Serving &amp; AI Applications</h4>
+<img src="https://skillicons.dev/icons?i=fastapi,postman&theme=dark" height="36" />
+&nbsp;
+<img src="https://img.shields.io/badge/Streamlit-0B0F17?style=for-the-badge&logo=streamlit&logoColor=C084FC" height="36" />
+<img src="https://img.shields.io/badge/REST_API-0B0F17?style=for-the-badge&logo=fastapi&logoColor=A855F7" height="36" />
 
-</div>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top" style="padding: 14px;">
+
+<h4>📊 Data Pipelines &amp; Storage</h4>
+<img src="https://skillicons.dev/icons?i=postgres,mysql,sqlite,prisma&theme=dark" height="36" />
+
+</td>
+<td width="50%" valign="top" style="padding: 14px;">
+
+<h4>⚙️ MLOps, Containerization &amp; Infrastructure</h4>
+<img src="https://skillicons.dev/icons?i=docker,git,githubactions,linux,bash&theme=dark" height="36" />
+
+</td>
+</tr>
+</table>
 
 ---
 

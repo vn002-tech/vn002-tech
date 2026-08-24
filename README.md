@@ -6,7 +6,7 @@
 
 <!-- Animated Typing SVG -->
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&pause=1200&color=C084FC&center=true&vCenter=true&width=760&lines=%E2%9A%A1+AI+Engineer+%7C+ML+%C2%B7+Deep+Learning+%C2%B7+LLMs;%F0%9F%A7%A0+Building+Practical+AI+Applications+%26+Automation;%F0%9F%9B%A0%EF%B8%8F+Python+%7C+PyTorch+%7C+Scikit-learn+%7C+FastAPI+%7C+Docker;%F0%9F%93%8A+From+Data+Pipelines+to+Production+Model+Serving" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&pause=1200&color=C084FC&center=true&vCenter=true&width=760&lines=%E2%9A%A1+AI+Engineering+%7C+Machine+Learning+%26+Data+Science;%F0%9F%A7%A0+LLMs+%C2%B7+RAG+%C2%B7+Deep+Learning+%26+AI+Automation;%F0%9F%9B%A0%EF%B8%8F+Python+%7C+PyTorch+%7C+Scikit-learn+%7C+FastAPI+%7C+Docker;%F0%9F%93%8A+From+Data+Pipelines+to+Production-Ready+AI+Systems" alt="Typing SVG" />
 </a>
 
 <br/><br/>
@@ -24,7 +24,7 @@
 <table width="100%">
   <thead>
     <tr>
-      <th width="25%" align="center">🧠 Classical ML</th>
+      <th width="25%" align="center">🧠 ML &amp; Data Science</th>
       <th width="25%" align="center">⚡ Deep Learning</th>
       <th width="25%" align="center">🤖 LLMs &amp; Automation</th>
       <th width="25%" align="center">⚙️ MLOps &amp; Systems</th>
@@ -33,8 +33,8 @@
   <tbody>
     <tr>
       <td align="center" style="padding: 12px 8px;">
-        <b>Predictive Modeling</b><br/>
-        <sub>Feature Pipelines · XGBoost<br/>Classification &amp; Metrics</sub>
+        <b>Predictive &amp; Analytics</b><br/>
+        <sub>Feature Pipelines · XGBoost<br/>Statistical EDA &amp; Metrics</sub>
       </td>
       <td align="center" style="padding: 12px 8px;">
         <b>Neural Systems</b><br/>
@@ -64,50 +64,70 @@
 
 <br/><br/>
 
-> **Data Foundation → Feature &amp; Embedding Engine → [ML · Deep Learning · LLM &amp; Automation] → FastAPI Serving → Autonomous Client**
+> **Data Foundation → Feature &amp; Embedding Engine → [ML &amp; Data Science · Deep Learning · LLM &amp; Automation] → FastAPI Serving → Autonomous Client**
 
 </div>
 
 ---
 
-### 🛠️ AI Engineering Tech Stack & Tooling
+### 🛠️ AI Engineering Tech Stack &amp; Tooling
 
-<div align="center">
+<table width="100%">
+<tr>
+<td width="50%" valign="top" style="padding: 14px;">
 
-<p><b>🧠 Machine Learning &amp; Deep Learning</b></p>
-<img src="https://skillicons.dev/icons?i=python,pytorch,scikitlearn&theme=dark" height="40" />
+<h4>🧠 Machine Learning &amp; Data Science</h4>
+<img src="https://skillicons.dev/icons?i=python,scikitlearn&theme=dark" height="36" />
 &nbsp;
-<img src="https://img.shields.io/badge/XGBoost-0B0F17?style=for-the-badge&logo=xgboost&logoColor=C084FC" height="40" />
-<img src="https://img.shields.io/badge/Pandas-0B0F17?style=for-the-badge&logo=pandas&logoColor=C084FC" height="40" />
-<img src="https://img.shields.io/badge/NumPy-0B0F17?style=for-the-badge&logo=numpy&logoColor=C084FC" height="40" />
+<img src="https://img.shields.io/badge/XGBoost-0B0F17?style=for-the-badge&logo=xgboost&logoColor=C084FC" height="36" />
+<img src="https://img.shields.io/badge/Pandas-0B0F17?style=for-the-badge&logo=pandas&logoColor=C084FC" height="36" />
+<img src="https://img.shields.io/badge/NumPy-0B0F17?style=for-the-badge&logo=numpy&logoColor=C084FC" height="36" />
 
-<br/><br/>
+</td>
+<td width="50%" valign="top" style="padding: 14px;">
 
-<p><b>🤖 LLM, RAG &amp; AI Automation</b></p>
-<img src="https://img.shields.io/badge/RAG_Architecture-140D24?style=for-the-badge&logo=openai&logoColor=C084FC" height="40" />
-<img src="https://img.shields.io/badge/Vector_Search-140D24?style=for-the-badge&logo=supabase&logoColor=A855F7" height="40" />
-<img src="https://img.shields.io/badge/Agentic_Workflows-140D24?style=for-the-badge&logo=githubactions&logoColor=38BDF8" height="40" />
-<img src="https://img.shields.io/badge/Embeddings-140D24?style=for-the-badge&logo=huggingface&logoColor=FBBF24" height="40" />
-
-<br/><br/>
-
-<p><b>⚡ Model Serving &amp; AI Application Backends</b></p>
-<img src="https://skillicons.dev/icons?i=fastapi,postman&theme=dark" height="40" />
+<h4>⚡ Deep Learning &amp; Neural Tensors</h4>
+<img src="https://skillicons.dev/icons?i=pytorch&theme=dark" height="36" />
 &nbsp;
-<img src="https://img.shields.io/badge/Streamlit-0B0F17?style=for-the-badge&logo=streamlit&logoColor=C084FC" height="40" />
-<img src="https://img.shields.io/badge/REST_API-0B0F17?style=for-the-badge&logo=fastapi&logoColor=A855F7" height="40" />
+<img src="https://img.shields.io/badge/Embeddings-0B0F17?style=for-the-badge&logo=huggingface&logoColor=FBBF24" height="36" />
+<img src="https://img.shields.io/badge/Neural_Tensors-0B0F17?style=for-the-badge&logo=pytorch&logoColor=C084FC" height="36" />
 
-<br/><br/>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top" style="padding: 14px;">
 
-<p><b>📊 Data Pipelines &amp; Storage</b></p>
-<img src="https://skillicons.dev/icons?i=postgres,mysql,sqlite,prisma&theme=dark" height="40" />
+<h4>🤖 LLMs, RAG &amp; AI Automation</h4>
+<img src="https://img.shields.io/badge/RAG_Pipelines-140D24?style=for-the-badge&logo=openai&logoColor=C084FC" height="36" />
+<img src="https://img.shields.io/badge/Vector_Search-140D24?style=for-the-badge&logo=supabase&logoColor=A855F7" height="36" />
+<img src="https://img.shields.io/badge/Agentic_AI-140D24?style=for-the-badge&logo=githubactions&logoColor=38BDF8" height="36" />
 
-<br/><br/>
+</td>
+<td width="50%" valign="top" style="padding: 14px;">
 
-<p><b>⚙️ MLOps, Containerization &amp; Infrastructure</b></p>
-<img src="https://skillicons.dev/icons?i=docker,git,githubactions,linux,bash&theme=dark" height="40" />
+<h4>🔌 Model Serving &amp; AI Applications</h4>
+<img src="https://skillicons.dev/icons?i=fastapi,postman&theme=dark" height="36" />
+&nbsp;
+<img src="https://img.shields.io/badge/Streamlit-0B0F17?style=for-the-badge&logo=streamlit&logoColor=C084FC" height="36" />
+<img src="https://img.shields.io/badge/REST_API-0B0F17?style=for-the-badge&logo=fastapi&logoColor=A855F7" height="36" />
 
-</div>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top" style="padding: 14px;">
+
+<h4>📊 Data Pipelines &amp; Storage</h4>
+<img src="https://skillicons.dev/icons?i=postgres,mysql,sqlite,prisma&theme=dark" height="36" />
+
+</td>
+<td width="50%" valign="top" style="padding: 14px;">
+
+<h4>⚙️ MLOps, Containerization &amp; Infrastructure</h4>
+<img src="https://skillicons.dev/icons?i=docker,git,githubactions,linux,bash&theme=dark" height="36" />
+
+</td>
+</tr>
+</table>
 
 ---
 
