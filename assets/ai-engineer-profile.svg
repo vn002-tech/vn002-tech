@@ -1,257 +1,60 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="2450" viewBox="0 0 1400 2450">
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg">
 <defs>
-  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#06040d"/>
-    <stop offset="0.52" stop-color="#0d081b"/>
-    <stop offset="1" stop-color="#160b2d"/>
+  <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="360">
+    <stop stop-color="#160A24"/><stop offset=".45" stop-color="#090611"/><stop offset="1" stop-color="#0B0818"/>
   </linearGradient>
   <linearGradient id="purple" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#6d28d9"/>
-    <stop offset="0.5" stop-color="#a855f7"/>
-    <stop offset="1" stop-color="#c084fc"/>
+    <stop stop-color="#7E22CE"/><stop offset=".5" stop-color="#C084FC"/><stop offset="1" stop-color="#6D28D9"/>
   </linearGradient>
-  <linearGradient id="violet" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0" stop-color="#a855f7"/>
-    <stop offset="1" stop-color="#c084fc"/>
-  </linearGradient>
-  <radialGradient id="glow">
-    <stop offset="0" stop-color="#7c3aed" stop-opacity=".35"/>
-    <stop offset="1" stop-color="#7c3aed" stop-opacity="0"/>
+  <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(590 130) rotate(90) scale(190 360)">
+    <stop stop-color="#7C3AED" stop-opacity=".28"/><stop offset="1" stop-color="#7C3AED" stop-opacity="0"/>
   </radialGradient>
-  <filter id="shadow">
-    <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#000000" flood-opacity=".55"/>
-  </filter>
-  <filter id="soft">
-    <feGaussianBlur stdDeviation="28"/>
-  </filter>
-  <style>
-    .title{font-family:Arial,Helvetica,sans-serif;font-weight:700;fill:#f5f3ff}
-    .sub{font-family:Arial,Helvetica,sans-serif;fill:#cbd5e1}
-    .purple{fill:#c084fc}
-    .muted{fill:#94a3b8}
-    .card{fill:#0b0815;fill-opacity:.92;stroke:#35205a;stroke-width:1.5}
-    .small{font-family:Arial,Helvetica,sans-serif;font-size:18px}
-    .body{font-family:Arial,Helvetica,sans-serif;font-size:20px;fill:#cbd5e1}
-  </style>
+  <filter id="shadow"><feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#000" flood-opacity=".55"/></filter>
 </defs>
 
-<rect width="1400" height="2450" fill="url(#bg)"/>
-<circle cx="1000" cy="270" r="430" fill="url(#glow)"/>
-<circle cx="280" cy="720" r="350" fill="url(#glow)" opacity=".35"/>
+<rect x="8" y="8" width="1184" height="344" rx="18" fill="url(#bg)" stroke="#5B2A82" stroke-width="1.5" filter="url(#shadow)"/>
+<rect x="9" y="9" width="1182" height="342" rx="17" fill="url(#glow)"/>
 
-<!-- HERO -->
-<rect x="28" y="28" width="1344" height="430" rx="22" fill="#090611" stroke="#4c2677" stroke-width="2" filter="url(#shadow)"/>
-<path d="M28 50 L28 438 L410 438 L650 28 L420 28 Z" fill="#1a0d2f"/>
-<path d="M28 55 L28 190 L190 28 L360 28 L100 288 L28 288 Z" fill="#37145f"/>
-<path d="M80 438 L500 28 L610 28 L190 438 Z" fill="#27103f"/>
-<path d="M28 120 L28 250 L250 28 L365 28 L120 438 L28 438 Z" fill="url(#purple)" opacity=".7"/>
-<path d="M110 438 L530 28 L590 28 L170 438 Z" fill="#7c3aed" opacity=".22"/>
+<!-- geometric purple composition -->
+<path d="M10 10H420L145 351H10V10Z" fill="#12091D"/>
+<path d="M10 10H102L392 351H268L10 82V10Z" fill="#5B267E" opacity=".65"/>
+<path d="M105 10H174L454 351H385L105 10Z" fill="url(#purple)" opacity=".82"/>
+<path d="M10 160L130 10H245L10 288V160Z" fill="#24113B"/>
+<path d="M245 10H350L80 351H10V305L245 10Z" fill="#08050D" opacity=".9"/>
+<path d="M350 10H420L150 351H82L350 10Z" fill="#2A1342" opacity=".75"/>
 
-<!-- VA mark -->
-<g transform="translate(775 62)">
-  <path d="M0 95 L55 0 L110 95 L78 95 L55 53 L32 95 Z" fill="url(#purple)"/>
-  <path d="M48 95 L80 42 L110 95 L78 95 L65 72 L54 95 Z" fill="#d8b4fe"/>
+<line x1="445" y1="55" x2="445" y2="305" stroke="#7C3AED" stroke-opacity=".35"/>
+
+<!-- VA monogram -->
+<g transform="translate(505 46)">
+  <path d="M43 0L86 75H62L43 42L24 75H0L43 0Z" fill="url(#purple)"/>
+  <path d="M43 42L62 75H48L43 65L38 75H24L43 42Z" fill="#0B0815"/>
+  <path d="M43 13L56 36L43 58L30 36L43 13Z" fill="#0B0815"/>
 </g>
 
-<text x="775" y="210" class="title" font-size="72" letter-spacing="5">VAN</text>
-<text x="1040" y="207" class="purple" font-family="Arial" font-size="28">(vn002-tech)</text>
-<line x1="775" y1="235" x2="1330" y2="235" stroke="#5b2b86"/>
-<text x="775" y="278" class="purple" font-family="Arial" font-size="30" font-weight="700">AI ENGINEER &amp; MLOps ENGINEER</text>
-<text x="775" y="314" class="sub" font-size="20">Python · PyTorch · LLM · RAG · MLOps · PySpark · PostgreSQL</text>
+<text x="505" y="155" fill="#F8FAFC" font-family="Arial,Helvetica,sans-serif" font-size="50" font-weight="700" letter-spacing="5">VAN</text>
+<text x="648" y="154" fill="#C084FC" font-family="Arial,Helvetica,sans-serif" font-size="22">(vn002-tech)</text>
+<line x1="505" y1="176" x2="1135" y2="176" stroke="#7C3AED" stroke-opacity=".55"/>
 
-<g transform="translate(775 345)">
-  <rect width="168" height="54" rx="10" class="card"/>
-  <text x="20" y="34" class="sub small">●  GitHub</text>
-  <rect x="180" width="168" height="54" rx="10" class="card"/>
-  <text x="200" y="34" class="sub small">in  LinkedIn</text>
-  <rect x="360" width="168" height="54" rx="10" class="card"/>
-  <text x="380" y="34" class="sub small">✉  Email</text>
-</g>
+<text x="505" y="211" fill="#E9D5FF" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="600" letter-spacing="1">AI ENGINEER &amp; MLOPS ENGINEER</text>
+<text x="505" y="245" fill="#CBD5E1" font-family="Arial,Helvetica,sans-serif" font-size="16">Python · PyTorch · PySpark · Airflow · MLflow · PostgreSQL</text>
 
-<!-- SPECIALIZATION -->
-<g transform="translate(28 490)">
-  <rect width="1344" height="128" rx="18" class="card"/>
-  <line x1="336" y1="25" x2="336" y2="103" stroke="#4c2677"/>
-  <line x1="672" y1="25" x2="672" y2="103" stroke="#4c2677"/>
-  <line x1="1008" y1="25" x2="1008" y2="103" stroke="#4c2677"/>
-  <text x="35" y="51" class="purple title" font-size="23">AI Engineering</text>
-  <text x="35" y="82" class="muted small">LLM · RAG · NLP</text>
-  <text x="371" y="51" class="purple title" font-size="23">MLOps</text>
-  <text x="371" y="82" class="muted small">MLflow · CI/CD · Deployment</text>
-  <text x="707" y="51" class="purple title" font-size="23">AI / Data</text>
-  <text x="707" y="82" class="muted small">Pipelines · Features · Analytics</text>
-  <text x="1043" y="51" class="purple title" font-size="23">Cloud Native</text>
-  <text x="1043" y="82" class="muted small">AWS · Docker · Kubernetes</text>
-</g>
+<!-- contact cards -->
+<rect x="505" y="268" width="185" height="45" rx="8" fill="#0C0915" stroke="#382050"/>
+<circle cx="528" cy="290" r="11" fill="#F8FAFC"/>
+<text x="528" y="295" text-anchor="middle" fill="#0B0815" font-family="Arial" font-size="11" font-weight="700">GH</text>
+<text x="548" y="296" fill="#CBD5E1" font-family="Arial,Helvetica,sans-serif" font-size="13">github.com/vn002-tech</text>
 
-<!-- GITHUB -->
-<text x="28" y="680" class="purple title" font-size="27">▣  GITHUB ACTIVITY</text>
-<g transform="translate(28 705)">
-  <rect width="1344" height="205" rx="18" class="card"/>
-  <g transform="translate(22 22)">
-    <rect width="240" height="160" rx="12" fill="#0f0a1d" stroke="#35205a"/>
-    <text x="25" y="38" class="purple small">GITHUB PROFILE</text>
-    <text x="25" y="88" class="title" font-size="38">vn002-tech</text>
-    <text x="25" y="120" class="muted small">AI Engineering · MLOps</text>
-    <text x="25" y="150" class="muted small">Open-source development</text>
+<rect x="700" y="268" width="205" height="45" rx="8" fill="#0C0915" stroke="#382050"/>
+<rect x="718" y="279" width="22" height="22" rx="4" fill="#2563EB"/>
+<text x="729" y="295" text-anchor="middle" fill="#fff" font-family="Arial" font-size="12" font-weight="700">in</text>
+<text x="750" y="296" fill="#CBD5E1" font-family="Arial,Helvetica,sans-serif" font-size="13">linkedin.com/in/vn002-tech</text>
 
-    <rect x="262" width="325" height="160" rx="12" fill="#0f0a1d" stroke="#35205a"/>
-    <text x="285" y="38" class="purple small">CONTRIBUTION STREAK</text>
-    <text x="285" y="90" class="title" font-size="38">GitHub</text>
-    <text x="285" y="122" class="muted small">Live data widget below</text>
-    <text x="285" y="150" class="muted small">No fabricated statistics</text>
+<rect x="915" y="268" width="220" height="45" rx="8" fill="#0C0915" stroke="#382050"/>
+<rect x="933" y="280" width="20" height="16" rx="3" fill="none" stroke="#C084FC" stroke-width="1.5"/>
+<path d="M934 281L943 289L952 281" stroke="#C084FC" stroke-width="1.5"/>
+<text x="963" y="296" fill="#CBD5E1" font-family="Arial,Helvetica,sans-serif" font-size="13">wahidivansaputra@gmail.com</text>
 
-    <rect x="609" width="330" height="160" rx="12" fill="#0f0a1d" stroke="#35205a"/>
-    <text x="632" y="38" class="purple small">ENGINEERING SIGNAL</text>
-    <text x="632" y="84" class="title" font-size="27">AI · MLOps · Data</text>
-    <text x="632" y="116" class="muted small">Models → Pipelines → APIs</text>
-    <text x="632" y="148" class="muted small">Production-oriented systems</text>
-
-    <rect x="961" width="337" height="160" rx="12" fill="#0f0a1d" stroke="#35205a"/>
-    <text x="984" y="38" class="purple small">PROFILE</text>
-    <text x="984" y="84" class="title" font-size="27">AI Engineer</text>
-    <text x="984" y="116" class="muted small">MLOps Engineer</text>
-    <text x="984" y="148" class="muted small">Indonesia 🇮🇩</text>
-  </g>
-</g>
-
-<!-- ABOUT -->
-<text x="28" y="975" class="purple title" font-size="27">♟  ABOUT ME</text>
-<g transform="translate(28 1000)">
-  <rect width="1344" height="255" rx="18" class="card"/>
-  <rect x="22" y="22" width="570" height="211" rx="12" fill="#0f0a1d" stroke="#35205a"/>
-  <text x="48" y="62" class="purple title" font-size="23">AI Engineer</text>
-  <text x="48" y="101" class="body">Building intelligent systems,</text>
-  <text x="48" y="132" class="body">production ML workflows, LLM/RAG</text>
-  <text x="48" y="163" class="body">applications and reliable data platforms.</text>
-  <text x="48" y="201" class="muted small">AI · Backend · Data · MLOps</text>
-
-  <g transform="translate(625 22)">
-    <text x="0" y="32" class="purple small">ROLE</text>
-    <text x="130" y="32" class="sub small">AI Engineer &amp; MLOps Engineer</text>
-    <text x="0" y="75" class="purple small">FOCUS</text>
-    <text x="130" y="75" class="sub small">LLM · RAG · ML · MLOps</text>
-    <text x="0" y="118" class="purple small">STACK</text>
-    <text x="130" y="118" class="sub small">Python · PyTorch · PostgreSQL</text>
-    <text x="0" y="161" class="purple small">MISSION</text>
-    <text x="130" y="161" class="sub small">Build useful AI systems</text>
-    <text x="0" y="204" class="purple small">LOCATION</text>
-    <text x="130" y="204" class="sub small">Indonesia 🇮🇩</text>
-  </g>
-</g>
-
-<!-- STACK -->
-<text x="28" y="1320" class="purple title" font-size="27">⚒  TECH STACK</text>
-<g transform="translate(28 1345)">
-  <rect width="320" height="190" rx="16" class="card"/>
-  <rect x="340" width="320" height="190" rx="16" class="card"/>
-  <rect x="680" width="320" height="190" rx="16" class="card"/>
-  <rect x="1020" width="324" height="190" rx="16" class="card"/>
-
-  <text x="105" y="38" class="purple title" font-size="21">AI / ML</text>
-  <text x="34" y="82" class="sub small">Python</text><text x="34" y="113" class="sub small">PyTorch</text><text x="34" y="144" class="sub small">Scikit-learn</text>
-  <text x="185" y="82" class="sub small">XGBoost</text><text x="185" y="113" class="sub small">LLM</text><text x="185" y="144" class="sub small">RAG</text>
-
-  <text x="425" y="38" class="purple title" font-size="21">DATA / PIPELINES</text>
-  <text x="374" y="82" class="sub small">PySpark</text><text x="374" y="113" class="sub small">Airflow</text><text x="374" y="144" class="sub small">Kafka</text>
-  <text x="525" y="82" class="sub small">dbt</text><text x="525" y="113" class="sub small">Pandas</text><text x="525" y="144" class="sub small">ETL</text>
-
-  <text x="765" y="38" class="purple title" font-size="21">DATABASE / STORAGE</text>
-  <text x="714" y="82" class="sub small">PostgreSQL</text><text x="714" y="113" class="sub small">MySQL</text><text x="714" y="144" class="sub small">Redis</text>
-  <text x="865" y="82" class="sub small">S3</text><text x="865" y="113" class="sub small">Data Lake</text><text x="865" y="144" class="sub small">Vector DB</text>
-
-  <text x="1092" y="38" class="purple title" font-size="21">MLOps / CLOUD</text>
-  <text x="1054" y="82" class="sub small">MLflow</text><text x="1054" y="113" class="sub small">Docker</text><text x="1054" y="144" class="sub small">AWS</text>
-  <text x="1178" y="82" class="sub small">CI/CD</text><text x="1178" y="113" class="sub small">K8s</text><text x="1178" y="144" class="sub small">Linux</text>
-</g>
-
-<!-- ARCHITECTURE -->
-<text x="28" y="1600" class="purple title" font-size="27">▥  AI ENGINEERING ARCHITECTURE</text>
-<g transform="translate(28 1625)">
-  <rect width="1344" height="245" rx="18" class="card"/>
-  <g font-family="Arial" font-size="16">
-    <rect x="22" y="48" width="190" height="145" rx="12" fill="#0f0a1d" stroke="#5b2b86"/>
-    <rect x="232" y="48" width="190" height="145" rx="12" fill="#0f0a1d" stroke="#5b2b86"/>
-    <rect x="442" y="48" width="190" height="145" rx="12" fill="#0f0a1d" stroke="#5b2b86"/>
-    <rect x="652" y="48" width="190" height="145" rx="12" fill="#0f0a1d" stroke="#5b2b86"/>
-    <rect x="862" y="48" width="190" height="145" rx="12" fill="#0f0a1d" stroke="#5b2b86"/>
-    <rect x="1072" y="48" width="250" height="145" rx="12" fill="#0f0a1d" stroke="#5b2b86"/>
-
-    <g class="purple title" font-size="18">
-      <text x="62" y="82">DATA SOURCES</text>
-      <text x="270" y="82">INGESTION</text>
-      <text x="480" y="82">PROCESSING</text>
-      <text x="690" y="82">STORAGE</text>
-      <text x="903" y="82">AI / ML</text>
-      <text x="1125" y="82">SERVING</text>
-    </g>
-
-    <g class="sub">
-      <text x="48" y="115">APIs</text><text x="48" y="140">DBs</text><text x="48" y="165">Events</text>
-      <text x="258" y="115">Kafka</text><text x="258" y="140">Airflow</text><text x="258" y="165">ETL</text>
-      <text x="468" y="115">PySpark</text><text x="468" y="140">Pandas</text><text x="468" y="165">dbt</text>
-      <text x="678" y="115">PostgreSQL</text><text x="678" y="140">Data Lake</text><text x="678" y="165">S3</text>
-      <text x="888" y="115">PyTorch</text><text x="888" y="140">LLM / RAG</text><text x="888" y="165">MLflow</text>
-      <text x="1098" y="115">REST APIs</text><text x="1098" y="140">Dashboards</text><text x="1098" y="165">AI Apps</text>
-    </g>
-
-    <g stroke="#a855f7" stroke-width="2" stroke-dasharray="6 5">
-      <line x1="212" y1="120" x2="232" y2="120"/><line x1="422" y1="120" x2="442" y2="120"/>
-      <line x1="632" y1="120" x2="652" y2="120"/><line x1="842" y1="120" x2="862" y2="120"/>
-      <line x1="1052" y1="120" x2="1072" y2="120"/>
-    </g>
-  </g>
-</g>
-
-<!-- PROJECTS -->
-<text x="28" y="1935" class="purple title" font-size="27">↗  FEATURED AI PROJECTS</text>
-<g transform="translate(28 1960)">
-  <rect width="250" height="205" rx="16" class="card"/>
-  <rect x="270" width="250" height="205" rx="16" class="card"/>
-  <rect x="540" width="250" height="205" rx="16" class="card"/>
-  <rect x="810" width="250" height="205" rx="16" class="card"/>
-  <rect x="1080" width="264" height="205" rx="16" class="card"/>
-
-  <text x="22" y="40" class="purple title" font-size="20">RAG Assistant</text>
-  <text x="22" y="75" class="sub small">LLM-powered assistant</text><text x="22" y="100" class="sub small">with retrieval and</text><text x="22" y="125" class="sub small">vector search.</text>
-  <text x="22" y="172" class="muted small">LLM · RAG · Python</text>
-
-  <text x="292" y="40" class="purple title" font-size="20">MLOps Pipeline</text>
-  <text x="292" y="75" class="sub small">Experiment tracking,</text><text x="292" y="100" class="sub small">evaluation and</text><text x="292" y="125" class="sub small">deployment workflow.</text>
-  <text x="292" y="172" class="muted small">MLflow · Docker</text>
-
-  <text x="562" y="40" class="purple title" font-size="20">Real-Time AI</text>
-  <text x="562" y="75" class="sub small">Streaming pipeline</text><text x="562" y="100" class="sub small">for high-volume</text><text x="562" y="125" class="sub small">analytics.</text>
-  <text x="562" y="172" class="muted small">Kafka · PySpark</text>
-
-  <text x="832" y="40" class="purple title" font-size="20">Fraud Detection</text>
-  <text x="832" y="75" class="sub small">ML-based financial</text><text x="832" y="100" class="sub small">transaction anomaly</text><text x="832" y="125" class="sub small">detection.</text>
-  <text x="832" y="172" class="muted small">XGBoost · PostgreSQL</text>
-
-  <text x="1102" y="40" class="purple title" font-size="20">AI Data Platform</text>
-  <text x="1102" y="75" class="sub small">Reliable data layer</text><text x="1102" y="100" class="sub small">supporting models,</text><text x="1102" y="125" class="sub small">features and APIs.</text>
-  <text x="1102" y="172" class="muted small">ETL · PostgreSQL · AWS</text>
-</g>
-
-<!-- FOOTER / KNIGHT PLACEHOLDER -->
-<rect x="28" y="2210" width="1344" height="190" rx="20" fill="#12091f" stroke="#4c2677"/>
-<circle cx="1090" cy="2300" r="150" fill="url(#glow)"/>
-<text x="70" y="2265" class="purple title" font-size="25">⚔  THE ENGINEERING CODE</text>
-<text x="70" y="2310" class="title" font-size="25">Build intelligent systems that survive</text>
-<text x="70" y="2345" class="title" font-size="25">beyond the model itself.</text>
-<text x="70" y="2380" class="muted small">VAN · AI Engineer &amp; MLOps Engineer</text>
-
-<!-- Minimal knight silhouette -->
-<g transform="translate(1120 2240)" fill="#17101f" stroke="#9d5ce5" stroke-width="2" opacity=".95">
-  <circle cx="70" cy="35" r="28"/>
-  <path d="M43 62 L100 62 L125 125 L35 125 Z"/>
-  <path d="M70 120 L70 172"/>
-  <path d="M50 125 L22 175"/>
-  <path d="M92 125 L120 175"/>
-  <path d="M68 75 L155 135"/>
-  <path d="M155 135 L170 30"/>
-  <path d="M155 135 L170 30" stroke="#c084fc" stroke-width="6"/>
-  <path d="M170 30 L185 45" stroke="#c084fc" stroke-width="3"/>
-</g>
-
+<circle cx="1138" cy="42" r="3" fill="#C084FC"/>
+<circle cx="1152" cy="42" r="2" fill="#7C3AED"/>
 </svg>
