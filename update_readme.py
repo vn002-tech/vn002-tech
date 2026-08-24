@@ -27,18 +27,11 @@ readme = r'''<div align="center">
 <br>
 ---
 
-### 🏆 GITHUB ACHIEVEMENTS & STATS
+### 📊 GITHUB ACTIVITY & STREAK
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=vn002-tech&theme=tokyonight&no-frame=true&no-bg=true&margin-w=15&column=4" width="100%" />
-  <br><br>
   <img src="https://streak-stats.demolab.com?user=vn002-tech&hide_border=true&background=0b0815&ring=a855f7&fire=c084fc&currStreakLabel=c084fc&sideLabels=cbd5e1&currStreakNum=ffffff&sideNums=ffffff&dates=64748b" width="70%" />
   <br><br>
-  <!-- Animasi Snake Contribution Grid -->
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/vn002-tech/vn002-tech/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/vn002-tech/vn002-tech/output/github-contribution-grid-snake.svg" />
-    <img alt="snake animation" src="https://raw.githubusercontent.com/vn002-tech/vn002-tech/output/github-contribution-grid-snake.svg" width="100%" />
-  </picture>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=vn002-tech&bg_color=0b0815&color=c084fc&line=a855f7&point=f5f3ff&area=true&hide_border=true" width="98%" />
 </div>
 
 <br>
@@ -98,7 +91,7 @@ I am an **AI Engineer & MLOps Specialist** passionate about architecting end-to-
   <img src="./assets/knight-garden.gif" width="90%" alt="Knight in Garden Animation" />
   <br><br>
   
-  <!-- Animasi GIF Karakter Tambahan / Pixel Coding -->
+  <!-- Animasi Developer Coding -->
   <img src="https://raw.githubusercontent.com/nixin72/nixin72/master/assets/developer.gif" width="220" alt="Developer Animation" />
   <br><br>
 
@@ -148,4 +141,4 @@ svg = r'''<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmln
 
 (base / "README.md").write_text(readme, encoding="utf-8")
 (assets / "ai-engineer-profile.svg").write_text(svg, encoding="utf-8")
-print("Successfully added typing animation and character/developer GIFs!")
+print("Successfully cleaned error trophy, removed snake, and kept active developer animations!")
