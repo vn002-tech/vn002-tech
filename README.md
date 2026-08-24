@@ -154,8 +154,8 @@
 
 <div align="center">
 
-<!-- Son Goku Dragon Ball Anime Animation with Cartoon Scene Background -->
-<img src="./assets/goku.gif" width="300" alt="Son Goku Dragon Ball Animation" />
+<!-- Anime Studio Coding Scene -->
+<img src="./assets/character.gif" width="380" alt="Anime Developer Animation" style="border-radius: 12px;" />
 
 <br/><br/>
 
