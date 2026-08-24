@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 update_readme.py
-Programmatic generator for vn002-tech GitHub Profile README, Animated SVG Banner,
+Programmatic generator for vn002-tech GitHub Profile README, Animated Luxury SVG Card,
 AI Engineering Pillars Card SVG, AI Architecture Diagram SVG, and Cyber Telemetry Speedway Track SVG.
 """
 
@@ -9,27 +9,51 @@ from pathlib import Path
 
 
 def generate_svg_banner() -> str:
-    """Generates an animated, ultra-sleek dark-themed SVG banner with CSS keyframes."""
-    return """<svg width="1200" height="280" viewBox="0 0 1200 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+    """
+    Generates a luxury, deep purple geometric layered executive card SVG banner (Pinterest style)
+    with the animated neural network mesh cluster on the left side preserved and enhanced.
+    """
+    return """<svg width="1200" height="300" viewBox="0 0 1200 300" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <!-- Background Gradient -->
-    <linearGradient id="bg-grad" x1="0" y1="0" x2="1200" y2="280" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#080C14"/>
-      <stop offset="50%" stop-color="#0B0F19"/>
-      <stop offset="100%" stop-color="#060910"/>
+    <linearGradient id="card-bg" x1="0" y1="0" x2="1200" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#08040F"/>
+      <stop offset="40%" stop-color="#120822"/>
+      <stop offset="70%" stop-color="#180A2D"/>
+      <stop offset="100%" stop-color="#08040F"/>
     </linearGradient>
 
-    <!-- Purple Gradient -->
-    <linearGradient id="purple-grad" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#C084FC"/>
-      <stop offset="50%" stop-color="#A855F7"/>
-      <stop offset="100%" stop-color="#6366F1"/>
+    <!-- Diagonal Ribbon Gradients (Pinterest Luxury Card Style) -->
+    <linearGradient id="ribbon-1" x1="200" y1="0" x2="600" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2D104E" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#0F051A" stop-opacity="0.9"/>
     </linearGradient>
 
-    <!-- Node Glow Filter -->
-    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="4" result="blur" />
+    <linearGradient id="ribbon-bright" x1="250" y1="0" x2="500" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#A855F7"/>
+      <stop offset="50%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#4C1D95"/>
+    </linearGradient>
+
+    <linearGradient id="ribbon-accent" x1="800" y1="0" x2="1200" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1E0A38"/>
+      <stop offset="50%" stop-color="#2F0D59"/>
+      <stop offset="100%" stop-color="#100520"/>
+    </linearGradient>
+
+    <!-- Radial Glows -->
+    <radialGradient id="core-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#A855F7" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="soft-blur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="drop-shadow-ribbon" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="-4" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.75"/>
     </filter>
   </defs>
 
@@ -37,7 +61,6 @@ def generate_svg_banner() -> str:
     .font-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
     .font-mono { font-family: 'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
 
-    /* Keyframe Animations */
     @keyframes pulse-core {
       0%, 100% { transform: scale(1); opacity: 0.85; filter: drop-shadow(0 0 4px #A855F7); }
       50% { transform: scale(1.15); opacity: 1; filter: drop-shadow(0 0 10px #C084FC); }
@@ -54,12 +77,12 @@ def generate_svg_banner() -> str:
     }
 
     @keyframes glow-line {
-      0%, 100% { stroke-opacity: 0.3; }
-      50% { stroke-opacity: 0.9; }
+      0%, 100% { stroke-opacity: 0.35; }
+      50% { stroke-opacity: 0.95; }
     }
 
     .anim-pulse {
-      transform-origin: 170px 105px;
+      transform-origin: 170px 115px;
       animation: pulse-core 3s ease-in-out infinite;
     }
 
@@ -77,100 +100,113 @@ def generate_svg_banner() -> str:
     }
   </style>
 
-  <!-- Container Box -->
-  <rect x="2" y="2" width="1196" height="276" rx="16" fill="url(#bg-grad)" stroke="#1E293B" stroke-width="1.5"/>
+  <!-- Container Base Box -->
+  <rect x="2" y="2" width="1196" height="296" rx="16" fill="url(#card-bg)" stroke="#2D1254" stroke-width="1.5"/>
 
-  <!-- Ambient Glows -->
-  <circle cx="160" cy="140" r="110" fill="#7C3AED" opacity="0.06" filter="url(#glow)"/>
-  <circle cx="1060" cy="80" r="100" fill="#6366F1" opacity="0.04" filter="url(#glow)"/>
+  <!-- ================= LUXURY GEOMETRIC RIBBON LAYERS (PINTEREST STYLE) ================= -->
+  <!-- Ambient Backlight -->
+  <circle cx="420" cy="140" r="160" fill="url(#core-glow)"/>
+  <circle cx="1050" cy="80" r="140" fill="url(#core-glow)"/>
 
-  <!-- Neural Mesh / Graph Cluster (Left Side) -->
-  <g opacity="0.9" transform="translate(40, 35)">
+  <!-- Geometric Dark Ribbon (Background Layer) -->
+  <polygon points="260,0 380,0 120,300 0,300" fill="url(#ribbon-1)" opacity="0.6"/>
+
+  <!-- Main Luxury Purple Ribbon (Angled Cross Band with Drop Shadow) -->
+  <polygon points="420,0 520,0 230,300 130,300" fill="url(#ribbon-bright)" filter="url(#drop-shadow-ribbon)"/>
+  <!-- Highlight Edge Line on Ribbon -->
+  <line x1="420" y1="0" x2="130" y2="300" stroke="#E9D5FF" stroke-width="1" opacity="0.5"/>
+
+  <!-- Right Geometric Overlay Band -->
+  <polygon points="850,0 1200,0 1200,220 980,300 820,300" fill="url(#ribbon-accent)" opacity="0.45"/>
+  <line x1="850" y1="0" x2="1200" y2="220" stroke="#7C3AED" stroke-width="1" opacity="0.3"/>
+
+  <!-- ================= LEFT: ANIMATED NEURAL NETWORK MESH (PRESERVED) ================= -->
+  <g opacity="0.95" transform="translate(35, 40)">
     <!-- Connections -->
-    <line x1="30" y1="105" x2="95" y2="50" stroke="#334155" stroke-width="1.5" class="anim-flow"/>
-    <line x1="30" y1="105" x2="95" y2="160" stroke="#334155" stroke-width="1.5"/>
-    <line x1="95" y1="50" x2="170" y2="30" stroke="#475569" stroke-width="1.5"/>
-    <line x1="95" y1="50" x2="170" y2="105" stroke="#7C3AED" stroke-width="1.8" class="anim-glow"/>
-    <line x1="95" y1="160" x2="170" y2="105" stroke="#7C3AED" stroke-width="1.8" class="anim-glow"/>
-    <line x1="95" y1="160" x2="170" y2="180" stroke="#475569" stroke-width="1.5"/>
-    <line x1="170" y1="30" x2="240" y2="70" stroke="#334155" stroke-width="1.5"/>
-    <line x1="170" y1="105" x2="240" y2="70" stroke="#A855F7" stroke-width="1.8" class="anim-flow"/>
-    <line x1="170" y1="105" x2="240" y2="140" stroke="#A855F7" stroke-width="1.8" class="anim-flow"/>
-    <line x1="170" y1="180" x2="240" y2="140" stroke="#334155" stroke-width="1.5"/>
+    <line x1="30" y1="115" x2="95" y2="55" stroke="#4C1D95" stroke-width="1.5" class="anim-flow"/>
+    <line x1="30" y1="115" x2="95" y2="175" stroke="#4C1D95" stroke-width="1.5"/>
+    <line x1="95" y1="55" x2="170" y2="35" stroke="#6B21A8" stroke-width="1.5"/>
+    <line x1="95" y1="55" x2="170" y2="115" stroke="#A855F7" stroke-width="2" class="anim-glow"/>
+    <line x1="95" y1="175" x2="170" y2="115" stroke="#A855F7" stroke-width="2" class="anim-glow"/>
+    <line x1="95" y1="175" x2="170" y2="195" stroke="#6B21A8" stroke-width="1.5"/>
+    <line x1="170" y1="35" x2="245" y2="75" stroke="#4C1D95" stroke-width="1.5"/>
+    <line x1="170" y1="115" x2="245" y2="75" stroke="#C084FC" stroke-width="2" class="anim-flow"/>
+    <line x1="170" y1="115" x2="245" y2="155" stroke="#C084FC" stroke-width="2" class="anim-flow"/>
+    <line x1="170" y1="195" x2="245" y2="155" stroke="#4C1D95" stroke-width="1.5"/>
 
-    <!-- Nodes -->
-    <circle cx="30" cy="105" r="5" fill="#1E293B" stroke="#64748B" stroke-width="2"/>
-    <circle cx="95" cy="50" r="6" fill="#0F172A" stroke="#818CF8" stroke-width="2"/>
-    <circle cx="95" cy="160" r="6" fill="#0F172A" stroke="#818CF8" stroke-width="2"/>
-    <circle cx="170" cy="30" r="5" fill="#1E293B" stroke="#64748B" stroke-width="2"/>
+    <!-- Outer Nodes -->
+    <circle cx="30" cy="115" r="5.5" fill="#170B2C" stroke="#8B5CF6" stroke-width="2"/>
+    <circle cx="95" cy="55" r="6.5" fill="#170B2C" stroke="#A855F7" stroke-width="2"/>
+    <circle cx="95" cy="175" r="6.5" fill="#170B2C" stroke="#A855F7" stroke-width="2"/>
+    <circle cx="170" cy="35" r="5.5" fill="#170B2C" stroke="#8B5CF6" stroke-width="2"/>
     
     <!-- Central Pulsing Core Node -->
-    <circle cx="170" cy="105" r="10" fill="#581C87" stroke="#C084FC" stroke-width="2.5" class="anim-pulse" filter="url(#glow)"/>
-    <circle cx="170" cy="105" r="3.5" fill="#FFFFFF"/>
+    <circle cx="170" cy="115" r="11" fill="#581C87" stroke="#E879F9" stroke-width="2.5" class="anim-pulse" filter="url(#soft-blur)"/>
+    <circle cx="170" cy="115" r="4" fill="#FFFFFF"/>
     
-    <circle cx="170" cy="180" r="5" fill="#1E293B" stroke="#64748B" stroke-width="2"/>
-    <circle cx="240" cy="70" r="6.5" fill="#0F172A" stroke="#A855F7" stroke-width="2"/>
-    <circle cx="240" cy="140" r="6.5" fill="#0F172A" stroke="#A855F7" stroke-width="2"/>
+    <circle cx="170" cy="195" r="5.5" fill="#170B2C" stroke="#8B5CF6" stroke-width="2"/>
+    <circle cx="245" cy="75" r="7" fill="#170B2C" stroke="#C084FC" stroke-width="2"/>
+    <circle cx="245" cy="155" r="7" fill="#170B2C" stroke="#C084FC" stroke-width="2"/>
   </g>
 
-  <!-- Vertical Divider -->
-  <line x1="330" y1="32" x2="330" y2="248" stroke="#1E293B" stroke-width="1.5"/>
+  <!-- Vertical Dividing Shadow -->
+  <line x1="345" y1="25" x2="345" y2="275" stroke="#3B1466" stroke-width="1.5" opacity="0.6"/>
 
-  <!-- Right Content Area -->
+  <!-- ================= RIGHT: IDENTITY & CARD CONTENT ================= -->
   <!-- Top Status Badge with Radar Ping -->
-  <rect x="360" y="32" width="260" height="24" rx="12" fill="#150E28" stroke="#581C87" stroke-width="1"/>
-  <circle cx="376" cy="44" r="3.5" fill="#A855F7"/>
-  <circle cx="376" cy="44" r="3.5" fill="#C084FC" class="anim-radar"/>
-  <text x="390" y="48" fill="#D8B4FE" class="font-mono" font-size="10.5" font-weight="600" letter-spacing="1">AI ENGINEERING &amp; DATA SCIENCE</text>
+  <rect x="375" y="32" width="265" height="26" rx="13" fill="#1C0B33" stroke="#7C3AED" stroke-width="1.2"/>
+  <circle cx="392" cy="45" r="3.5" fill="#C084FC"/>
+  <circle cx="392" cy="45" r="3.5" fill="#E879F9" class="anim-radar"/>
+  <text x="406" y="49" fill="#E9D5FF" class="font-mono" font-size="10.5" font-weight="700" letter-spacing="1.2">AI ENGINEERING &amp; DATA SCIENCE</text>
 
   <!-- Name & Identifier -->
-  <text x="360" y="94" fill="#F8FAFC" class="font-title" font-size="36" font-weight="800" letter-spacing="2">VAN</text>
-  <rect x="460" y="72" width="105" height="26" rx="6" fill="#1E152F" stroke="#4C1D95" stroke-width="1"/>
-  <text x="512" y="89" fill="#C084FC" class="font-mono" font-size="12" font-weight="600" text-anchor="middle">vn002-tech</text>
+  <text x="375" y="102" fill="#FFFFFF" class="font-title" font-size="40" font-weight="800" letter-spacing="2">VAN</text>
+  <rect x="485" y="78" width="110" height="28" rx="7" fill="#2A0E4E" stroke="#9333EA" stroke-width="1.2"/>
+  <text x="540" y="96" fill="#E879F9" class="font-mono" font-size="12.5" font-weight="700" text-anchor="middle">vn002-tech</text>
 
   <!-- Primary Role -->
-  <text x="360" y="126" fill="#E2E8F0" class="font-title" font-size="17" font-weight="700" letter-spacing="1.5">AI ENGINEER</text>
-  <text x="360" y="150" fill="#94A3B8" class="font-title" font-size="13.5" font-weight="400">AI Engineering · Machine Learning &amp; Data Science · LLMs &amp; Automation</text>
+  <text x="375" y="136" fill="#F3E8FF" class="font-title" font-size="18" font-weight="700" letter-spacing="1.5">AI ENGINEER</text>
+  <text x="375" y="160" fill="#C4B5FD" class="font-title" font-size="13.5" font-weight="400">AI Engineering · Machine Learning &amp; Data Science · LLMs &amp; Automation</text>
 
-  <!-- Tech Stack Pills -->
-  <g transform="translate(360, 170)">
-    <rect x="0" y="0" width="68" height="24" rx="5" fill="#0F172A" stroke="#334155" stroke-width="1"/>
-    <text x="34" y="16" fill="#CBD5E1" class="font-mono" font-size="11" font-weight="500" text-anchor="middle">Python</text>
+  <!-- Tech Stack Pills with Purple Bevel Borders -->
+  <g transform="translate(375, 180)">
+    <rect x="0" y="0" width="72" height="25" rx="6" fill="#180A2E" stroke="#6B21A8" stroke-width="1"/>
+    <text x="36" y="17" fill="#E9D5FF" class="font-mono" font-size="11" font-weight="600" text-anchor="middle">Python</text>
 
-    <rect x="76" y="0" width="76" height="24" rx="5" fill="#0F172A" stroke="#334155" stroke-width="1"/>
-    <text x="114" y="16" fill="#CBD5E1" class="font-mono" font-size="11" font-weight="500" text-anchor="middle">PyTorch</text>
+    <rect x="80" y="0" width="80" height="25" rx="6" fill="#180A2E" stroke="#6B21A8" stroke-width="1"/>
+    <text x="120" y="17" fill="#E9D5FF" class="font-mono" font-size="11" font-weight="600" text-anchor="middle">PyTorch</text>
 
-    <rect x="160" y="0" width="98" height="24" rx="5" fill="#0F172A" stroke="#334155" stroke-width="1"/>
-    <text x="209" y="16" fill="#CBD5E1" class="font-mono" font-size="11" font-weight="500" text-anchor="middle">Scikit-learn</text>
+    <rect x="168" y="0" width="102" height="25" rx="6" fill="#180A2E" stroke="#6B21A8" stroke-width="1"/>
+    <text x="219" y="17" fill="#E9D5FF" class="font-mono" font-size="11" font-weight="600" text-anchor="middle">Scikit-learn</text>
 
-    <rect x="266" y="0" width="72" height="24" rx="5" fill="#0F172A" stroke="#334155" stroke-width="1"/>
-    <text x="302" y="16" fill="#CBD5E1" class="font-mono" font-size="11" font-weight="500" text-anchor="middle">FastAPI</text>
+    <rect x="278" y="0" width="76" height="25" rx="6" fill="#180A2E" stroke="#6B21A8" stroke-width="1"/>
+    <text x="316" y="17" fill="#E9D5FF" class="font-mono" font-size="11" font-weight="600" text-anchor="middle">FastAPI</text>
 
-    <rect x="346" y="0" width="92" height="24" rx="5" fill="#0F172A" stroke="#334155" stroke-width="1"/>
-    <text x="392" y="16" fill="#CBD5E1" class="font-mono" font-size="11" font-weight="500" text-anchor="middle">PostgreSQL</text>
+    <rect x="362" y="0" width="96" height="25" rx="6" fill="#180A2E" stroke="#6B21A8" stroke-width="1"/>
+    <text x="410" y="17" fill="#E9D5FF" class="font-mono" font-size="11" font-weight="600" text-anchor="middle">PostgreSQL</text>
 
-    <rect x="446" y="0" width="68" height="24" rx="5" fill="#0F172A" stroke="#334155" stroke-width="1"/>
-    <text x="480" y="16" fill="#CBD5E1" class="font-mono" font-size="11" font-weight="500" text-anchor="middle">Docker</text>
+    <rect x="466" y="0" width="72" height="25" rx="6" fill="#180A2E" stroke="#6B21A8" stroke-width="1"/>
+    <text x="502" y="17" fill="#E9D5FF" class="font-mono" font-size="11" font-weight="600" text-anchor="middle">Docker</text>
   </g>
 
-  <!-- Horizontal Divider -->
-  <line x1="360" y1="208" x2="1140" y2="208" stroke="#1E293B" stroke-width="1"/>
+  <!-- Horizontal Luxury Divider -->
+  <line x1="375" y1="222" x2="1150" y2="222" stroke="#3B1466" stroke-width="1"/>
 
-  <!-- Social & Contact Badges -->
-  <g transform="translate(360, 220)">
-    <rect x="0" y="0" width="165" height="32" rx="6" fill="#090E17" stroke="#1E293B" stroke-width="1"/>
-    <path d="M18 17C18 12.58 21.58 9 26 9C30.42 9 34 12.58 34 17C34 20.54 31.7 23.54 28.52 24.6C28.12 24.67 27.97 24.43 27.97 24.21C27.97 24.02 27.98 23.36 27.98 22.56C25.75 23.05 25.28 21.61 25.28 21.61C24.92 20.69 24.39 20.45 24.39 20.45C23.66 19.95 24.45 19.96 24.45 19.96C25.26 20.02 25.68 20.79 25.68 20.79C26.4 22.02 27.56 21.67 28.02 21.46C28.09 20.94 28.3 20.58 28.53 20.38C26.75 20.18 24.88 19.49 24.88 16.42C24.88 15.55 25.19 14.83 25.7 14.27C25.62 14.07 25.35 13.25 25.78 12.16C25.78 12.16 26.45 11.95 27.97 12.98C28.61 12.8 29.29 12.71 29.97 12.71C30.65 12.71 31.33 12.8 31.97 12.98C33.49 11.95 34.16 12.16 34.16 12.16C34.59 13.25 34.32 14.07 34.24 14.27C34.75 14.83 35.06 15.55 35.06 16.42C35.06 19.5 33.18 20.18 31.4 20.37C31.69 20.62 31.95 21.11 31.95 21.87C31.95 22.96 31.94 23.84 31.94 24.21C31.94 24.43 31.79 24.68 31.38 24.6C28.2 23.53 25.9 20.53 25.9 17H18Z" fill="#94A3B8" transform="translate(-10, -4) scale(0.85)"/>
-    <text x="36" y="20" fill="#E2E8F0" class="font-mono" font-size="11.5" font-weight="500">vn002-tech</text>
+  <!-- Social & Contact Badges (Executive Card Style) -->
+  <g transform="translate(375, 236)">
+    <rect x="0" y="0" width="170" height="34" rx="7" fill="#150826" stroke="#4C1D95" stroke-width="1"/>
+    <path d="M18 17C18 12.58 21.58 9 26 9C30.42 9 34 12.58 34 17C34 20.54 31.7 23.54 28.52 24.6C28.12 24.67 27.97 24.43 27.97 24.21C27.97 24.02 27.98 23.36 27.98 22.56C25.75 23.05 25.28 21.61 25.28 21.61C24.92 20.69 24.39 20.45 24.39 20.45C23.66 19.95 24.45 19.96 24.45 19.96C25.26 20.02 25.68 20.79 25.68 20.79C26.4 22.02 27.56 21.67 28.02 21.46C28.09 20.94 28.3 20.58 28.53 20.38C26.75 20.18 24.88 19.49 24.88 16.42C24.88 15.55 25.19 14.83 25.7 14.27C25.62 14.07 25.35 13.25 25.78 12.16C25.78 12.16 26.45 11.95 27.97 12.98C28.61 12.8 29.29 12.71 29.97 12.71C30.65 12.71 31.33 12.8 31.97 12.98C33.49 11.95 34.16 12.16 34.16 12.16C34.59 13.25 34.32 14.07 34.24 14.27C34.75 14.83 35.06 15.55 35.06 16.42C35.06 19.5 33.18 20.18 31.4 20.37C31.69 20.62 31.95 21.11 31.95 21.87C31.95 22.96 31.94 23.84 31.94 24.21C31.94 24.43 31.79 24.68 31.38 24.6C28.2 23.53 25.9 20.53 25.9 17H18Z" fill="#C084FC" transform="translate(-8, -3) scale(0.85)"/>
+    <text x="40" y="21" fill="#F3E8FF" class="font-mono" font-size="12" font-weight="600">vn002-tech</text>
 
-    <rect x="175" y="0" width="125" height="32" rx="6" fill="#090E17" stroke="#1E293B" stroke-width="1"/>
-    <rect x="187" y="8" width="15" height="15" rx="3" fill="#2563EB"/>
-    <text x="194.5" y="19" fill="#FFFFFF" class="font-title" font-size="9.5" font-weight="800" text-anchor="middle">in</text>
-    <text x="210" y="20" fill="#E2E8F0" class="font-title" font-size="11.5" font-weight="500">LinkedIn</text>
+    <rect x="180" y="0" width="130" height="34" rx="7" fill="#150826" stroke="#4C1D95" stroke-width="1"/>
+    <rect x="194" y="9" width="16" height="16" rx="3.5" fill="#7C3AED"/>
+    <text x="202" y="21" fill="#FFFFFF" class="font-title" font-size="10" font-weight="800" text-anchor="middle">in</text>
+    <text x="218" y="21" fill="#F3E8FF" class="font-title" font-size="12" font-weight="600">LinkedIn</text>
 
-    <rect x="310" y="0" width="240" height="32" rx="6" fill="#090E17" stroke="#1E293B" stroke-width="1"/>
-    <path d="M323 10H337C338 10 339 10.8 339 11.8V20.2C339 21.2 338 22 337 22H323C322 22 321 21.2 321 20.2V11.8C321 10.8 322 10 323 10Z" stroke="#A855F7" stroke-width="1.2" fill="none"/>
-    <path d="M321 12L330 17L339 12" stroke="#A855F7" stroke-width="1.2" fill="none"/>
-    <text x="347" y="20" fill="#E2E8F0" class="font-mono" font-size="11" font-weight="500">wahidivansaputra@gmail.com</text>
+    <rect x="320" y="0" width="255" height="34" rx="7" fill="#150826" stroke="#4C1D95" stroke-width="1"/>
+    <path d="M335 11H349C350.1 11 351 11.9 351 13V21C351 22.1 350.1 23 349 23H335C333.9 23 333 22.1 333 21V13C333 11.9 333.9 11 335 11Z" stroke="#C084FC" stroke-width="1.3" fill="none"/>
+    <path d="M333 13L342 18L351 13" stroke="#C084FC" stroke-width="1.3" fill="none"/>
+    <text x="360" y="21" fill="#F3E8FF" class="font-mono" font-size="11.5" font-weight="500">wahidivansaputra@gmail.com</text>
   </g>
 </svg>"""
 
@@ -559,7 +595,7 @@ def generate_telemetry_track_svg() -> str:
 
   <!-- ================= RACING CYBER CAR ================= -->
   <g id="cyber-speedster">
-    <!-- Clean Futuristic LED Tail Lights (No flame) -->
+    <!-- Clean Futuristic LED Tail Lights -->
     <rect x="-17" y="-5" width="2.5" height="3" rx="1" fill="#F43F5E" filter="url(#car-glow)"/>
     <rect x="-17" y="2" width="2.5" height="3" rx="1" fill="#F43F5E" filter="url(#car-glow)"/>
 
