@@ -20,22 +20,31 @@
 
 <br/><br/>
 
-<!-- Core Domains -->
-<table>
-  <tr>
-    <td align="center" width="33%" style="padding: 14px;">
-      <b>🧠 Machine Learning</b><br/>
-      <sub>Classification · Predictive Models<br/>Feature Pipelines · Empirical Validation</sub>
-    </td>
-    <td align="center" width="33%" style="padding: 14px;">
-      <b>⚡ AI Applications</b><br/>
-      <sub>Model Serving · FastAPI<br/>REST APIs · Async Workflows</sub>
-    </td>
-    <td align="center" width="33%" style="padding: 14px;">
-      <b>⚙️ Data &amp; Systems</b><br/>
-      <sub>ETL Pipelines · Data Quality<br/>PostgreSQL · Docker Architecture</sub>
-    </td>
-  </tr>
+<!-- Core Domains Table Card -->
+<table width="100%">
+  <thead>
+    <tr>
+      <th width="33%" align="center">🧠 Machine Learning</th>
+      <th width="33%" align="center">⚡ AI Applications</th>
+      <th width="33%" align="center">⚙️ Data &amp; Systems</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center" style="padding: 12px 16px;">
+        <b>Classification &amp; Predictive Models</b><br/>
+        <sub>Feature Engineering · Evaluation &amp; Metrics</sub>
+      </td>
+      <td align="center" style="padding: 12px 16px;">
+        <b>Model Serving &amp; Inference APIs</b><br/>
+        <sub>FastAPI · Async Pipelines · Streamlit UI</sub>
+      </td>
+      <td align="center" style="padding: 12px 16px;">
+        <b>ETL Pipelines &amp; Data Quality</b><br/>
+        <sub>PostgreSQL · Docker Architecture</sub>
+      </td>
+    </tr>
+  </tbody>
 </table>
 
 </div>
@@ -44,44 +53,46 @@
 
 ### 🚀 AI Engineering Lifecycle
 
-```text
-┌──────────────┐      ┌─────────────────────┐      ┌────────────────┐
-│   RAW DATA   │ ───> │ FEATURE ENGINEERING │ ───> │ MODEL TRAINING │
-│ ETL & Schema │      │ Preprocessing & PCA │      │ XGBoost / ML   │
-└──────────────┘      └─────────────────────┘      └────────────────┘
-                                                           │
-                                                           ▼
-┌──────────────┐      ┌─────────────────────┐      ┌────────────────┐
-│  AI CLIENT   │ <─── │   FASTAPI BACKEND   │ <─── │   EVALUATION   │
-│ UI Dashboard │      │ Inference Endpoints │      │ Metrics & Test │
-└──────────────┘      └─────────────────────┘      └────────────────┘
-```
+<div align="center">
 
-> **Data Integrity → Feature Pipelines → Model Validation → API Serving → Application Integration**
+<img src="./assets/ai-engineering-pipeline.svg" width="100%" alt="AI Engineering Pipeline Architecture" />
+
+<br/><br/>
+
+> **Data Integrity → Feature Engineering → Model Validation → API Serving → Application Integration**
+
+</div>
 
 ---
 
-### 🛠️ Tech Stack & Tooling
+### 🛠️ AI Engineering Stack & Tooling
 
 <div align="center">
 
-<p><b>AI &amp; Machine Learning</b></p>
+<p><b>🧠 Machine Learning &amp; Deep Learning</b></p>
 <img src="https://skillicons.dev/icons?i=python,pytorch,scikitlearn&theme=dark" height="40" />
 &nbsp;
 <img src="https://img.shields.io/badge/XGBoost-0B0F17?style=for-the-badge&logo=xgboost&logoColor=C084FC" height="40" />
 <img src="https://img.shields.io/badge/Pandas-0B0F17?style=for-the-badge&logo=pandas&logoColor=C084FC" height="40" />
 <img src="https://img.shields.io/badge/NumPy-0B0F17?style=for-the-badge&logo=numpy&logoColor=C084FC" height="40" />
+
+<br/><br/>
+
+<p><b>⚡ Model Serving &amp; AI Application Architecture</b></p>
+<img src="https://skillicons.dev/icons?i=fastapi,postman&theme=dark" height="40" />
+&nbsp;
 <img src="https://img.shields.io/badge/Streamlit-0B0F17?style=for-the-badge&logo=streamlit&logoColor=C084FC" height="40" />
+<img src="https://img.shields.io/badge/REST_API-0B0F17?style=for-the-badge&logo=fastapi&logoColor=A855F7" height="40" />
 
 <br/><br/>
 
-<p><b>Backend &amp; Data Engineering</b></p>
-<img src="https://skillicons.dev/icons?i=fastapi,nodejs,express,go,postgres,mysql,sqlite,prisma&theme=dark" height="40" />
+<p><b>📊 Data Pipelines &amp; Storage</b></p>
+<img src="https://skillicons.dev/icons?i=postgres,mysql,sqlite,prisma&theme=dark" height="40" />
 
 <br/><br/>
 
-<p><b>Infrastructure &amp; Tooling</b></p>
-<img src="https://skillicons.dev/icons?i=docker,git,github,githubactions,linux,bash,postman,vscode&theme=dark" height="40" />
+<p><b>⚙️ MLOps, Containerization &amp; Infrastructure</b></p>
+<img src="https://skillicons.dev/icons?i=docker,git,githubactions,linux,bash&theme=dark" height="40" />
 
 </div>
 

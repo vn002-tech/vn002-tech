@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
 update_readme.py
-Programmatic generator for vn002-tech GitHub Profile README and Animated SVG Banner.
-Features modern animations, glowing vector effects, dynamic typing SVG, and sleek tech styling.
+Programmatic generator for vn002-tech GitHub Profile README, Animated SVG Banner,
+and Animated AI Engineering Lifecycle Pipeline Diagram.
 """
 
 from pathlib import Path
@@ -175,6 +175,145 @@ def generate_svg_banner() -> str:
 </svg>"""
 
 
+def generate_pipeline_svg() -> str:
+    """Generates an ultra-modern, high-tech animated SVG diagram for the AI Engineering Lifecycle."""
+    return """<svg width="1000" height="260" viewBox="0 0 1000 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Card & BG Gradients -->
+    <linearGradient id="pipe-bg" x1="0" y1="0" x2="1000" y2="260" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#080C14"/>
+      <stop offset="50%" stop-color="#0B0F19"/>
+      <stop offset="100%" stop-color="#060910"/>
+    </linearGradient>
+
+    <linearGradient id="card-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#131B2E"/>
+      <stop offset="100%" stop-color="#0D1322"/>
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="p-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, monospace; }
+
+    @keyframes flow-h-fwd {
+      0% { stroke-dashoffset: 20; }
+      100% { stroke-dashoffset: 0; }
+    }
+
+    @keyframes flow-h-bwd {
+      0% { stroke-dashoffset: 0; }
+      100% { stroke-dashoffset: 20; }
+    }
+
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 0.3; transform: scale(0.9); }
+      50% { opacity: 1; transform: scale(1.2); }
+    }
+
+    .anim-fwd {
+      stroke-dasharray: 5 4;
+      animation: flow-h-fwd 1.2s linear infinite;
+    }
+
+    .anim-bwd {
+      stroke-dasharray: 5 4;
+      animation: flow-h-bwd 1.2s linear infinite;
+    }
+
+    .anim-pdot {
+      animation: pulse-dot 2s ease-in-out infinite;
+    }
+  </style>
+
+  <!-- Container Box -->
+  <rect x="2" y="2" width="996" height="256" rx="14" fill="url(#pipe-bg)" stroke="#1E293B" stroke-width="1.5"/>
+
+  <!-- Pipeline Connectors (Background Wires) -->
+  <!-- Top Row Forward Connections -->
+  <line x1="285" y1="67" x2="355" y2="67" stroke="#7C3AED" stroke-width="2" class="anim-fwd"/>
+  <polygon points="355,67 347,63 347,71" fill="#C084FC"/>
+
+  <line x1="640" y1="67" x2="710" y2="67" stroke="#7C3AED" stroke-width="2" class="anim-fwd"/>
+  <polygon points="710,67 702,63 702,71" fill="#C084FC"/>
+
+  <!-- Row 1 to Row 2 Downward Connector -->
+  <path d="M852 110 V140" stroke="#A855F7" stroke-width="2" class="anim-fwd"/>
+  <polygon points="852,145 848,137 856,137" fill="#C084FC"/>
+
+  <!-- Bottom Row Backward Connections -->
+  <line x1="710" y1="187" x2="640" y2="187" stroke="#6366F1" stroke-width="2" class="anim-bwd"/>
+  <polygon points="640,187 648,183 648,191" fill="#818CF8"/>
+
+  <line x1="355" y1="187" x2="285" y2="187" stroke="#6366F1" stroke-width="2" class="anim-bwd"/>
+  <polygon points="285,187 293,183 293,191" fill="#818CF8"/>
+
+  <!-- ================= TOP ROW ================= -->
+
+  <!-- STAGE 01: DATA INGESTION -->
+  <g transform="translate(30, 25)">
+    <rect width="255" height="85" rx="10" fill="url(#card-grad)" stroke="#334155" stroke-width="1.2"/>
+    <circle cx="20" cy="22" r="4" fill="#38BDF8" class="anim-pdot"/>
+    <text x="32" y="26" fill="#38BDF8" class="font-mono" font-size="11" font-weight="700" letter-spacing="1">01. DATA INGESTION</text>
+    <text x="20" y="50" fill="#F8FAFC" class="font-sans" font-size="13" font-weight="600">ETL &amp; Schema Integrity</text>
+    <text x="20" y="70" fill="#94A3B8" class="font-sans" font-size="11">Validation Rules · PostgreSQL</text>
+  </g>
+
+  <!-- STAGE 02: FEATURE PIPELINE -->
+  <g transform="translate(385, 25)">
+    <rect width="255" height="85" rx="10" fill="url(#card-grad)" stroke="#7C3AED" stroke-width="1.2"/>
+    <circle cx="20" cy="22" r="4" fill="#C084FC" class="anim-pdot"/>
+    <text x="32" y="26" fill="#C084FC" class="font-mono" font-size="11" font-weight="700" letter-spacing="1">02. FEATURE PIPELINE</text>
+    <text x="20" y="50" fill="#F8FAFC" class="font-sans" font-size="13" font-weight="600">Transforms &amp; Encoders</text>
+    <text x="20" y="70" fill="#94A3B8" class="font-sans" font-size="11">Scikit-learn · Pandas · NumPy</text>
+  </g>
+
+  <!-- STAGE 03: MODEL TRAINING -->
+  <g transform="translate(740, 25)">
+    <rect width="230" height="85" rx="10" fill="url(#card-grad)" stroke="#A855F7" stroke-width="1.2"/>
+    <circle cx="20" cy="22" r="4" fill="#A855F7" class="anim-pdot"/>
+    <text x="32" y="26" fill="#A855F7" class="font-mono" font-size="11" font-weight="700" letter-spacing="1">03. MODEL TRAINING</text>
+    <text x="20" y="50" fill="#F8FAFC" class="font-sans" font-size="13" font-weight="600">XGBoost &amp; PyTorch</text>
+    <text x="20" y="70" fill="#94A3B8" class="font-sans" font-size="11">Supervised &amp; Hyperparam Tuning</text>
+  </g>
+
+  <!-- ================= BOTTOM ROW ================= -->
+
+  <!-- STAGE 04: EVALUATION -->
+  <g transform="translate(740, 145)">
+    <rect width="230" height="85" rx="10" fill="url(#card-grad)" stroke="#6366F1" stroke-width="1.2"/>
+    <circle cx="20" cy="22" r="4" fill="#818CF8" class="anim-pdot"/>
+    <text x="32" y="26" fill="#818CF8" class="font-mono" font-size="11" font-weight="700" letter-spacing="1">04. EVALUATION</text>
+    <text x="20" y="50" fill="#F8FAFC" class="font-sans" font-size="13" font-weight="600">Empirical Metrics &amp; Tests</text>
+    <text x="20" y="70" fill="#94A3B8" class="font-sans" font-size="11">Precision · Recall · ROC-AUC</text>
+  </g>
+
+  <!-- STAGE 05: FASTAPI SERVING -->
+  <g transform="translate(385, 145)">
+    <rect width="255" height="85" rx="10" fill="url(#card-grad)" stroke="#10B981" stroke-width="1.2"/>
+    <circle cx="20" cy="22" r="4" fill="#34D399" class="anim-pdot"/>
+    <text x="32" y="26" fill="#34D399" class="font-mono" font-size="11" font-weight="700" letter-spacing="1">05. FASTAPI SERVING</text>
+    <text x="20" y="50" fill="#F8FAFC" class="font-sans" font-size="13" font-weight="600">Inference Endpoints</text>
+    <text x="20" y="70" fill="#94A3B8" class="font-sans" font-size="11">Low-Latency Async · Docker</text>
+  </g>
+
+  <!-- STAGE 06: AI APPLICATION -->
+  <g transform="translate(30, 145)">
+    <rect width="255" height="85" rx="10" fill="url(#card-grad)" stroke="#F59E0B" stroke-width="1.2"/>
+    <circle cx="20" cy="22" r="4" fill="#FBBF24" class="anim-pdot"/>
+    <text x="32" y="26" fill="#FBBF24" class="font-mono" font-size="11" font-weight="700" letter-spacing="1">06. AI APPLICATION</text>
+    <text x="20" y="50" fill="#F8FAFC" class="font-sans" font-size="13" font-weight="600">Streamlit &amp; UI Client</text>
+    <text x="20" y="70" fill="#94A3B8" class="font-sans" font-size="11">Real-Time Risk Scoring &amp; Viz</text>
+  </g>
+</svg>"""
+
+
 def generate_readme() -> str:
     """Generates the visual, modern, and animated GitHub Profile README."""
     return """<div align="center">
@@ -199,22 +338,31 @@ def generate_readme() -> str:
 
 <br/><br/>
 
-<!-- Core Domains -->
-<table>
-  <tr>
-    <td align="center" width="33%" style="padding: 14px;">
-      <b>🧠 Machine Learning</b><br/>
-      <sub>Classification · Predictive Models<br/>Feature Pipelines · Empirical Validation</sub>
-    </td>
-    <td align="center" width="33%" style="padding: 14px;">
-      <b>⚡ AI Applications</b><br/>
-      <sub>Model Serving · FastAPI<br/>REST APIs · Async Workflows</sub>
-    </td>
-    <td align="center" width="33%" style="padding: 14px;">
-      <b>⚙️ Data &amp; Systems</b><br/>
-      <sub>ETL Pipelines · Data Quality<br/>PostgreSQL · Docker Architecture</sub>
-    </td>
-  </tr>
+<!-- Core Domains Table Card -->
+<table width="100%">
+  <thead>
+    <tr>
+      <th width="33%" align="center">🧠 Machine Learning</th>
+      <th width="33%" align="center">⚡ AI Applications</th>
+      <th width="33%" align="center">⚙️ Data &amp; Systems</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center" style="padding: 12px 16px;">
+        <b>Classification &amp; Predictive Models</b><br/>
+        <sub>Feature Engineering · Evaluation &amp; Metrics</sub>
+      </td>
+      <td align="center" style="padding: 12px 16px;">
+        <b>Model Serving &amp; Inference APIs</b><br/>
+        <sub>FastAPI · Async Pipelines · Streamlit UI</sub>
+      </td>
+      <td align="center" style="padding: 12px 16px;">
+        <b>ETL Pipelines &amp; Data Quality</b><br/>
+        <sub>PostgreSQL · Docker Architecture</sub>
+      </td>
+    </tr>
+  </tbody>
 </table>
 
 </div>
@@ -223,44 +371,46 @@ def generate_readme() -> str:
 
 ### 🚀 AI Engineering Lifecycle
 
-```text
-┌──────────────┐      ┌─────────────────────┐      ┌────────────────┐
-│   RAW DATA   │ ───> │ FEATURE ENGINEERING │ ───> │ MODEL TRAINING │
-│ ETL & Schema │      │ Preprocessing & PCA │      │ XGBoost / ML   │
-└──────────────┘      └─────────────────────┘      └────────────────┘
-                                                           │
-                                                           ▼
-┌──────────────┐      ┌─────────────────────┐      ┌────────────────┐
-│  AI CLIENT   │ <─── │   FASTAPI BACKEND   │ <─── │   EVALUATION   │
-│ UI Dashboard │      │ Inference Endpoints │      │ Metrics & Test │
-└──────────────┘      └─────────────────────┘      └────────────────┘
-```
+<div align="center">
 
-> **Data Integrity → Feature Pipelines → Model Validation → API Serving → Application Integration**
+<img src="./assets/ai-engineering-pipeline.svg" width="100%" alt="AI Engineering Pipeline Architecture" />
+
+<br/><br/>
+
+> **Data Integrity → Feature Engineering → Model Validation → API Serving → Application Integration**
+
+</div>
 
 ---
 
-### 🛠️ Tech Stack & Tooling
+### 🛠️ AI Engineering Stack & Tooling
 
 <div align="center">
 
-<p><b>AI &amp; Machine Learning</b></p>
+<p><b>🧠 Machine Learning &amp; Deep Learning</b></p>
 <img src="https://skillicons.dev/icons?i=python,pytorch,scikitlearn&theme=dark" height="40" />
 &nbsp;
 <img src="https://img.shields.io/badge/XGBoost-0B0F17?style=for-the-badge&logo=xgboost&logoColor=C084FC" height="40" />
 <img src="https://img.shields.io/badge/Pandas-0B0F17?style=for-the-badge&logo=pandas&logoColor=C084FC" height="40" />
 <img src="https://img.shields.io/badge/NumPy-0B0F17?style=for-the-badge&logo=numpy&logoColor=C084FC" height="40" />
+
+<br/><br/>
+
+<p><b>⚡ Model Serving &amp; AI Application Architecture</b></p>
+<img src="https://skillicons.dev/icons?i=fastapi,postman&theme=dark" height="40" />
+&nbsp;
 <img src="https://img.shields.io/badge/Streamlit-0B0F17?style=for-the-badge&logo=streamlit&logoColor=C084FC" height="40" />
+<img src="https://img.shields.io/badge/REST_API-0B0F17?style=for-the-badge&logo=fastapi&logoColor=A855F7" height="40" />
 
 <br/><br/>
 
-<p><b>Backend &amp; Data Engineering</b></p>
-<img src="https://skillicons.dev/icons?i=fastapi,nodejs,express,go,postgres,mysql,sqlite,prisma&theme=dark" height="40" />
+<p><b>📊 Data Pipelines &amp; Storage</b></p>
+<img src="https://skillicons.dev/icons?i=postgres,mysql,sqlite,prisma&theme=dark" height="40" />
 
 <br/><br/>
 
-<p><b>Infrastructure &amp; Tooling</b></p>
-<img src="https://skillicons.dev/icons?i=docker,git,github,githubactions,linux,bash,postman,vscode&theme=dark" height="40" />
+<p><b>⚙️ MLOps, Containerization &amp; Infrastructure</b></p>
+<img src="https://skillicons.dev/icons?i=docker,git,githubactions,linux,bash&theme=dark" height="40" />
 
 </div>
 
@@ -376,7 +526,12 @@ def main():
     svg_path.write_text(generate_svg_banner(), encoding="utf-8")
     print(f"Generated animated SVG banner: {svg_path}")
 
-    # 2. Update README.md
+    # 2. Update AI Engineering Pipeline SVG
+    pipeline_svg_path = assets_dir / "ai-engineering-pipeline.svg"
+    pipeline_svg_path.write_text(generate_pipeline_svg(), encoding="utf-8")
+    print(f"Generated AI Engineering pipeline SVG: {pipeline_svg_path}")
+
+    # 3. Update README.md
     readme_path = root / "README.md"
     readme_path.write_text(generate_readme(), encoding="utf-8")
     print(f"Generated README: {readme_path}")
