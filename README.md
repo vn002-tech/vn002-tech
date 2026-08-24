@@ -5,7 +5,7 @@
 <br><br>
 
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&pause=1000&color=C084FC&center=true&vCenter=true&width=700&lines=🚀+AI+Engineer+%26+MLOps+Specialist;⚡+Python+%7C+PyTorch+%7C+PySpark+%7C+Airflow;🤖+LLM+%7C+RAG+Systems+%7C+Model+Serving" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&pause=1000&color=C084FC&center=true&vCenter=true&width=750&lines=🚀+Architecting+Intelligent+AI+%26+ML+Systems;⚡+Python+%7C+PyTorch+%7C+PySpark+%7C+Airflow;🤖+LLM+%7C+RAG+Applications+%7C+MLOps;☁️+Cloud-Native+Pipelines+%26+Model+Serving" alt="Typing SVG" />
 </a>
 
 <br><br>
@@ -23,7 +23,7 @@
 
 <br>
 
-### 📊 GITHUB ACTIVITY
+### 📊 LIVE GITHUB ACTIVITY
 
 <div align="center">
 <img src="https://streak-stats.demolab.com?user=vn002-tech&hide_border=true&background=0b0815&ring=a855f7&fire=c084fc&currStreakLabel=c084fc&sideLabels=cbd5e1&currStreakNum=ffffff&sideNums=ffffff&dates=64748b" width="100%" />
@@ -33,10 +33,12 @@
 
 <br>
 
-### 🛠️ CORE TECH STACK
+### 🛠️ ANIMATED TECH STACK
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,kafka,postgres,redis,aws,docker,kubernetes,githubactions,terraform,fastapi" height="48" />
+  <img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,kafka,postgres,redis,aws,docker,kubernetes,githubactions,terraform,fastapi" height="52" />
+  <br><br>
+  <img src="https://img.shields.io/badge/Status-Actively_Building_AI_Systems-0b0815?style=for-the-badge&logoColor=c084fc&logo=appveyor" />
 </div>
 
 <br>
