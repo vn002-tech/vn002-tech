@@ -21,18 +21,22 @@
 
 <table>
 <tr>
-<td width="50%" align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=vn002-tech&show_icons=true&hide_border=true&bg_color=0b0815&title_color=c084fc&icon_color=a855f7&text_color=cbd5e1&rank_icon=github" width="100%" alt="GitHub statistics">
+<td width="25%" align="center">
+<img src="https://github-readme-stats.vercel.app/api?username=vn002-tech&show_icons=true&hide_border=true&bg_color=0b0815&title_color=c084fc&icon_color=a855f7&text_color=cbd5e1&count_private=true" width="100%" alt="Repos">
 </td>
-<td width="50%" align="center">
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=vn002-tech&layout=compact&hide_border=true&bg_color=0b0815&title_color=c084fc&text_color=cbd5e1&langs_count=8" width="100%" alt="Top languages">
+<td width="25%" align="center">
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=vn002-tech&layout=compact&hide_border=true&bg_color=0b0815&title_color=c084fc&text_color=cbd5e1&langs_count=4" width="100%" alt="Langs">
+</td>
+<td width="25%" align="center">
+<img src="https://streak-stats.demolab.com?user=vn002-tech&hide_border=true&background=0b0815&ring=a855f7&fire=c084fc&currStreakLabel=c084fc&sideLabels=cbd5e1&currStreakNum=ffffff&sideNums=ffffff" width="100%" alt="Streak">
+</td>
+<td width="25%" align="center">
+<img src="https://komarev.com/ghpvc/?username=vn002-tech&color=c084fc&style=flat&label=Views" width="100%" alt="Views">
 </td>
 </tr>
 </table>
 
 <div align="center">
-<img src="https://streak-stats.demolab.com?user=vn002-tech&hide_border=true&background=0b0815&ring=a855f7&fire=c084fc&currStreakLabel=c084fc&sideLabels=cbd5e1&currStreakNum=ffffff&sideNums=ffffff&dates=64748b" width="100%" alt="Contribution streak">
-<br><br>
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=vn002-tech&bg_color=0b0815&color=c084fc&line=a855f7&point=f5f3ff&area=true&hide_border=true" width="100%" alt="GitHub activity graph">
 </div>
 
@@ -73,25 +77,25 @@ AI Engineer & MLOps Specialist passionate about building intelligent systems, sc
 </tr>
 <tr>
 <td align="center" valign="top">
-<img src="https://skillicons.dev/icons?i=python,pytorch,scikitlearn" height="40"><br><br>
+<img src="https://skillicons.dev/icons?i=python,pytorch,scikitlearn" height="36"><br><br>
 <img src="https://img.shields.io/badge/Hugging%20Face-0b0815?style=flat-square&logo=huggingface&logoColor=c084fc"><br>
 <img src="https://img.shields.io/badge/LangChain-0b0815?style=flat-square&logoColor=a855f7">
 </td>
 <td align="center" valign="top">
-<img src="https://skillicons.dev/icons?i=kafka" height="40"><br><br>
+<img src="https://skillicons.dev/icons?i=kafka" height="36"><br><br>
 <img src="https://img.shields.io/badge/PySpark-0b0815?style=flat-square&logo=apachespark&logoColor=c084fc"><br>
 <img src="https://img.shields.io/badge/Airflow-0b0815?style=flat-square&logo=apacheairflow&logoColor=a855f7"><br>
 <img src="https://img.shields.io/badge/dbt-0b0815?style=flat-square&logo=dbt&logoColor=c084fc"><br>
 <img src="https://img.shields.io/badge/Great%20Expectations-0b0815?style=flat-square&logoColor=a855f7">
 </td>
 <td align="center" valign="top">
-<img src="https://skillicons.dev/icons?i=postgres,redis" height="40"><br><br>
+<img src="https://skillicons.dev/icons?i=postgres,redis" height="36"><br><br>
 <img src="https://img.shields.io/badge/Snowflake-0b0815?style=flat-square&logo=snowflake&logoColor=c084fc"><br>
 <img src="https://img.shields.io/badge/AWS%20S3-0b0815?style=flat-square&logo=amazons3&logoColor=a855f7"><br>
 <img src="https://img.shields.io/badge/Delta%20Lake-0b0815?style=flat-square&logoColor=c084fc">
 </td>
 <td align="center" valign="top">
-<img src="https://skillicons.dev/icons?i=aws,docker,kubernetes,githubactions,terraform" height="40"><br><br>
+<img src="https://skillicons.dev/icons?i=aws,docker,kubernetes,githubactions,terraform" height="36"><br><br>
 <img src="https://img.shields.io/badge/CI%2FCD-0b0815?style=flat-square&logo=githubactions&logoColor=c084fc">
 </td>
 </tr>
