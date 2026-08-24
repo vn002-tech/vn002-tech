@@ -6,7 +6,7 @@
 
 <!-- Animated Typing SVG -->
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&pause=1200&color=C084FC&center=true&vCenter=true&width=760&lines=%E2%9A%A1+AI+Engineer+%7C+Machine+Learning+%26+Systems;%F0%9F%A7%A0+Building+Practical+AI+Applications;%F0%9F%9B%A0%EF%B8%8F+Python+%7C+PyTorch+%7C+Scikit-learn+%7C+FastAPI;%F0%9F%93%8A+From+Data+Pipelines+to+Production+Model+Serving" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&pause=1200&color=C084FC&center=true&vCenter=true&width=760&lines=%E2%9A%A1+AI+Engineer+%7C+ML+%C2%B7+Deep+Learning+%C2%B7+LLMs;%F0%9F%A7%A0+Building+Practical+AI+Applications+%26+Automation;%F0%9F%9B%A0%EF%B8%8F+Python+%7C+PyTorch+%7C+Scikit-learn+%7C+FastAPI+%7C+Docker;%F0%9F%93%8A+From+Data+Pipelines+to+Production+Model+Serving" alt="Typing SVG" />
 </a>
 
 <br/><br/>
@@ -20,28 +20,33 @@
 
 <br/><br/>
 
-<!-- Core Domains Table Card -->
+<!-- 4-Pillar Core AI Engineering Matrix -->
 <table width="100%">
   <thead>
     <tr>
-      <th width="33%" align="center">🧠 Machine Learning</th>
-      <th width="33%" align="center">⚡ AI Applications</th>
-      <th width="33%" align="center">⚙️ Data &amp; Systems</th>
+      <th width="25%" align="center">🧠 Classical ML</th>
+      <th width="25%" align="center">⚡ Deep Learning</th>
+      <th width="25%" align="center">🤖 LLMs &amp; Automation</th>
+      <th width="25%" align="center">⚙️ MLOps &amp; Systems</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td align="center" style="padding: 12px 16px;">
-        <b>Classification &amp; Predictive Models</b><br/>
-        <sub>Feature Engineering · Evaluation &amp; Metrics</sub>
+      <td align="center" style="padding: 12px 8px;">
+        <b>Predictive Modeling</b><br/>
+        <sub>Feature Pipelines · XGBoost<br/>Classification &amp; Metrics</sub>
       </td>
-      <td align="center" style="padding: 12px 16px;">
-        <b>Model Serving &amp; Inference APIs</b><br/>
-        <sub>FastAPI · Async Pipelines · Streamlit UI</sub>
+      <td align="center" style="padding: 12px 8px;">
+        <b>Neural Systems</b><br/>
+        <sub>PyTorch · Tensors<br/>Dense Embeddings</sub>
       </td>
-      <td align="center" style="padding: 12px 16px;">
-        <b>ETL Pipelines &amp; Data Quality</b><br/>
-        <sub>PostgreSQL · Docker Architecture</sub>
+      <td align="center" style="padding: 12px 8px;">
+        <b>AI Automation</b><br/>
+        <sub>RAG Pipelines · Vector DBs<br/>Autonomous Workflows</sub>
+      </td>
+      <td align="center" style="padding: 12px 8px;">
+        <b>Serving &amp; Production</b><br/>
+        <sub>FastAPI · Docker Runtime<br/>ETL &amp; Data Integrity</sub>
       </td>
     </tr>
   </tbody>
@@ -51,21 +56,21 @@
 
 ---
 
-### 🚀 AI Engineering Lifecycle
+### 🌐 End-to-End AI Engineering Architecture
 
 <div align="center">
 
-<img src="./assets/ai-engineering-pipeline.svg" width="100%" alt="AI Engineering Pipeline Architecture" />
+<img src="./assets/ai-engineering-pipeline.svg" width="100%" alt="AI Engineering Architecture Diagram" />
 
 <br/><br/>
 
-> **Data Integrity → Feature Engineering → Model Validation → API Serving → Application Integration**
+> **Data Foundation → Feature &amp; Embedding Engine → [ML · Deep Learning · LLM &amp; Automation] → FastAPI Serving → Autonomous Client**
 
 </div>
 
 ---
 
-### 🛠️ AI Engineering Stack & Tooling
+### 🛠️ AI Engineering Tech Stack & Tooling
 
 <div align="center">
 
@@ -78,7 +83,15 @@
 
 <br/><br/>
 
-<p><b>⚡ Model Serving &amp; AI Application Architecture</b></p>
+<p><b>🤖 LLM, RAG &amp; AI Automation</b></p>
+<img src="https://img.shields.io/badge/RAG_Architecture-140D24?style=for-the-badge&logo=openai&logoColor=C084FC" height="40" />
+<img src="https://img.shields.io/badge/Vector_Search-140D24?style=for-the-badge&logo=supabase&logoColor=A855F7" height="40" />
+<img src="https://img.shields.io/badge/Agentic_Workflows-140D24?style=for-the-badge&logo=githubactions&logoColor=38BDF8" height="40" />
+<img src="https://img.shields.io/badge/Embeddings-140D24?style=for-the-badge&logo=huggingface&logoColor=FBBF24" height="40" />
+
+<br/><br/>
+
+<p><b>⚡ Model Serving &amp; AI Application Backends</b></p>
 <img src="https://skillicons.dev/icons?i=fastapi,postman&theme=dark" height="40" />
 &nbsp;
 <img src="https://img.shields.io/badge/Streamlit-0B0F17?style=for-the-badge&logo=streamlit&logoColor=C084FC" height="40" />
