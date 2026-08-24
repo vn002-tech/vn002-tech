@@ -4,6 +4,14 @@
 
 <br/><br/>
 
+<!-- Animated Typing SVG -->
+<a href="https://git.io/typing-svg">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&pause=1200&color=C084FC&center=true&vCenter=true&width=760&lines=%E2%9A%A1+AI+Engineer+%7C+Machine+Learning+%26+Systems;%F0%9F%A7%A0+Building+Practical+AI+Applications;%F0%9F%9B%A0%EF%B8%8F+Python+%7C+PyTorch+%7C+Scikit-learn+%7C+FastAPI;%F0%9F%93%8A+From+Data+Pipelines+to+Production+Model+Serving" alt="Typing SVG" />
+</a>
+
+<br/><br/>
+
+<!-- Action & Contact Badges -->
 <a href="https://github.com/vn002-tech"><img src="https://img.shields.io/badge/GitHub-vn002--tech-0B0F17?style=for-the-badge&logo=github&logoColor=F8FAFC" alt="GitHub" /></a>
 &nbsp;
 <a href="https://linkedin.com"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
@@ -12,6 +20,7 @@
 
 <br/><br/>
 
+<!-- Core Domains -->
 <table>
   <tr>
     <td align="center" width="33%" style="padding: 14px;">
@@ -57,22 +66,22 @@
 <div align="center">
 
 <p><b>AI &amp; Machine Learning</b></p>
-<img src="https://skillicons.dev/icons?i=python,pytorch,scikitlearn&theme=dark" height="38" />
+<img src="https://skillicons.dev/icons?i=python,pytorch,scikitlearn&theme=dark" height="40" />
 &nbsp;
-<img src="https://img.shields.io/badge/XGBoost-0B0F17?style=for-the-badge&logo=xgboost&logoColor=C084FC" height="38" />
-<img src="https://img.shields.io/badge/Pandas-0B0F17?style=for-the-badge&logo=pandas&logoColor=C084FC" height="38" />
-<img src="https://img.shields.io/badge/NumPy-0B0F17?style=for-the-badge&logo=numpy&logoColor=C084FC" height="38" />
-<img src="https://img.shields.io/badge/Streamlit-0B0F17?style=for-the-badge&logo=streamlit&logoColor=C084FC" height="38" />
+<img src="https://img.shields.io/badge/XGBoost-0B0F17?style=for-the-badge&logo=xgboost&logoColor=C084FC" height="40" />
+<img src="https://img.shields.io/badge/Pandas-0B0F17?style=for-the-badge&logo=pandas&logoColor=C084FC" height="40" />
+<img src="https://img.shields.io/badge/NumPy-0B0F17?style=for-the-badge&logo=numpy&logoColor=C084FC" height="40" />
+<img src="https://img.shields.io/badge/Streamlit-0B0F17?style=for-the-badge&logo=streamlit&logoColor=C084FC" height="40" />
 
 <br/><br/>
 
 <p><b>Backend &amp; Data Engineering</b></p>
-<img src="https://skillicons.dev/icons?i=fastapi,nodejs,express,go,postgres,mysql,sqlite,prisma&theme=dark" height="38" />
+<img src="https://skillicons.dev/icons?i=fastapi,nodejs,express,go,postgres,mysql,sqlite,prisma&theme=dark" height="40" />
 
 <br/><br/>
 
 <p><b>Infrastructure &amp; Tooling</b></p>
-<img src="https://skillicons.dev/icons?i=docker,git,github,githubactions,linux,bash,postman,vscode&theme=dark" height="38" />
+<img src="https://skillicons.dev/icons?i=docker,git,github,githubactions,linux,bash,postman,vscode&theme=dark" height="40" />
 
 </div>
 
@@ -145,19 +154,33 @@
 
 ---
 
-### 📈 GitHub Metrics
+### 📈 GitHub Analytics & Activity
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=vn002-tech&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0b0f17&title_color=c084fc&icon_color=a855f7&text_color=cbd5e1" height="150" alt="GitHub Stats" />
   &nbsp;&nbsp;
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=vn002-tech&layout=compact&theme=tokyonight&hide_border=true&bg_color=0b0f17&title_color=c084fc&text_color=cbd5e1" height="150" alt="Top Languages" />
   <br/><br/>
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=vn002-tech&bg_color=0b0f17&color=c084fc&line=a855f7&point=f5f3ff&area=true&hide_border=true" width="100%" alt="Activity Graph" />
+  <!-- Animated Live Streak & Activity -->
+  <img src="https://streak-stats.demolab.com?user=vn002-tech&hide_border=true&background=0b0f17&ring=A855F7&fire=C084FC&currStreakLabel=C084FC&sideLabels=CBD5E1&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=64748B" width="95%" alt="Streak Stats" />
+  <br/><br/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=vn002-tech&bg_color=0b0f17&color=c084fc&line=a855f7&point=f5f3ff&area=true&hide_border=true" width="95%" alt="Activity Graph" />
 </div>
 
----
+<br/>
 
 <div align="center">
-  <sub><b>VAN (vn002-tech)</b> · AI Engineer</sub><br/>
-  <sub><i>Building reliable AI systems from data to application.</i></sub>
+
+<img src="https://raw.githubusercontent.com/nixin72/nixin72/master/assets/developer.gif" width="220" alt="Developer coding animation" />
+
+<br/><br/>
+
+<b>“Build systems that turn data into decisions.”</b><br/>
+<sub>— VAN · vn002-tech</sub>
+
+<br/><br/>
+
+<!-- Animated Wave Footer -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0b0f17,50:2E1065,100:6D28D9&height=100&section=footer" width="100%" alt="Footer Wave" />
+
 </div>
