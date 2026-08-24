@@ -1,57 +1,51 @@
 <svg width="1000" height="220" viewBox="0 0 1000 220" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <!-- Background Gradient -->
-    <linearGradient id="track-petrol-bg" x1="0" y1="0" x2="1000" y2="220" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#080E17"/>
-      <stop offset="50%" stop-color="#0E1724"/>
-      <stop offset="100%" stop-color="#070C14"/>
+    <linearGradient id="track-ivory-bg" x1="0" y1="0" x2="1000" y2="220" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FAF9F5"/>
+      <stop offset="50%" stop-color="#F4F1EA"/>
+      <stop offset="100%" stop-color="#EBE7DE"/>
     </linearGradient>
 
-    <!-- Area Gradient under Track: Warm Champagne Gold / Amber -->
-    <linearGradient id="track-petrol-area" x1="0" y1="60" x2="0" y2="200" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.25"/>
-      <stop offset="60%" stop-color="#0284C7" stop-opacity="0.08"/>
-      <stop offset="100%" stop-color="#070C14" stop-opacity="0"/>
+    <!-- Area Gradient under Track: Soft Warm Amber -->
+    <linearGradient id="track-gold-area" x1="0" y1="60" x2="0" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.2"/>
+      <stop offset="60%" stop-color="#0284C7" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#FAF9F5" stop-opacity="0"/>
     </linearGradient>
 
-    <!-- Editorial Track Stroke Gradient (Glacier Blue -> Teal -> Champagne Gold) -->
-    <linearGradient id="track-petrol-line" x1="0" y1="0" x2="1000" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#38BDF8"/>
-      <stop offset="35%" stop-color="#2DD4BF"/>
-      <stop offset="70%" stop-color="#FBBF24"/>
-      <stop offset="100%" stop-color="#F97316"/>
+    <!-- Track Stroke Gradient (Glacier Blue -> Emerald -> Amber -> Rust) -->
+    <linearGradient id="track-ivory-line" x1="0" y1="0" x2="1000" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0284C7"/>
+      <stop offset="35%" stop-color="#059669"/>
+      <stop offset="70%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#EA580C"/>
     </linearGradient>
-
-    <!-- Glow Filter -->
-    <filter id="car-gold-glow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="4" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
-    </filter>
   </defs>
 
   <style>
     .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
     .font-mono { font-family: 'JetBrains Mono', 'Fira Code', monospace; }
 
-    @keyframes pulse-node {
+    @keyframes pulse-node-light {
       0%, 100% { r: 3.5px; opacity: 0.6; }
-      50% { r: 6px; opacity: 1; filter: drop-shadow(0 0 6px #FBBF24); }
+      50% { r: 6px; opacity: 1; }
     }
 
-    @keyframes grid-glow {
-      0%, 100% { opacity: 0.15; }
-      50% { opacity: 0.3; }
+    @keyframes grid-glow-light {
+      0%, 100% { opacity: 0.4; }
+      50% { opacity: 0.7; }
     }
 
-    .anim-node { animation: pulse-node 2.2s ease-in-out infinite; }
-    .anim-grid { animation: grid-glow 3s ease-in-out infinite; }
+    .anim-node { animation: pulse-node-light 2.2s ease-in-out infinite; }
+    .anim-grid { animation: grid-glow-light 3s ease-in-out infinite; }
   </style>
 
   <!-- Frame -->
-  <rect x="2" y="2" width="996" height="216" rx="14" fill="url(#track-petrol-bg)" stroke="#1E2C3D" stroke-width="1.5"/>
+  <rect x="2" y="2" width="996" height="216" rx="14" fill="url(#track-ivory-bg)" stroke="#D1C7B7" stroke-width="1.5"/>
 
   <!-- Background Telemetry Grid Lines -->
-  <g class="anim-grid" stroke="#24364D" stroke-width="0.8" stroke-dasharray="3 6" opacity="0.4">
+  <g class="anim-grid" stroke="#CBD5E1" stroke-width="0.8" stroke-dasharray="3 6" opacity="0.6">
     <line x1="50" y1="50" x2="950" y2="50"/>
     <line x1="50" y1="90" x2="950" y2="90"/>
     <line x1="50" y1="130" x2="950" y2="130"/>
@@ -63,79 +57,79 @@
   </g>
 
   <!-- HUD Header -->
-  <text x="40" y="32" fill="#38BDF8" class="font-mono" font-size="11" font-weight="700" letter-spacing="1.5">TELEMETRY CIRCUIT // INFERENCE ACCELERATION TRACK</text>
-  <text x="960" y="32" fill="#FBBF24" class="font-mono" font-size="10" font-weight="600" text-anchor="end">SYSTEM STATUS: HIGH VELOCITY</text>
+  <text x="40" y="32" fill="#0284C7" class="font-mono" font-size="11" font-weight="700" letter-spacing="1.5">TELEMETRY CIRCUIT // INFERENCE ACCELERATION TRACK</text>
+  <text x="960" y="32" fill="#D97706" class="font-mono" font-size="10" font-weight="600" text-anchor="end">SYSTEM STATUS: HIGH VELOCITY</text>
 
   <!-- Filled Area Under Graph Track -->
-  <path d="M 40 160 C 160 160, 240 70, 360 70 C 480 70, 540 180, 660 180 C 760 180, 830 50, 940 50 L 940 200 L 40 200 Z" fill="url(#track-petrol-area)"/>
+  <path d="M 40 160 C 160 160, 240 70, 360 70 C 480 70, 540 180, 660 180 C 760 180, 830 50, 940 50 L 940 200 L 40 200 Z" fill="url(#track-gold-area)"/>
 
   <!-- Track Outline Base -->
-  <path id="race-track" d="M 40 160 C 160 160, 240 70, 360 70 C 480 70, 540 180, 660 180 C 760 180, 830 50, 940 50" fill="none" stroke="url(#track-petrol-line)" stroke-width="4.5" stroke-linecap="round" filter="url(#car-gold-glow)"/>
+  <path id="race-track" d="M 40 160 C 160 160, 240 70, 360 70 C 480 70, 540 180, 660 180 C 760 180, 830 50, 940 50" fill="none" stroke="url(#track-ivory-line)" stroke-width="4.5" stroke-linecap="round"/>
 
   <!-- Track Center Dashed Guideline -->
-  <path d="M 40 160 C 160 160, 240 70, 360 70 C 480 70, 540 180, 660 180 C 760 180, 830 50, 940 50" fill="none" stroke="#FEF3C7" stroke-width="1.2" stroke-dasharray="6 8" opacity="0.8"/>
+  <path d="M 40 160 C 160 160, 240 70, 360 70 C 480 70, 540 180, 660 180 C 760 180, 830 50, 940 50" fill="none" stroke="#FFFFFF" stroke-width="1.4" stroke-dasharray="6 8" opacity="0.9"/>
 
   <!-- Checkpoint Telemetry Nodes along Graph -->
   <!-- Checkpoint 1 -->
   <g transform="translate(200, 115)">
-    <circle cx="0" cy="0" r="5" fill="#0B131E" stroke="#38BDF8" stroke-width="2" class="anim-node"/>
-    <rect x="-40" y="12" width="80" height="18" rx="4" fill="#0E1724" stroke="#24364D" stroke-width="1"/>
-    <text x="0" y="24" fill="#94A3B8" class="font-mono" font-size="9" font-weight="600" text-anchor="middle">01. INGEST</text>
+    <circle cx="0" cy="0" r="5" fill="#FFFFFF" stroke="#0284C7" stroke-width="2.2" class="anim-node"/>
+    <rect x="-40" y="12" width="80" height="18" rx="4" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+    <text x="0" y="24" fill="#0284C7" class="font-mono" font-size="9" font-weight="700" text-anchor="middle">01. INGEST</text>
   </g>
 
   <!-- Checkpoint 2 -->
   <g transform="translate(360, 70)">
-    <circle cx="0" cy="0" r="5" fill="#0B131E" stroke="#2DD4BF" stroke-width="2" class="anim-node"/>
-    <rect x="-45" y="-26" width="90" height="18" rx="4" fill="#0E1724" stroke="#24364D" stroke-width="1"/>
-    <text x="0" y="-14" fill="#99F6E4" class="font-mono" font-size="9" font-weight="600" text-anchor="middle">02. EMBEDDINGS</text>
+    <circle cx="0" cy="0" r="5" fill="#FFFFFF" stroke="#059669" stroke-width="2.2" class="anim-node"/>
+    <rect x="-45" y="-26" width="90" height="18" rx="4" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+    <text x="0" y="-14" fill="#059669" class="font-mono" font-size="9" font-weight="700" text-anchor="middle">02. EMBEDDINGS</text>
   </g>
 
   <!-- Checkpoint 3 -->
   <g transform="translate(540, 140)">
-    <circle cx="0" cy="0" r="5" fill="#0B131E" stroke="#F59E0B" stroke-width="2" class="anim-node"/>
-    <rect x="-40" y="12" width="80" height="18" rx="4" fill="#0E1724" stroke="#24364D" stroke-width="1"/>
-    <text x="0" y="24" fill="#FDE68A" class="font-mono" font-size="9" font-weight="600" text-anchor="middle">03. NEURAL</text>
+    <circle cx="0" cy="0" r="5" fill="#FFFFFF" stroke="#D97706" stroke-width="2.2" class="anim-node"/>
+    <rect x="-40" y="12" width="80" height="18" rx="4" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+    <text x="0" y="24" fill="#D97706" class="font-mono" font-size="9" font-weight="700" text-anchor="middle">03. NEURAL</text>
   </g>
 
   <!-- Checkpoint 4 -->
   <g transform="translate(660, 180)">
-    <circle cx="0" cy="0" r="5" fill="#0B131E" stroke="#FBBF24" stroke-width="2" class="anim-node"/>
-    <rect x="-45" y="12" width="90" height="18" rx="4" fill="#0E1724" stroke="#24364D" stroke-width="1"/>
-    <text x="0" y="24" fill="#FEF3C7" class="font-mono" font-size="9" font-weight="600" text-anchor="middle">04. RAG / AGENT</text>
+    <circle cx="0" cy="0" r="5" fill="#FFFFFF" stroke="#B45309" stroke-width="2.2" class="anim-node"/>
+    <rect x="-45" y="12" width="90" height="18" rx="4" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+    <text x="0" y="24" fill="#B45309" class="font-mono" font-size="9" font-weight="700" text-anchor="middle">04. RAG / AGENT</text>
   </g>
 
   <!-- Checkpoint 5 (Peak Throughput) -->
   <g transform="translate(940, 50)">
-    <circle cx="0" cy="0" r="6" fill="#451A03" stroke="#F97316" stroke-width="2" class="anim-node"/>
-    <rect x="-55" y="-26" width="105" height="18" rx="4" fill="#20110B" stroke="#7C2D12" stroke-width="1"/>
-    <text x="-2" y="-14" fill="#FDBA74" class="font-mono" font-size="9" font-weight="700" text-anchor="middle">05. PROD SERVING</text>
+    <circle cx="0" cy="0" r="6" fill="#EA580C" stroke="#C2410C" stroke-width="2.2" class="anim-node"/>
+    <rect x="-55" y="-26" width="105" height="18" rx="4" fill="#FFF7ED" stroke="#FDBA74" stroke-width="1"/>
+    <text x="-2" y="-14" fill="#EA580C" class="font-mono" font-size="9" font-weight="700" text-anchor="middle">05. PROD SERVING</text>
   </g>
 
-  <!-- ================= RACING TITANIUM SLATE CYBER CAR ================= -->
+  <!-- ================= RACING PRUSSIAN NAVY CYBER SPEEDSTER ================= -->
   <g id="cyber-speedster">
-    <!-- Clean LED Tail Lights -->
-    <rect x="-17" y="-5" width="2.5" height="3" rx="1" fill="#F97316" filter="url(#car-gold-glow)"/>
-    <rect x="-17" y="2" width="2.5" height="3" rx="1" fill="#F97316" filter="url(#car-gold-glow)"/>
+    <!-- Clean Tail Lights -->
+    <rect x="-17" y="-5" width="2.5" height="3" rx="1" fill="#EA580C"/>
+    <rect x="-17" y="2" width="2.5" height="3" rx="1" fill="#EA580C"/>
 
-    <!-- Car Body in Titanium Petrol Slate -->
-    <rect x="-16" y="-6" width="32" height="12" rx="4" fill="#0E1724" stroke="#FBBF24" stroke-width="1.4"/>
+    <!-- Car Body in Deep Prussian Navy with Amber Accents -->
+    <rect x="-16" y="-6" width="32" height="12" rx="4" fill="#0F172A" stroke="#D97706" stroke-width="1.4"/>
     
     <!-- Windshield -->
-    <polygon points="-4,-4 8,-4 5,4 -4,4" fill="#38BDF8" opacity="0.9"/>
+    <polygon points="-4,-4 8,-4 5,4 -4,4" fill="#38BDF8" opacity="0.95"/>
 
-    <!-- Headlights Beam (Champagne Gold Glow) -->
-    <polygon points="16,-4 42,-8 42,8 16,4" fill="#FEF08A" opacity="0.4" filter="url(#car-gold-glow)"/>
-    <circle cx="16" cy="-3" r="1.8" fill="#FEF3C7"/>
-    <circle cx="16" cy="3" r="1.8" fill="#FEF3C7"/>
+    <!-- Headlights Beam (Amber Gold Glow) -->
+    <polygon points="16,-4 42,-8 42,8 16,4" fill="#FDE68A" opacity="0.5"/>
+    <circle cx="16" cy="-3" r="1.8" fill="#F59E0B"/>
+    <circle cx="16" cy="3" r="1.8" fill="#F59E0B"/>
 
     <!-- Rear Spoiler -->
-    <line x1="-15" y1="-7" x2="-15" y2="7" stroke="#F59E0B" stroke-width="1.8" stroke-linecap="round"/>
+    <line x1="-15" y1="-7" x2="-15" y2="7" stroke="#D97706" stroke-width="1.8" stroke-linecap="round"/>
 
-    <!-- Titanium Wheels -->
-    <circle cx="-10" cy="-6" r="2" fill="#FBBF24"/>
-    <circle cx="10" cy="-6" r="2" fill="#FBBF24"/>
-    <circle cx="-10" cy="6" r="2" fill="#FBBF24"/>
-    <circle cx="10" cy="6" r="2" fill="#FBBF24"/>
+    <!-- Navy Wheels -->
+    <circle cx="-10" cy="-6" r="2" fill="#D97706"/>
+    <circle cx="10" cy="-6" r="2" fill="#D97706"/>
+    <circle cx="-10" cy="6" r="2" fill="#D97706"/>
+    <circle cx="10" cy="6" r="2" fill="#D97706"/>
 
     <!-- Motion Animation along the Track Path -->
     <animateMotion dur="4.5s" repeatCount="indefinite" rotate="auto">
