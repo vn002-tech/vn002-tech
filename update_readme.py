@@ -1,6 +1,6 @@
 from pathlib import Path
 
-base = Path("/mnt/data/vn002-ai-engineer-final")
+base = Path(".")
 assets = base / "assets"
 assets.mkdir(parents=True, exist_ok=True)
 
@@ -130,4 +130,4 @@ svg = r'''<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmln
 
 (base / "README.md").write_text(readme, encoding="utf-8")
 (assets / "ai-engineer-profile.svg").write_text(svg, encoding="utf-8")
-print("Files generated successfully!")
+print("Files successfully updated locally!")
