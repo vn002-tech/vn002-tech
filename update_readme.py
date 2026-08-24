@@ -2,8 +2,7 @@
 """
 update_readme.py
 Programmatic generator for vn002-tech GitHub Profile README, Animated SVG Banner,
-AI Engineering Pillars Card SVG, AI Architecture Diagram SVG, Cyber Telemetry Speedway Track SVG,
-and Anime Studio Character animation.
+AI Engineering Pillars Card SVG, AI Architecture Diagram SVG, and Cyber Telemetry Speedway Track SVG.
 """
 
 from pathlib import Path
@@ -649,28 +648,11 @@ def generate_readme() -> str:
 <!-- Live GitHub Contribution Calendar (Purple Obsidian Theme) -->
 <img src="https://ghchart.rshah.org/A855F7/vn002-tech" width="100%" alt="vn002-tech Live GitHub Contribution Calendar" />
 
-<br/><br/>
-
-<!-- All-Time Commits + Private Contributions Enabled -->
-<img src="https://github-readme-stats.vercel.app/api?username=vn002-tech&show_icons=true&include_all_commits=true&count_private=true&theme=tokyonight&hide_border=true&bg_color=0b0f17&title_color=c084fc&icon_color=a855f7&text_color=cbd5e1" height="150" alt="GitHub Stats" />
-&nbsp;&nbsp;
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=vn002-tech&layout=compact&theme=tokyonight&hide_border=true&bg_color=0b0f17&title_color=c084fc&text_color=cbd5e1" height="150" alt="Top Languages" />
-
-<br/><br/>
-
-<!-- Real-time Activity Wave -->
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=vn002-tech&bg_color=0b0f17&color=c084fc&line=a855f7&point=f5f3ff&area=true&hide_border=true" width="95%" alt="Activity Graph" />
-
 </div>
 
-<br/>
+<br/><br/>
 
 <div align="center">
-
-<!-- Anime Studio Coding Scene -->
-<img src="./assets/character.gif" width="380" alt="Anime Developer Animation" style="border-radius: 12px;" />
-
-<br/><br/>
 
 <b>“Build systems that turn data into decisions.”</b><br/>
 <sub>— VAN · vn002-tech</sub>
