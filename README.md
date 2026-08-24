@@ -4,9 +4,8 @@
 
 <br><br>
 
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&pause=1000&color=C084FC&center=true&vCenter=true&width=750&lines=🚀+Architecting+Intelligent+AI+%26+ML+Systems;⚡+Python+%7C+PyTorch+%7C+PySpark+%7C+Airflow;🤖+LLM+%7C+RAG+Applications+%7C+MLOps;☁️+Cloud-Native+Pipelines+%26+Model+Serving" alt="Typing SVG" />
-</a>
+<!-- Animasi Teks Bergerak Berbasis Gambar GIF (Garanteed Working di GitHub) -->
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&pause=1000&color=C084FC&center=true&vCenter=true&width=750&lines=🚀+AI+Engineer+%26+MLOps+Specialist;⚡+Python+%7C+PyTorch+%7C+PySpark+%7C+Airflow;🤖+LLM+%7C+RAG+Applications+%7C+Model+Serving" alt="Typing SVG" />
 
 <br><br>
 
@@ -23,22 +22,21 @@
 
 <br>
 
-### 📊 LIVE GITHUB ACTIVITY
+### 📊 LIVE ACTIVITY & STREAKS
 
 <div align="center">
 <img src="https://streak-stats.demolab.com?user=vn002-tech&hide_border=true&background=0b0815&ring=a855f7&fire=c084fc&currStreakLabel=c084fc&sideLabels=cbd5e1&currStreakNum=ffffff&sideNums=ffffff&dates=64748b" width="100%" />
 <br><br>
+<!-- Grafik Aktivitas Bergerak Otomatis -->
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=vn002-tech&bg_color=0b0815&color=c084fc&line=a855f7&point=f5f3ff&area=true&hide_border=true" width="100%" />
 </div>
 
 <br>
 
-### 🛠️ ANIMATED TECH STACK
+### 🛠️ TECH STACK
 
 <div align="center">
   <img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,kafka,postgres,redis,aws,docker,kubernetes,githubactions,terraform,fastapi" height="52" />
-  <br><br>
-  <img src="https://img.shields.io/badge/Status-Actively_Building_AI_Systems-0b0815?style=for-the-badge&logoColor=c084fc&logo=appveyor" />
 </div>
 
 <br>
@@ -78,7 +76,10 @@
 ---
 
 <div align="center">
+<!-- Animasi Ksatria & Suasana Bergerak -->
 <img src="./assets/knight-garden.gif" width="85%"><br><br>
+<!-- Animasi Developer Pixel Art Bergerak -->
+<img src="https://raw.githubusercontent.com/nixin72/nixin72/master/assets/developer.gif" width="240"><br><br>
 <b>“The strongest models are built not just on data, but on purpose.”</b><br>
 <sub>— VAN (vn002-tech)</sub>
 <br><br>
