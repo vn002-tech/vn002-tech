@@ -1,0 +1,145 @@
+<svg width="1000" height="220" viewBox="0 0 1000 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="track-bg" x1="0" y1="0" x2="1000" y2="220" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#080C14"/>
+      <stop offset="50%" stop-color="#0B0F19"/>
+      <stop offset="100%" stop-color="#060910"/>
+    </linearGradient>
+
+    <!-- Area Gradient under Track -->
+    <linearGradient id="track-area" x1="0" y1="60" x2="0" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.35"/>
+      <stop offset="60%" stop-color="#6366F1" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#060910" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Neon Track Stroke Gradient -->
+    <linearGradient id="track-line" x1="0" y1="0" x2="1000" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="35%" stop-color="#818CF8"/>
+      <stop offset="70%" stop-color="#C084FC"/>
+      <stop offset="100%" stop-color="#F43F5E"/>
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="car-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', 'Fira Code', monospace; }
+
+    @keyframes pulse-node {
+      0%, 100% { r: 3.5px; opacity: 0.6; }
+      50% { r: 6px; opacity: 1; filter: drop-shadow(0 0 6px #C084FC); }
+    }
+
+    @keyframes grid-glow {
+      0%, 100% { opacity: 0.15; }
+      50% { opacity: 0.3; }
+    }
+
+    .anim-node { animation: pulse-node 2.2s ease-in-out infinite; }
+    .anim-grid { animation: grid-glow 3s ease-in-out infinite; }
+  </style>
+
+  <!-- Frame -->
+  <rect x="2" y="2" width="996" height="216" rx="14" fill="url(#track-bg)" stroke="#1E293B" stroke-width="1.5"/>
+
+  <!-- Background Telemetry Grid Lines -->
+  <g class="anim-grid" stroke="#334155" stroke-width="0.8" stroke-dasharray="3 6" opacity="0.25">
+    <line x1="50" y1="50" x2="950" y2="50"/>
+    <line x1="50" y1="90" x2="950" y2="90"/>
+    <line x1="50" y1="130" x2="950" y2="130"/>
+    <line x1="50" y1="170" x2="950" y2="170"/>
+    <line x1="200" y1="40" x2="200" y2="190"/>
+    <line x1="400" y1="40" x2="400" y2="190"/>
+    <line x1="600" y1="40" x2="600" y2="190"/>
+    <line x1="800" y1="40" x2="800" y2="190"/>
+  </g>
+
+  <!-- HUD Header -->
+  <text x="40" y="32" fill="#38BDF8" class="font-mono" font-size="11" font-weight="700" letter-spacing="1.5">🏎️ TELEMETRY CIRCUIT // INFERENCE ACCELERATION TRACK</text>
+  <text x="960" y="32" fill="#A855F7" class="font-mono" font-size="10" font-weight="600" text-anchor="end">SYSTEM STATUS: HIGH VELOCITY</text>
+
+  <!-- Filled Area Under Graph Track -->
+  <path d="M 40 160 C 160 160, 240 70, 360 70 C 480 70, 540 180, 660 180 C 760 180, 830 50, 940 50 L 940 200 L 40 200 Z" fill="url(#track-area)"/>
+
+  <!-- Track Outline Base (Wide Glow) -->
+  <path id="race-track" d="M 40 160 C 160 160, 240 70, 360 70 C 480 70, 540 180, 660 180 C 760 180, 830 50, 940 50" fill="none" stroke="url(#track-line)" stroke-width="4.5" stroke-linecap="round" filter="url(#car-glow)"/>
+
+  <!-- Track Center Dashed Guideline -->
+  <path d="M 40 160 C 160 160, 240 70, 360 70 C 480 70, 540 180, 660 180 C 760 180, 830 50, 940 50" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-dasharray="6 8" opacity="0.8"/>
+
+  <!-- Checkpoint Telemetry Nodes along Graph -->
+  <!-- Checkpoint 1 -->
+  <g transform="translate(200, 115)">
+    <circle cx="0" cy="0" r="5" fill="#0F172A" stroke="#38BDF8" stroke-width="2" class="anim-node"/>
+    <rect x="-40" y="12" width="80" height="18" rx="4" fill="#090E17" stroke="#1E293B" stroke-width="1"/>
+    <text x="0" y="24" fill="#94A3B8" class="font-mono" font-size="9" font-weight="600" text-anchor="middle">01. INGEST</text>
+  </g>
+
+  <!-- Checkpoint 2 -->
+  <g transform="translate(360, 70)">
+    <circle cx="0" cy="0" r="5" fill="#0F172A" stroke="#818CF8" stroke-width="2" class="anim-node"/>
+    <rect x="-45" y="-26" width="90" height="18" rx="4" fill="#090E17" stroke="#1E293B" stroke-width="1"/>
+    <text x="0" y="-14" fill="#C084FC" class="font-mono" font-size="9" font-weight="600" text-anchor="middle">02. EMBEDDINGS</text>
+  </g>
+
+  <!-- Checkpoint 3 -->
+  <g transform="translate(540, 140)">
+    <circle cx="0" cy="0" r="5" fill="#0F172A" stroke="#A855F7" stroke-width="2" class="anim-node"/>
+    <rect x="-40" y="12" width="80" height="18" rx="4" fill="#090E17" stroke="#1E293B" stroke-width="1"/>
+    <text x="0" y="24" fill="#D8B4FE" class="font-mono" font-size="9" font-weight="600" text-anchor="middle">03. NEURAL</text>
+  </g>
+
+  <!-- Checkpoint 4 -->
+  <g transform="translate(660, 180)">
+    <circle cx="0" cy="0" r="5" fill="#0F172A" stroke="#C084FC" stroke-width="2" class="anim-node"/>
+    <rect x="-45" y="12" width="90" height="18" rx="4" fill="#090E17" stroke="#1E293B" stroke-width="1"/>
+    <text x="0" y="24" fill="#F0ABFC" class="font-mono" font-size="9" font-weight="600" text-anchor="middle">04. RAG / AGENT</text>
+  </g>
+
+  <!-- Checkpoint 5 (Peak Throughput) -->
+  <g transform="translate(940, 50)">
+    <circle cx="0" cy="0" r="6" fill="#581C87" stroke="#F43F5E" stroke-width="2" class="anim-node"/>
+    <rect x="-55" y="-26" width="105" height="18" rx="4" fill="#1E0A2A" stroke="#701A75" stroke-width="1"/>
+    <text x="-2" y="-14" fill="#F472B6" class="font-mono" font-size="9" font-weight="700" text-anchor="middle">05. PROD SERVING</text>
+  </g>
+
+  <!-- ================= RACING CYBER CAR ================= -->
+  <g id="cyber-speedster">
+    <!-- Exhaust Flame Glow / Particle Tail -->
+    <ellipse cx="-22" cy="0" rx="10" ry="3" fill="#F43F5E" opacity="0.7" filter="url(#car-glow)"/>
+    <ellipse cx="-16" cy="0" rx="6" ry="2" fill="#FDE047" opacity="0.9"/>
+
+    <!-- Car Body -->
+    <rect x="-16" y="-6" width="32" height="12" rx="4" fill="#0F172A" stroke="#C084FC" stroke-width="1.4"/>
+    
+    <!-- Windshield & Cockpit -->
+    <polygon points="-4,-4 8,-4 5,4 -4,4" fill="#38BDF8" opacity="0.9"/>
+
+    <!-- Headlights Beam (Front Glow) -->
+    <polygon points="16,-4 42,-8 42,8 16,4" fill="#38BDF8" opacity="0.35" filter="url(#car-glow)"/>
+    <circle cx="16" cy="-3" r="1.8" fill="#E0F2FE"/>
+    <circle cx="16" cy="3" r="1.8" fill="#E0F2FE"/>
+
+    <!-- Rear Spoiler -->
+    <line x1="-15" y1="-7" x2="-15" y2="7" stroke="#F43F5E" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Neon Wheels -->
+    <circle cx="-10" cy="-6" r="2" fill="#C084FC"/>
+    <circle cx="10" cy="-6" r="2" fill="#C084FC"/>
+    <circle cx="-10" cy="6" r="2" fill="#C084FC"/>
+    <circle cx="10" cy="6" r="2" fill="#C084FC"/>
+
+    <!-- Motion Animation along the Track Path -->
+    <animateMotion dur="4.5s" repeatCount="indefinite" rotate="auto">
+      <mpath href="#race-track"/>
+    </animateMotion>
+  </g>
+</svg>

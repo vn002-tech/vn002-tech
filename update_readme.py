@@ -2,11 +2,11 @@
 """
 update_readme.py
 Programmatic generator for vn002-tech GitHub Profile README, Animated SVG Banner,
-AI Engineering Architecture Diagram, and Anime Studio Character animation.
+AI Engineering Pillars Card SVG, AI Architecture Diagram SVG, Cyber Telemetry Speedway Track SVG,
+and Anime Studio Character animation.
 """
 
 from pathlib import Path
-import urllib.request
 
 
 def generate_svg_banner() -> str:
@@ -172,6 +172,103 @@ def generate_svg_banner() -> str:
     <path d="M323 10H337C338 10 339 10.8 339 11.8V20.2C339 21.2 338 22 337 22H323C322 22 321 21.2 321 20.2V11.8C321 10.8 322 10 323 10Z" stroke="#A855F7" stroke-width="1.2" fill="none"/>
     <path d="M321 12L330 17L339 12" stroke="#A855F7" stroke-width="1.2" fill="none"/>
     <text x="347" y="20" fill="#E2E8F0" class="font-mono" font-size="11" font-weight="500">wahidivansaputra@gmail.com</text>
+  </g>
+</svg>"""
+
+
+def generate_pillars_svg() -> str:
+    """
+    Generates an ultra-sleek, animated 4-Card Vector Matrix SVG for:
+    ML & Data Science | Deep Learning | LLMs & Automation | MLOps & Systems.
+    """
+    return """<svg width="1000" height="148" viewBox="0 0 1000 148" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Dark Card Background Gradient -->
+    <linearGradient id="pil-card-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="50%" stop-color="#0E1422"/>
+      <stop offset="100%" stop-color="#080C14"/>
+    </linearGradient>
+
+    <!-- Glowing LLM Card Gradient -->
+    <linearGradient id="pil-llm-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#24123E"/>
+      <stop offset="50%" stop-color="#170E2A"/>
+      <stop offset="100%" stop-color="#0C0816"/>
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="pil-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, monospace; }
+
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 0.35; transform: scale(0.9); }
+      50% { opacity: 1; transform: scale(1.2); }
+    }
+
+    @keyframes radar-ring {
+      0% { r: 3.5px; opacity: 1; }
+      100% { r: 9px; opacity: 0; }
+    }
+
+    .anim-pulse {
+      animation: pulse-dot 2.2s ease-in-out infinite;
+    }
+
+    .anim-radar {
+      animation: radar-ring 1.8s cubic-bezier(0, 0, 0.2, 1) infinite;
+    }
+  </style>
+
+  <!-- Frame Background -->
+  <rect x="2" y="2" width="996" height="144" rx="14" fill="#080C14" stroke="#1E293B" stroke-width="1.5"/>
+
+  <!-- ================= CARD 1: ML & DATA SCIENCE ================= -->
+  <g transform="translate(16, 14)">
+    <rect width="230" height="120" rx="10" fill="url(#pil-card-grad)" stroke="#2563EB" stroke-width="1.2" stroke-opacity="0.8"/>
+    <circle cx="18" cy="20" r="4" fill="#60A5FA" class="anim-pulse"/>
+    <text x="28" y="24" fill="#93C5FD" class="font-mono" font-size="10.5" font-weight="700" letter-spacing="0.5">🧠 ML &amp; DATA SCIENCE</text>
+    <text x="16" y="49" fill="#F8FAFC" class="font-sans" font-size="13" font-weight="700">Predictive &amp; Analytics</text>
+    <text x="16" y="73" fill="#94A3B8" class="font-sans" font-size="11">Feature Pipelines · XGBoost</text>
+    <text x="16" y="93" fill="#64748B" class="font-sans" font-size="10.5">Statistical EDA &amp; Metrics</text>
+  </g>
+
+  <!-- ================= CARD 2: DEEP LEARNING ================= -->
+  <g transform="translate(260, 14)">
+    <rect width="230" height="120" rx="10" fill="url(#pil-card-grad)" stroke="#7C3AED" stroke-width="1.2" stroke-opacity="0.8"/>
+    <circle cx="18" cy="20" r="4" fill="#A855F7" class="anim-pulse"/>
+    <text x="28" y="24" fill="#C084FC" class="font-mono" font-size="10.5" font-weight="700" letter-spacing="0.5">⚡ DEEP LEARNING</text>
+    <text x="16" y="49" fill="#F8FAFC" class="font-sans" font-size="13" font-weight="700">Neural Systems</text>
+    <text x="16" y="73" fill="#94A3B8" class="font-sans" font-size="11">PyTorch · Tensors</text>
+    <text x="16" y="93" fill="#64748B" class="font-sans" font-size="10.5">Dense Embeddings</text>
+  </g>
+
+  <!-- ================= CARD 3: LLMs & AUTOMATION (FOCAL) ================= -->
+  <g transform="translate(504, 14)">
+    <rect width="230" height="120" rx="10" fill="url(#pil-llm-grad)" stroke="#C084FC" stroke-width="1.4" filter="url(#pil-glow)"/>
+    <circle cx="18" cy="20" r="4" fill="#E879F9"/>
+    <circle cx="18" cy="20" r="4" fill="#C084FC" class="anim-radar"/>
+    <text x="28" y="24" fill="#F0ABFC" class="font-mono" font-size="10.5" font-weight="700" letter-spacing="0.5">🤖 LLMs &amp; AUTOMATION</text>
+    <text x="16" y="49" fill="#FFFFFF" class="font-sans" font-size="13" font-weight="700">AI Automation</text>
+    <text x="16" y="73" fill="#E9D5FF" class="font-sans" font-size="11">RAG Pipelines · Vector DBs</text>
+    <text x="16" y="93" fill="#D8B4FE" class="font-sans" font-size="10.5">Autonomous Workflows</text>
+  </g>
+
+  <!-- ================= CARD 4: MLOPS & SYSTEMS ================= -->
+  <g transform="translate(748, 14)">
+    <rect width="236" height="120" rx="10" fill="url(#pil-card-grad)" stroke="#10B981" stroke-width="1.2" stroke-opacity="0.8"/>
+    <circle cx="18" cy="20" r="4" fill="#34D399" class="anim-pulse"/>
+    <text x="28" y="24" fill="#6EE7B7" class="font-mono" font-size="10.5" font-weight="700" letter-spacing="0.5">⚙️ MLOps &amp; SYSTEMS</text>
+    <text x="16" y="49" fill="#F8FAFC" class="font-sans" font-size="13" font-weight="700">Serving &amp; Production</text>
+    <text x="16" y="73" fill="#94A3B8" class="font-sans" font-size="11">FastAPI · Docker Runtime</text>
+    <text x="16" y="93" fill="#64748B" class="font-sans" font-size="10.5">ETL &amp; Data Integrity</text>
   </g>
 </svg>"""
 
@@ -343,6 +440,158 @@ def generate_pipeline_svg() -> str:
 </svg>"""
 
 
+def generate_telemetry_track_svg() -> str:
+    """
+    Generates an animated Cyber Speedway Track SVG where a futuristic Cyber Sports Car
+    races continuously along an AI inference telemetry waveform track.
+    """
+    return """<svg width="1000" height="220" viewBox="0 0 1000 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="track-bg" x1="0" y1="0" x2="1000" y2="220" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#080C14"/>
+      <stop offset="50%" stop-color="#0B0F19"/>
+      <stop offset="100%" stop-color="#060910"/>
+    </linearGradient>
+
+    <!-- Area Gradient under Track -->
+    <linearGradient id="track-area" x1="0" y1="60" x2="0" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.35"/>
+      <stop offset="60%" stop-color="#6366F1" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#060910" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Neon Track Stroke Gradient -->
+    <linearGradient id="track-line" x1="0" y1="0" x2="1000" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="35%" stop-color="#818CF8"/>
+      <stop offset="70%" stop-color="#C084FC"/>
+      <stop offset="100%" stop-color="#F43F5E"/>
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="car-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', 'Fira Code', monospace; }
+
+    @keyframes pulse-node {
+      0%, 100% { r: 3.5px; opacity: 0.6; }
+      50% { r: 6px; opacity: 1; filter: drop-shadow(0 0 6px #C084FC); }
+    }
+
+    @keyframes grid-glow {
+      0%, 100% { opacity: 0.15; }
+      50% { opacity: 0.3; }
+    }
+
+    .anim-node { animation: pulse-node 2.2s ease-in-out infinite; }
+    .anim-grid { animation: grid-glow 3s ease-in-out infinite; }
+  </style>
+
+  <!-- Frame -->
+  <rect x="2" y="2" width="996" height="216" rx="14" fill="url(#track-bg)" stroke="#1E293B" stroke-width="1.5"/>
+
+  <!-- Background Telemetry Grid Lines -->
+  <g class="anim-grid" stroke="#334155" stroke-width="0.8" stroke-dasharray="3 6" opacity="0.25">
+    <line x1="50" y1="50" x2="950" y2="50"/>
+    <line x1="50" y1="90" x2="950" y2="90"/>
+    <line x1="50" y1="130" x2="950" y2="130"/>
+    <line x1="50" y1="170" x2="950" y2="170"/>
+    <line x1="200" y1="40" x2="200" y2="190"/>
+    <line x1="400" y1="40" x2="400" y2="190"/>
+    <line x1="600" y1="40" x2="600" y2="190"/>
+    <line x1="800" y1="40" x2="800" y2="190"/>
+  </g>
+
+  <!-- HUD Header -->
+  <text x="40" y="32" fill="#38BDF8" class="font-mono" font-size="11" font-weight="700" letter-spacing="1.5">🏎️ TELEMETRY CIRCUIT // INFERENCE ACCELERATION TRACK</text>
+  <text x="960" y="32" fill="#A855F7" class="font-mono" font-size="10" font-weight="600" text-anchor="end">SYSTEM STATUS: HIGH VELOCITY</text>
+
+  <!-- Filled Area Under Graph Track -->
+  <path d="M 40 160 C 160 160, 240 70, 360 70 C 480 70, 540 180, 660 180 C 760 180, 830 50, 940 50 L 940 200 L 40 200 Z" fill="url(#track-area)"/>
+
+  <!-- Track Outline Base (Wide Glow) -->
+  <path id="race-track" d="M 40 160 C 160 160, 240 70, 360 70 C 480 70, 540 180, 660 180 C 760 180, 830 50, 940 50" fill="none" stroke="url(#track-line)" stroke-width="4.5" stroke-linecap="round" filter="url(#car-glow)"/>
+
+  <!-- Track Center Dashed Guideline -->
+  <path d="M 40 160 C 160 160, 240 70, 360 70 C 480 70, 540 180, 660 180 C 760 180, 830 50, 940 50" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-dasharray="6 8" opacity="0.8"/>
+
+  <!-- Checkpoint Telemetry Nodes along Graph -->
+  <!-- Checkpoint 1 -->
+  <g transform="translate(200, 115)">
+    <circle cx="0" cy="0" r="5" fill="#0F172A" stroke="#38BDF8" stroke-width="2" class="anim-node"/>
+    <rect x="-40" y="12" width="80" height="18" rx="4" fill="#090E17" stroke="#1E293B" stroke-width="1"/>
+    <text x="0" y="24" fill="#94A3B8" class="font-mono" font-size="9" font-weight="600" text-anchor="middle">01. INGEST</text>
+  </g>
+
+  <!-- Checkpoint 2 -->
+  <g transform="translate(360, 70)">
+    <circle cx="0" cy="0" r="5" fill="#0F172A" stroke="#818CF8" stroke-width="2" class="anim-node"/>
+    <rect x="-45" y="-26" width="90" height="18" rx="4" fill="#090E17" stroke="#1E293B" stroke-width="1"/>
+    <text x="0" y="-14" fill="#C084FC" class="font-mono" font-size="9" font-weight="600" text-anchor="middle">02. EMBEDDINGS</text>
+  </g>
+
+  <!-- Checkpoint 3 -->
+  <g transform="translate(540, 140)">
+    <circle cx="0" cy="0" r="5" fill="#0F172A" stroke="#A855F7" stroke-width="2" class="anim-node"/>
+    <rect x="-40" y="12" width="80" height="18" rx="4" fill="#090E17" stroke="#1E293B" stroke-width="1"/>
+    <text x="0" y="24" fill="#D8B4FE" class="font-mono" font-size="9" font-weight="600" text-anchor="middle">03. NEURAL</text>
+  </g>
+
+  <!-- Checkpoint 4 -->
+  <g transform="translate(660, 180)">
+    <circle cx="0" cy="0" r="5" fill="#0F172A" stroke="#C084FC" stroke-width="2" class="anim-node"/>
+    <rect x="-45" y="12" width="90" height="18" rx="4" fill="#090E17" stroke="#1E293B" stroke-width="1"/>
+    <text x="0" y="24" fill="#F0ABFC" class="font-mono" font-size="9" font-weight="600" text-anchor="middle">04. RAG / AGENT</text>
+  </g>
+
+  <!-- Checkpoint 5 (Peak Throughput) -->
+  <g transform="translate(940, 50)">
+    <circle cx="0" cy="0" r="6" fill="#581C87" stroke="#F43F5E" stroke-width="2" class="anim-node"/>
+    <rect x="-55" y="-26" width="105" height="18" rx="4" fill="#1E0A2A" stroke="#701A75" stroke-width="1"/>
+    <text x="-2" y="-14" fill="#F472B6" class="font-mono" font-size="9" font-weight="700" text-anchor="middle">05. PROD SERVING</text>
+  </g>
+
+  <!-- ================= RACING CYBER CAR ================= -->
+  <g id="cyber-speedster">
+    <!-- Exhaust Flame Glow / Particle Tail -->
+    <ellipse cx="-22" cy="0" rx="10" ry="3" fill="#F43F5E" opacity="0.7" filter="url(#car-glow)"/>
+    <ellipse cx="-16" cy="0" rx="6" ry="2" fill="#FDE047" opacity="0.9"/>
+
+    <!-- Car Body -->
+    <rect x="-16" y="-6" width="32" height="12" rx="4" fill="#0F172A" stroke="#C084FC" stroke-width="1.4"/>
+    
+    <!-- Windshield & Cockpit -->
+    <polygon points="-4,-4 8,-4 5,4 -4,4" fill="#38BDF8" opacity="0.9"/>
+
+    <!-- Headlights Beam (Front Glow) -->
+    <polygon points="16,-4 42,-8 42,8 16,4" fill="#38BDF8" opacity="0.35" filter="url(#car-glow)"/>
+    <circle cx="16" cy="-3" r="1.8" fill="#E0F2FE"/>
+    <circle cx="16" cy="3" r="1.8" fill="#E0F2FE"/>
+
+    <!-- Rear Spoiler -->
+    <line x1="-15" y1="-7" x2="-15" y2="7" stroke="#F43F5E" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Neon Wheels -->
+    <circle cx="-10" cy="-6" r="2" fill="#C084FC"/>
+    <circle cx="10" cy="-6" r="2" fill="#C084FC"/>
+    <circle cx="-10" cy="6" r="2" fill="#C084FC"/>
+    <circle cx="10" cy="6" r="2" fill="#C084FC"/>
+
+    <!-- Motion Animation along the Track Path -->
+    <animateMotion dur="4.5s" repeatCount="indefinite" rotate="auto">
+      <mpath href="#race-track"/>
+    </animateMotion>
+  </g>
+</svg>"""
+
+
 def generate_readme() -> str:
     """Generates the comprehensive, visual, modern, and animated GitHub Profile README."""
     return """<div align="center">
@@ -367,37 +616,8 @@ def generate_readme() -> str:
 
 <br/><br/>
 
-<!-- 4-Pillar Core AI Engineering Matrix -->
-<table width="100%">
-  <thead>
-    <tr>
-      <th width="25%" align="center">🧠 ML &amp; Data Science</th>
-      <th width="25%" align="center">⚡ Deep Learning</th>
-      <th width="25%" align="center">🤖 LLMs &amp; Automation</th>
-      <th width="25%" align="center">⚙️ MLOps &amp; Systems</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td align="center" style="padding: 12px 8px;">
-        <b>Predictive &amp; Analytics</b><br/>
-        <sub>Feature Pipelines · XGBoost<br/>Statistical EDA &amp; Metrics</sub>
-      </td>
-      <td align="center" style="padding: 12px 8px;">
-        <b>Neural Systems</b><br/>
-        <sub>PyTorch · Tensors<br/>Dense Embeddings</sub>
-      </td>
-      <td align="center" style="padding: 12px 8px;">
-        <b>AI Automation</b><br/>
-        <sub>RAG Pipelines · Vector DBs<br/>Autonomous Workflows</sub>
-      </td>
-      <td align="center" style="padding: 12px 8px;">
-        <b>Serving &amp; Production</b><br/>
-        <sub>FastAPI · Docker Runtime<br/>ETL &amp; Data Integrity</sub>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<!-- 4-Pillar Core AI Engineering Matrix SVG Card -->
+<img src="./assets/ai-pillars.svg" width="100%" alt="4-Pillar Core AI Engineering Domains" />
 
 </div>
 
@@ -417,84 +637,35 @@ def generate_readme() -> str:
 
 ---
 
-### 🛠️ AI Engineering Tech Stack &amp; Tooling
-
-<table width="100%">
-  <tr>
-    <td width="38%" valign="middle" style="padding: 12px 16px;">
-      <b>🧠 Machine Learning &amp; Data Science</b>
-    </td>
-    <td valign="middle" style="padding: 12px 16px;">
-      <img src="https://skillicons.dev/icons?i=python,scikitlearn&theme=dark" height="34" />
-      &nbsp;
-      <img src="https://img.shields.io/badge/XGBoost-0B0F17?style=flat-square&logo=xgboost&logoColor=C084FC" height="34" />
-      <img src="https://img.shields.io/badge/Pandas-0B0F17?style=flat-square&logo=pandas&logoColor=C084FC" height="34" />
-      <img src="https://img.shields.io/badge/NumPy-0B0F17?style=flat-square&logo=numpy&logoColor=C084FC" height="34" />
-    </td>
-  </tr>
-  <tr>
-    <td valign="middle" style="padding: 12px 16px;">
-      <b>⚡ Deep Learning &amp; Neural Tensors</b>
-    </td>
-    <td valign="middle" style="padding: 12px 16px;">
-      <img src="https://skillicons.dev/icons?i=pytorch&theme=dark" height="34" />
-      &nbsp;
-      <img src="https://img.shields.io/badge/Embeddings-0B0F17?style=flat-square&logo=huggingface&logoColor=FBBF24" height="34" />
-      <img src="https://img.shields.io/badge/Neural_Tensors-0B0F17?style=flat-square&logo=pytorch&logoColor=C084FC" height="34" />
-    </td>
-  </tr>
-  <tr>
-    <td valign="middle" style="padding: 12px 16px;">
-      <b>🤖 LLMs, RAG &amp; AI Automation</b>
-    </td>
-    <td valign="middle" style="padding: 12px 16px;">
-      <img src="https://img.shields.io/badge/RAG_Pipelines-140D24?style=flat-square&logo=openai&logoColor=C084FC" height="34" />
-      <img src="https://img.shields.io/badge/Vector_Search-140D24?style=flat-square&logo=supabase&logoColor=A855F7" height="34" />
-      <img src="https://img.shields.io/badge/Agentic_AI-140D24?style=flat-square&logo=githubactions&logoColor=38BDF8" height="34" />
-    </td>
-  </tr>
-  <tr>
-    <td valign="middle" style="padding: 12px 16px;">
-      <b>🔌 Model Serving &amp; AI Applications</b>
-    </td>
-    <td valign="middle" style="padding: 12px 16px;">
-      <img src="https://skillicons.dev/icons?i=fastapi,postman&theme=dark" height="34" />
-      &nbsp;
-      <img src="https://img.shields.io/badge/Streamlit-0B0F17?style=flat-square&logo=streamlit&logoColor=C084FC" height="34" />
-      <img src="https://img.shields.io/badge/REST_API-0B0F17?style=flat-square&logo=fastapi&logoColor=A855F7" height="34" />
-    </td>
-  </tr>
-  <tr>
-    <td valign="middle" style="padding: 12px 16px;">
-      <b>📊 Data Pipelines &amp; Storage</b>
-    </td>
-    <td valign="middle" style="padding: 12px 16px;">
-      <img src="https://skillicons.dev/icons?i=postgres,mysql,sqlite,prisma&theme=dark" height="34" />
-    </td>
-  </tr>
-  <tr>
-    <td valign="middle" style="padding: 12px 16px;">
-      <b>⚙️ MLOps, Containerization &amp; Infrastructure</b>
-    </td>
-    <td valign="middle" style="padding: 12px 16px;">
-      <img src="https://skillicons.dev/icons?i=docker,git,githubactions,linux,bash&theme=dark" height="34" />
-    </td>
-  </tr>
-</table>
-
----
-
-### 📈 GitHub Analytics & Activity
+### 🏎️ Telemetry Velocity &amp; Real-Time System Activity
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=vn002-tech&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0b0f17&title_color=c084fc&icon_color=a855f7&text_color=cbd5e1" height="150" alt="GitHub Stats" />
-  &nbsp;&nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=vn002-tech&layout=compact&theme=tokyonight&hide_border=true&bg_color=0b0f17&title_color=c084fc&text_color=cbd5e1" height="150" alt="Top Languages" />
-  <br/><br/>
-  <!-- Animated Live Streak & Activity -->
-  <img src="https://streak-stats.demolab.com?user=vn002-tech&hide_border=true&background=0b0f17&ring=A855F7&fire=C084FC&currStreakLabel=C084FC&sideLabels=CBD5E1&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=64748B" width="95%" alt="Streak Stats" />
-  <br/><br/>
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=vn002-tech&bg_color=0b0f17&color=c084fc&line=a855f7&point=f5f3ff&area=true&hide_border=true" width="95%" alt="Activity Graph" />
+
+<!-- Cyber Speedster Racing Across Telemetry Waveform Track -->
+<img src="./assets/ai-telemetry-track.svg" width="100%" alt="AI Inference Velocity Track with Cyber Car" />
+
+<br/><br/>
+
+<!-- Live GitHub Contribution Calendar (Purple Obsidian Theme) -->
+<img src="https://ghchart.rshah.org/A855F7/vn002-tech" width="100%" alt="vn002-tech Live GitHub Contribution Calendar" />
+
+<br/><br/>
+
+<!-- All-Time Commits + Private Contributions Enabled -->
+<img src="https://github-readme-stats.vercel.app/api?username=vn002-tech&show_icons=true&include_all_commits=true&count_private=true&theme=tokyonight&hide_border=true&bg_color=0b0f17&title_color=c084fc&icon_color=a855f7&text_color=cbd5e1" height="150" alt="GitHub Stats" />
+&nbsp;&nbsp;
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=vn002-tech&layout=compact&theme=tokyonight&hide_border=true&bg_color=0b0f17&title_color=c084fc&text_color=cbd5e1" height="150" alt="Top Languages" />
+
+<br/><br/>
+
+<!-- Animated Live Streak Stats -->
+<img src="https://streak-stats.demolab.com?user=vn002-tech&hide_border=true&background=0b0f17&ring=A855F7&fire=C084FC&currStreakLabel=C084FC&sideLabels=CBD5E1&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=64748B" width="95%" alt="Streak Stats" />
+
+<br/><br/>
+
+<!-- Real-time Activity Wave -->
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=vn002-tech&bg_color=0b0f17&color=c084fc&line=a855f7&point=f5f3ff&area=true&hide_border=true" width="95%" alt="Activity Graph" />
+
 </div>
 
 <br/>
@@ -528,12 +699,22 @@ def main():
     svg_path.write_text(generate_svg_banner(), encoding="utf-8")
     print(f"Generated animated SVG banner: {svg_path}")
 
-    # 2. Update AI Engineering Pipeline SVG
+    # 2. Update AI Pillars SVG
+    pillars_svg_path = assets_dir / "ai-pillars.svg"
+    pillars_svg_path.write_text(generate_pillars_svg(), encoding="utf-8")
+    print(f"Generated AI Pillars SVG: {pillars_svg_path}")
+
+    # 3. Update AI Engineering Pipeline SVG
     pipeline_svg_path = assets_dir / "ai-engineering-pipeline.svg"
     pipeline_svg_path.write_text(generate_pipeline_svg(), encoding="utf-8")
     print(f"Generated AI Engineering pipeline SVG: {pipeline_svg_path}")
 
-    # 3. Update README.md
+    # 4. Update Cyber Car Telemetry Track SVG
+    track_svg_path = assets_dir / "ai-telemetry-track.svg"
+    track_svg_path.write_text(generate_telemetry_track_svg(), encoding="utf-8")
+    print(f"Generated Cyber Telemetry Speedway Track SVG: {track_svg_path}")
+
+    # 5. Update README.md
     readme_path = root / "README.md"
     readme_path.write_text(generate_readme(), encoding="utf-8")
     print(f"Generated README: {readme_path}")

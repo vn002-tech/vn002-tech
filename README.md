@@ -20,37 +20,8 @@
 
 <br/><br/>
 
-<!-- 4-Pillar Core AI Engineering Matrix -->
-<table width="100%">
-  <thead>
-    <tr>
-      <th width="25%" align="center">🧠 ML &amp; Data Science</th>
-      <th width="25%" align="center">⚡ Deep Learning</th>
-      <th width="25%" align="center">🤖 LLMs &amp; Automation</th>
-      <th width="25%" align="center">⚙️ MLOps &amp; Systems</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td align="center" style="padding: 12px 8px;">
-        <b>Predictive &amp; Analytics</b><br/>
-        <sub>Feature Pipelines · XGBoost<br/>Statistical EDA &amp; Metrics</sub>
-      </td>
-      <td align="center" style="padding: 12px 8px;">
-        <b>Neural Systems</b><br/>
-        <sub>PyTorch · Tensors<br/>Dense Embeddings</sub>
-      </td>
-      <td align="center" style="padding: 12px 8px;">
-        <b>AI Automation</b><br/>
-        <sub>RAG Pipelines · Vector DBs<br/>Autonomous Workflows</sub>
-      </td>
-      <td align="center" style="padding: 12px 8px;">
-        <b>Serving &amp; Production</b><br/>
-        <sub>FastAPI · Docker Runtime<br/>ETL &amp; Data Integrity</sub>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<!-- 4-Pillar Core AI Engineering Matrix SVG Card -->
+<img src="./assets/ai-pillars.svg" width="100%" alt="4-Pillar Core AI Engineering Domains" />
 
 </div>
 
@@ -70,84 +41,35 @@
 
 ---
 
-### 🛠️ AI Engineering Tech Stack &amp; Tooling
-
-<table width="100%">
-  <tr>
-    <td width="38%" valign="middle" style="padding: 12px 16px;">
-      <b>🧠 Machine Learning &amp; Data Science</b>
-    </td>
-    <td valign="middle" style="padding: 12px 16px;">
-      <img src="https://skillicons.dev/icons?i=python,scikitlearn&theme=dark" height="34" />
-      &nbsp;
-      <img src="https://img.shields.io/badge/XGBoost-0B0F17?style=flat-square&logo=xgboost&logoColor=C084FC" height="34" />
-      <img src="https://img.shields.io/badge/Pandas-0B0F17?style=flat-square&logo=pandas&logoColor=C084FC" height="34" />
-      <img src="https://img.shields.io/badge/NumPy-0B0F17?style=flat-square&logo=numpy&logoColor=C084FC" height="34" />
-    </td>
-  </tr>
-  <tr>
-    <td valign="middle" style="padding: 12px 16px;">
-      <b>⚡ Deep Learning &amp; Neural Tensors</b>
-    </td>
-    <td valign="middle" style="padding: 12px 16px;">
-      <img src="https://skillicons.dev/icons?i=pytorch&theme=dark" height="34" />
-      &nbsp;
-      <img src="https://img.shields.io/badge/Embeddings-0B0F17?style=flat-square&logo=huggingface&logoColor=FBBF24" height="34" />
-      <img src="https://img.shields.io/badge/Neural_Tensors-0B0F17?style=flat-square&logo=pytorch&logoColor=C084FC" height="34" />
-    </td>
-  </tr>
-  <tr>
-    <td valign="middle" style="padding: 12px 16px;">
-      <b>🤖 LLMs, RAG &amp; AI Automation</b>
-    </td>
-    <td valign="middle" style="padding: 12px 16px;">
-      <img src="https://img.shields.io/badge/RAG_Pipelines-140D24?style=flat-square&logo=openai&logoColor=C084FC" height="34" />
-      <img src="https://img.shields.io/badge/Vector_Search-140D24?style=flat-square&logo=supabase&logoColor=A855F7" height="34" />
-      <img src="https://img.shields.io/badge/Agentic_AI-140D24?style=flat-square&logo=githubactions&logoColor=38BDF8" height="34" />
-    </td>
-  </tr>
-  <tr>
-    <td valign="middle" style="padding: 12px 16px;">
-      <b>🔌 Model Serving &amp; AI Applications</b>
-    </td>
-    <td valign="middle" style="padding: 12px 16px;">
-      <img src="https://skillicons.dev/icons?i=fastapi,postman&theme=dark" height="34" />
-      &nbsp;
-      <img src="https://img.shields.io/badge/Streamlit-0B0F17?style=flat-square&logo=streamlit&logoColor=C084FC" height="34" />
-      <img src="https://img.shields.io/badge/REST_API-0B0F17?style=flat-square&logo=fastapi&logoColor=A855F7" height="34" />
-    </td>
-  </tr>
-  <tr>
-    <td valign="middle" style="padding: 12px 16px;">
-      <b>📊 Data Pipelines &amp; Storage</b>
-    </td>
-    <td valign="middle" style="padding: 12px 16px;">
-      <img src="https://skillicons.dev/icons?i=postgres,mysql,sqlite,prisma&theme=dark" height="34" />
-    </td>
-  </tr>
-  <tr>
-    <td valign="middle" style="padding: 12px 16px;">
-      <b>⚙️ MLOps, Containerization &amp; Infrastructure</b>
-    </td>
-    <td valign="middle" style="padding: 12px 16px;">
-      <img src="https://skillicons.dev/icons?i=docker,git,githubactions,linux,bash&theme=dark" height="34" />
-    </td>
-  </tr>
-</table>
-
----
-
-### 📈 GitHub Analytics & Activity
+### 🏎️ Telemetry Velocity &amp; Real-Time System Activity
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=vn002-tech&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0b0f17&title_color=c084fc&icon_color=a855f7&text_color=cbd5e1" height="150" alt="GitHub Stats" />
-  &nbsp;&nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=vn002-tech&layout=compact&theme=tokyonight&hide_border=true&bg_color=0b0f17&title_color=c084fc&text_color=cbd5e1" height="150" alt="Top Languages" />
-  <br/><br/>
-  <!-- Animated Live Streak & Activity -->
-  <img src="https://streak-stats.demolab.com?user=vn002-tech&hide_border=true&background=0b0f17&ring=A855F7&fire=C084FC&currStreakLabel=C084FC&sideLabels=CBD5E1&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=64748B" width="95%" alt="Streak Stats" />
-  <br/><br/>
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=vn002-tech&bg_color=0b0f17&color=c084fc&line=a855f7&point=f5f3ff&area=true&hide_border=true" width="95%" alt="Activity Graph" />
+
+<!-- Cyber Speedster Racing Across Telemetry Waveform Track -->
+<img src="./assets/ai-telemetry-track.svg" width="100%" alt="AI Inference Velocity Track with Cyber Car" />
+
+<br/><br/>
+
+<!-- Live GitHub Contribution Calendar (Purple Obsidian Theme) -->
+<img src="https://ghchart.rshah.org/A855F7/vn002-tech" width="100%" alt="vn002-tech Live GitHub Contribution Calendar" />
+
+<br/><br/>
+
+<!-- All-Time Commits + Private Contributions Enabled -->
+<img src="https://github-readme-stats.vercel.app/api?username=vn002-tech&show_icons=true&include_all_commits=true&count_private=true&theme=tokyonight&hide_border=true&bg_color=0b0f17&title_color=c084fc&icon_color=a855f7&text_color=cbd5e1" height="150" alt="GitHub Stats" />
+&nbsp;&nbsp;
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=vn002-tech&layout=compact&theme=tokyonight&hide_border=true&bg_color=0b0f17&title_color=c084fc&text_color=cbd5e1" height="150" alt="Top Languages" />
+
+<br/><br/>
+
+<!-- Animated Live Streak Stats -->
+<img src="https://streak-stats.demolab.com?user=vn002-tech&hide_border=true&background=0b0f17&ring=A855F7&fire=C084FC&currStreakLabel=C084FC&sideLabels=CBD5E1&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=64748B" width="95%" alt="Streak Stats" />
+
+<br/><br/>
+
+<!-- Real-time Activity Wave -->
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=vn002-tech&bg_color=0b0f17&color=c084fc&line=a855f7&point=f5f3ff&area=true&hide_border=true" width="95%" alt="Activity Graph" />
+
 </div>
 
 <br/>
