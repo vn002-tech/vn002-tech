@@ -2,10 +2,11 @@
 """
 update_readme.py
 Programmatic generator for vn002-tech GitHub Profile README, Animated SVG Banner,
-and AI Engineering Architecture & Tech Stack Matrix.
+AI Engineering Architecture Diagram, and Dragon Ball Goku anime animation.
 """
 
 from pathlib import Path
+import urllib.request
 
 
 def generate_svg_banner() -> str:
@@ -500,7 +501,8 @@ def generate_readme() -> str:
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/nixin72/nixin72/master/assets/developer.gif" width="220" alt="Developer coding animation" />
+<!-- Son Goku Dragon Ball Anime Animation with Cartoon Scene Background -->
+<img src="./assets/goku.gif" width="300" alt="Son Goku Dragon Ball Animation" />
 
 <br/><br/>
 
@@ -521,17 +523,29 @@ def main():
     assets_dir = root / "assets"
     assets_dir.mkdir(parents=True, exist_ok=True)
 
-    # 1. Update SVG Banner
+    # 1. Ensure Goku GIF exists
+    goku_path = assets_dir / "goku.gif"
+    if not goku_path.exists():
+        try:
+            url = "https://media.giphy.com/media/cb9aF9tzoRjgQ/giphy.gif"
+            req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+            content = urllib.request.urlopen(req).read()
+            goku_path.write_bytes(content)
+            print(f"Downloaded Goku GIF: {goku_path}")
+        except Exception as e:
+            print(f"Notice downloading goku.gif: {e}")
+
+    # 2. Update SVG Banner
     svg_path = assets_dir / "ai-engineer-profile.svg"
     svg_path.write_text(generate_svg_banner(), encoding="utf-8")
     print(f"Generated animated SVG banner: {svg_path}")
 
-    # 2. Update AI Engineering Pipeline SVG
+    # 3. Update AI Engineering Pipeline SVG
     pipeline_svg_path = assets_dir / "ai-engineering-pipeline.svg"
     pipeline_svg_path.write_text(generate_pipeline_svg(), encoding="utf-8")
     print(f"Generated AI Engineering pipeline SVG: {pipeline_svg_path}")
 
-    # 3. Update README.md
+    # 4. Update README.md
     readme_path = root / "README.md"
     readme_path.write_text(generate_readme(), encoding="utf-8")
     print(f"Generated README: {readme_path}")

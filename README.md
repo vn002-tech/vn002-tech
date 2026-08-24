@@ -154,7 +154,8 @@
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/nixin72/nixin72/master/assets/developer.gif" width="220" alt="Developer coding animation" />
+<!-- Son Goku Dragon Ball Anime Animation with Cartoon Scene Background -->
+<img src="./assets/goku.gif" width="300" alt="Son Goku Dragon Ball Animation" />
 
 <br/><br/>
 
