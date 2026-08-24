@@ -1,147 +1,163 @@
 <div align="center">
 
-<img src="./assets/ai-engineer-profile.svg" width="100%" alt="VAN — AI Engineer">
+<img src="./assets/ai-engineer-profile.svg" width="100%" alt="VAN — AI Engineer Banner" />
 
-<p align="center">
-  <a href="https://github.com/vn002-tech">
-    <img src="https://img.shields.io/badge/GitHub-vn002--tech-0B0F17?style=flat-square&logo=github&logoColor=F8FAFC&labelColor=1E293B" alt="GitHub" />
-  </a>
-  <a href="https://linkedin.com">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-0B0F17?style=flat-square&logo=linkedin&logoColor=38BDF8&labelColor=1E293B" alt="LinkedIn" />
-  </a>
-  <a href="mailto:wahidivansaputra@gmail.com">
-    <img src="https://img.shields.io/badge/Email-wahidivansaputra%40gmail.com-0B0F17?style=flat-square&logo=gmail&logoColor=C084FC&labelColor=1E293B" alt="Email" />
-  </a>
-</p>
+<br/><br/>
+
+<a href="https://github.com/vn002-tech"><img src="https://img.shields.io/badge/GitHub-vn002--tech-0B0F17?style=for-the-badge&logo=github&logoColor=F8FAFC" alt="GitHub" /></a>
+&nbsp;
+<a href="https://linkedin.com"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+&nbsp;
+<a href="mailto:wahidivansaputra@gmail.com"><img src="https://img.shields.io/badge/Email-wahidivansaputra-7C3AED?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+
+<br/><br/>
+
+<table>
+  <tr>
+    <td align="center" width="33%" style="padding: 14px;">
+      <b>🧠 Machine Learning</b><br/>
+      <sub>Classification · Predictive Models<br/>Feature Pipelines · Empirical Validation</sub>
+    </td>
+    <td align="center" width="33%" style="padding: 14px;">
+      <b>⚡ AI Applications</b><br/>
+      <sub>Model Serving · FastAPI<br/>REST APIs · Async Workflows</sub>
+    </td>
+    <td align="center" width="33%" style="padding: 14px;">
+      <b>⚙️ Data &amp; Systems</b><br/>
+      <sub>ETL Pipelines · Data Quality<br/>PostgreSQL · Docker Architecture</sub>
+    </td>
+  </tr>
+</table>
 
 </div>
 
 ---
 
-## About
-
-I am an **AI Engineer** with a background in Informatics Engineering, focused on building reliable machine learning systems and AI-powered applications.
-
-My engineering practice combines **machine learning, backend systems, and data engineering** to transform models from experimental notebooks into robust software architectures. I focus on feature engineering, empirical validation, performant REST APIs, and reproducible data workflows.
-
----
-
-## Core Technical Focus
-
-### Machine Learning
-- **Predictive Modeling & Classification**: Developing supervised models, classification systems, and anomaly detection pipelines.
-- **Feature Engineering**: Designing domain-specific transformations, data preprocessing routines, and statistical feature pipelines.
-- **Model Evaluation**: In-depth empirical validation using Precision, Recall, F1-Score, ROC-AUC, and Confusion Matrices.
-
-### AI Application Development
-- **Model Integration & Serving**: Embedding machine learning models into responsive, service-oriented architectures.
-- **API Development**: Designing high-throughput, low-latency RESTful APIs using FastAPI and Node.js.
-- **Application Architecture**: Structuring modular backends for asynchronous inference workflows and user-facing dashboards.
-
-### ML & Data Engineering Foundations
-- **Automated ETL Pipelines**: Building resilient data ingestion and transformation pipelines with data quality assertions.
-- **Relational Databases**: Data modeling, query optimization, and schema integrity with PostgreSQL, MySQL, and SQLite.
-- **Reproducibility & Infrastructure**: Packaging containerized runtime environments with Docker for consistent deployments.
-
----
-
-## Technology Stack
-
-| Category | Technologies |
-| :--- | :--- |
-| **Languages** | Python, Go, JavaScript, SQL, Bash |
-| **Machine Learning & Data** | PyTorch, Scikit-learn, XGBoost, Pandas, NumPy, Streamlit |
-| **Backend & APIs** | FastAPI, Node.js, Express.js, REST APIs |
-| **Databases & Storage** | PostgreSQL, MySQL, SQLite, Prisma ORM |
-| **Engineering & Tools** | Docker, Git, GitHub Actions, Linux |
-
----
-
-## AI Engineering Workflow
+### 🚀 AI Engineering Lifecycle
 
 ```text
-┌─────────────────┐       ┌──────────────────────┐       ┌──────────────────┐
-│    RAW DATA     │  ───> │ FEATURE ENGINEERING  │  ───> │  MODEL TRAINING  │
-│ Ingestion & ETL │       │ Cleaning & Encoders  │       │ Baseline & Tuning│
-└─────────────────┘       └──────────────────────┘       └──────────────────┘
-                                                                   │
-                                                                   ▼
-┌─────────────────┐       ┌──────────────────────┐       ┌──────────────────┐
-│ AI APPLICATION  │  <─── │   FASTAPI BACKEND    │  <─── │ MODEL EVALUATION │
-│ Client & UI     │       │ Serving & Validation │       │ Metrics & Error  │
-└─────────────────┘       └──────────────────────┘       └──────────────────┘
+┌──────────────┐      ┌─────────────────────┐      ┌────────────────┐
+│   RAW DATA   │ ───> │ FEATURE ENGINEERING │ ───> │ MODEL TRAINING │
+│ ETL & Schema │      │ Preprocessing & PCA │      │ XGBoost / ML   │
+└──────────────┘      └─────────────────────┘      └────────────────┘
+                                                           │
+                                                           ▼
+┌──────────────┐      ┌─────────────────────┐      ┌────────────────┐
+│  AI CLIENT   │ <─── │   FASTAPI BACKEND   │ <─── │   EVALUATION   │
+│ UI Dashboard │      │ Inference Endpoints │      │ Metrics & Test │
+└──────────────┘      └─────────────────────┘      └────────────────┘
 ```
 
-The engineering objective is to understand and manage the complete system lifecycle:  
-**Data Integrity → Feature Pipelines → Model Validation → API Serving → Application Integration → Monitoring**
+> **Data Integrity → Feature Pipelines → Model Validation → API Serving → Application Integration**
 
 ---
 
-## Featured Projects
+### 🛠️ Tech Stack & Tooling
 
-### [Bank Fraud Detection System](https://github.com/vn002-tech/Transaksi_bank)
-> **Domain:** Machine Learning · Classification  
-> **Stack:** `Python` · `XGBoost` · `Scikit-learn` · `Pandas` · `Streamlit`
+<div align="center">
 
-* **Problem:** Detecting fraudulent financial transactions in highly imbalanced datasets while minimizing false positive disruptions.
-* **Engineering Approach:** Engineered domain-specific features from transaction metadata, balanced class distributions, tuned tree-based classifiers (XGBoost/Scikit-learn), and evaluated decision thresholds using Precision-Recall trade-offs.
-* **Interface:** Integrated an interactive Streamlit exploration dashboard for real-time risk assessment and score inspection.
-* **Link:** [`github.com/vn002-tech/Transaksi_bank`](https://github.com/vn002-tech/Transaksi_bank)
+<p><b>AI &amp; Machine Learning</b></p>
+<img src="https://skillicons.dev/icons?i=python,pytorch,scikitlearn&theme=dark" height="38" />
+&nbsp;
+<img src="https://img.shields.io/badge/XGBoost-0B0F17?style=for-the-badge&logo=xgboost&logoColor=C084FC" height="38" />
+<img src="https://img.shields.io/badge/Pandas-0B0F17?style=for-the-badge&logo=pandas&logoColor=C084FC" height="38" />
+<img src="https://img.shields.io/badge/NumPy-0B0F17?style=for-the-badge&logo=numpy&logoColor=C084FC" height="38" />
+<img src="https://img.shields.io/badge/Streamlit-0B0F17?style=for-the-badge&logo=streamlit&logoColor=C084FC" height="38" />
 
----
+<br/><br/>
 
-### [Government Grant ETL Pipeline](https://github.com/vn002-tech/government-grant-etl)
-> **Domain:** Data Engineering · ETL  
-> **Stack:** `Python` · `Pandas` · `PostgreSQL` · `Docker`
+<p><b>Backend &amp; Data Engineering</b></p>
+<img src="https://skillicons.dev/icons?i=fastapi,nodejs,express,go,postgres,mysql,sqlite,prisma&theme=dark" height="38" />
 
-* **Problem:** Ingesting, cleaning, and standardizing multi-source government grant proposal submissions for analytics and reporting.
-* **Engineering Approach:** Built an end-to-end automated ETL pipeline featuring automated data ingestion, validation rules, type conversions, and structured loading into PostgreSQL.
-* **Reliability:** Packaged with Docker for reproducible containerized execution and consistent schema assertions.
-* **Link:** [`github.com/vn002-tech/government-grant-etl`](https://github.com/vn002-tech/government-grant-etl)
+<br/><br/>
 
----
+<p><b>Infrastructure &amp; Tooling</b></p>
+<img src="https://skillicons.dev/icons?i=docker,git,github,githubactions,linux,bash,postman,vscode&theme=dark" height="38" />
 
-### [E-Klinik Management System](https://github.com/vn002-tech/E-klinik)
-> **Domain:** Backend Engineering · REST API  
-> **Stack:** `PHP` · `MySQL` · `REST API` · `Docker`
-
-* **Problem:** Managing clinical operational workflows, electronic medical records, and role-sensitive access securely.
-* **Engineering Approach:** Implemented a structured MVC backend architecture with Role-Based Access Control (RBAC), relational database integrity constraints, and RESTful API endpoints.
-* **Deployment:** Containerized development environment using Docker to ensure environment parity.
-* **Link:** [`github.com/vn002-tech/E-klinik`](https://github.com/vn002-tech/E-klinik)
+</div>
 
 ---
 
-### [Sports News API Service](https://github.com/vn002-tech)
-> **Domain:** Backend Engineering  
-> **Stack:** `Node.js` · `Express.js` · `Prisma ORM` · `SQLite`
+### 📁 Featured Projects
 
-* **Problem:** Providing structured content delivery and filtering for sports publications and article feeds.
-* **Engineering Approach:** Developed a REST API service utilizing Express.js and Prisma ORM for type-safe database queries, relational data modeling, and predictable CRUD operations.
-* **Link:** [`github.com/vn002-tech`](https://github.com/vn002-tech)
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 🛡️ [Bank Fraud Detection](https://github.com/vn002-tech/Transaksi_bank)
+`ML / Classification` &nbsp; `Python` `XGBoost` `Streamlit`
+
+* Real-time banking fraud classification system for imbalanced data.
+* Custom feature transformations & precision-recall threshold optimization.
+* Interactive Streamlit dashboard for real-time risk scoring and inspection.
+
+<br/>
+
+[**Explore Repository →**](https://github.com/vn002-tech/Transaksi_bank)
+
+</td>
+<td width="50%" valign="top">
+
+### 📊 [Government Grant ETL](https://github.com/vn002-tech/government-grant-etl)
+`Data Engineering` &nbsp; `Python` `Pandas` `PostgreSQL` `Docker`
+
+* Automated end-to-end data pipeline processing multi-source grant data.
+* Structured data cleaning, validation assertions, and relational loading.
+* Dockerized execution environment ensuring reproducible data workflows.
+
+<br/>
+
+[**Explore Repository →**](https://github.com/vn002-tech/government-grant-etl)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🏥 [E-Klinik Management](https://github.com/vn002-tech/E-klinik)
+`Backend / API` &nbsp; `PHP` `MySQL` `REST API` `Docker`
+
+* Clinic management system featuring Role-Based Access Control (RBAC).
+* Modular MVC backend with strict relational data integrity.
+* Containerized development & deployment with Docker.
+
+<br/>
+
+[**Explore Repository →**](https://github.com/vn002-tech/E-klinik)
+
+</td>
+<td width="50%" valign="top">
+
+### ⚽ [Sports News API](https://github.com/vn002-tech)
+`Backend Systems` &nbsp; `Node.js` `Express` `Prisma` `SQLite`
+
+* High-performance RESTful API service for sports publication delivery.
+* Type-safe database queries and relational modeling via Prisma ORM.
+* Structured CRUD endpoints designed for low-latency client consumption.
+
+<br/>
+
+[**View GitHub Profile →**](https://github.com/vn002-tech)
+
+</td>
+</tr>
+</table>
 
 ---
 
-## Engineering Principles
-
-- **Data Integrity First** — Model performance is strictly bounded by data quality, feature design, and pipeline reliability.
-- **Evidence-Driven** — Validate model behavior through quantitative metrics, baseline comparisons, and rigorous error analysis.
-- **Production Mindset** — Design beyond experimental notebooks: prioritize latency, fault tolerance, and clean API contracts.
-- **Reproducibility** — Maintain deterministic transformations, versioned artifacts, and isolated runtime environments.
-- **Modular Architecture** — Decouple data extraction, model inference, and backend presentation layers for long-term maintainability.
-
----
-
-## GitHub Activity
+### 📈 GitHub Metrics
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=vn002-tech&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0b0f17&title_color=c084fc&icon_color=a855f7&text_color=cbd5e1" height="150" alt="GitHub Stats" />
+  &nbsp;&nbsp;
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=vn002-tech&layout=compact&theme=tokyonight&hide_border=true&bg_color=0b0f17&title_color=c084fc&text_color=cbd5e1" height="150" alt="Top Languages" />
+  <br/><br/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=vn002-tech&bg_color=0b0f17&color=c084fc&line=a855f7&point=f5f3ff&area=true&hide_border=true" width="100%" alt="Activity Graph" />
 </div>
 
 ---
 
 <div align="center">
-  <sub><b>VAN (vn002-tech)</b> · AI Engineer</sub><br>
+  <sub><b>VAN (vn002-tech)</b> · AI Engineer</sub><br/>
   <sub><i>Building reliable AI systems from data to application.</i></sub>
 </div>
