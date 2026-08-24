@@ -1,42 +1,117 @@
-<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg">
-<defs>
-<linearGradient id="bg" x1="0" y1="0" x2="1200" y2="360">
-<stop stop-color="#160A24"/><stop offset=".45" stop-color="#090611"/><stop offset="1" stop-color="#0B0818"/>
-</linearGradient>
-<linearGradient id="purple" x1="0" y1="0" x2="1" y2="1">
-<stop stop-color="#7E22CE"/><stop offset=".5" stop-color="#C084FC"/><stop offset="1" stop-color="#6D28D9"/>
-</linearGradient>
-<filter id="shadow"><feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#000" flood-opacity=".55"/></filter>
-</defs>
-<rect x="8" y="8" width="1184" height="344" rx="18" fill="url(#bg)" stroke="#5B2A82" stroke-width="1.5" filter="url(#shadow)"/>
-<path d="M10 10H420L145 351H10V10Z" fill="#12091D"/>
-<path d="M10 10H102L392 351H268L10 82V10Z" fill="#5B267E" opacity=".65"/>
-<path d="M105 10H174L454 351H385L105 10Z" fill="url(#purple)" opacity=".82"/>
-<path d="M10 160L130 10H245L10 288V160Z" fill="#24113B"/>
-<path d="M245 10H350L80 351H10V305L245 10Z" fill="#08050D" opacity=".9"/>
-<path d="M350 10H420L150 351H82L350 10Z" fill="#2A1342" opacity=".75"/>
-<line x1="445" y1="55" x2="445" y2="305" stroke="#7C3AED" stroke-opacity=".35"/>
-<g transform="translate(505 46)">
-<path d="M43 0L86 75H62L43 42L24 75H0L43 0Z" fill="url(#purple)"/>
-<path d="M43 42L62 75H48L43 65L38 75H24L43 42Z" fill="#0B0815"/>
-<path d="M43 13L56 36L43 58L30 36L43 13Z" fill="#0B0815"/>
-</g>
-<text x="505" y="155" fill="#F8FAFC" font-family="Arial,Helvetica,sans-serif" font-size="50" font-weight="700" letter-spacing="5">VAN</text>
-<text x="648" y="154" fill="#C084FC" font-family="Arial,Helvetica,sans-serif" font-size="22">(vn002-tech)</text>
-<line x1="505" y1="176" x2="1135" y2="176" stroke="#7C3AED" stroke-opacity=".55"/>
-<text x="505" y="211" fill="#E9D5FF" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="600" letter-spacing="1">AI ENGINEER &amp; MLOPS ENGINEER</text>
-<text x="505" y="245" fill="#CBD5E1" font-family="Arial,Helvetica,sans-serif" font-size="16">Python · PyTorch · PySpark · Airflow · MLflow · PostgreSQL</text>
-<rect x="505" y="268" width="185" height="45" rx="8" fill="#0C0915" stroke="#382050"/>
-<circle cx="528" cy="290" r="11" fill="#F8FAFC"/>
-<text x="528" y="295" text-anchor="middle" fill="#0B0815" font-family="Arial" font-size="11" font-weight="700">GH</text>
-<text x="548" y="296" fill="#CBD5E1" font-family="Arial,Helvetica,sans-serif" font-size="13">github.com/vn002-tech</text>
-<rect x="700" y="268" width="205" height="45" rx="8" fill="#0C0915" stroke="#382050"/>
-<rect x="718" y="279" width="22" height="22" rx="4" fill="#2563EB"/>
-<text x="729" y="295" text-anchor="middle" fill="#fff" font-family="Arial" font-size="12" font-weight="700">in</text>
-<text x="750" y="296" fill="#CBD5E1" font-family="Arial,Helvetica,sans-serif" font-size="13">LinkedIn</text>
-<rect x="915" y="268" width="220" height="45" rx="8" fill="#0C0915" stroke="#382050"/>
-<text x="933" y="296" fill="#C084FC" font-family="Arial,Helvetica,sans-serif" font-size="13">✉</text>
-<text x="956" y="296" fill="#CBD5E1" font-family="Arial,Helvetica,sans-serif" font-size="13">wahidivansaputra@gmail.com</text>
-<circle cx="1138" cy="42" r="3" fill="#C084FC"/>
-<circle cx="1152" cy="42" r="2" fill="#7C3AED"/>
+<svg width="1200" height="300" viewBox="0 0 1200 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="1200" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0B0F17"/>
+      <stop offset="60%" stop-color="#080C14"/>
+      <stop offset="100%" stop-color="#05080E"/>
+    </linearGradient>
+
+    <!-- Node Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .font-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+  </style>
+
+  <!-- Base Container -->
+  <rect x="2" y="2" width="1196" height="296" rx="14" fill="url(#bg-grad)" stroke="#1E293B" stroke-width="1.5"/>
+
+  <!-- Subtle Ambient Background Accents -->
+  <circle cx="160" cy="150" r="120" fill="#7C3AED" opacity="0.04" filter="url(#glow)"/>
+  <circle cx="1080" cy="60" r="90" fill="#6366F1" opacity="0.03" filter="url(#glow)"/>
+
+  <!-- AI / ML Graph Mesh (Left Visual Accent) -->
+  <g opacity="0.85" transform="translate(45, 45)">
+    <!-- Connection Edges -->
+    <line x1="40" y1="105" x2="105" y2="55" stroke="#334155" stroke-width="1.5" stroke-dasharray="3 3"/>
+    <line x1="40" y1="105" x2="105" y2="155" stroke="#334155" stroke-width="1.5"/>
+    <line x1="105" y1="55" x2="175" y2="35" stroke="#475569" stroke-width="1.5"/>
+    <line x1="105" y1="55" x2="175" y2="105" stroke="#7C3AED" stroke-width="1.5" stroke-opacity="0.8"/>
+    <line x1="105" y1="155" x2="175" y2="105" stroke="#7C3AED" stroke-width="1.5" stroke-opacity="0.8"/>
+    <line x1="105" y1="155" x2="175" y2="175" stroke="#475569" stroke-width="1.5"/>
+    <line x1="175" y1="35" x2="235" y2="75" stroke="#334155" stroke-width="1.5"/>
+    <line x1="175" y1="105" x2="235" y2="75" stroke="#A855F7" stroke-width="1.8"/>
+    <line x1="175" y1="105" x2="235" y2="135" stroke="#A855F7" stroke-width="1.8"/>
+    <line x1="175" y1="175" x2="235" y2="135" stroke="#334155" stroke-width="1.5"/>
+
+    <!-- Graph Nodes -->
+    <circle cx="40" cy="105" r="5" fill="#1E293B" stroke="#64748B" stroke-width="2"/>
+    <circle cx="105" cy="55" r="6" fill="#0F172A" stroke="#818CF8" stroke-width="2"/>
+    <circle cx="105" cy="155" r="6" fill="#0F172A" stroke="#818CF8" stroke-width="2"/>
+    <circle cx="175" cy="35" r="5" fill="#1E293B" stroke="#64748B" stroke-width="2"/>
+    <circle cx="175" cy="105" r="9" fill="#581C87" stroke="#C084FC" stroke-width="2.5" filter="url(#glow)"/>
+    <circle cx="175" cy="105" r="3" fill="#FFFFFF"/>
+    <circle cx="175" cy="175" r="5" fill="#1E293B" stroke="#64748B" stroke-width="2"/>
+    <circle cx="235" cy="75" r="6.5" fill="#0F172A" stroke="#A855F7" stroke-width="2"/>
+    <circle cx="235" cy="135" r="6.5" fill="#0F172A" stroke="#A855F7" stroke-width="2"/>
+  </g>
+
+  <!-- Vertical Subtle Divider -->
+  <line x1="330" y1="36" x2="330" y2="264" stroke="#1E293B" stroke-width="1.5"/>
+
+  <!-- Right Content Area -->
+  <!-- Top Badge: Domain / Discipline -->
+  <rect x="365" y="36" width="220" height="24" rx="12" fill="#140D24" stroke="#581C87" stroke-width="1"/>
+  <circle cx="379" cy="48" r="3.5" fill="#A855F7"/>
+  <text x="391" y="52" fill="#D8B4FE" class="font-mono" font-size="11" font-weight="600" letter-spacing="1">AI &amp; ML SYSTEMS</text>
+
+  <!-- Name & Identifier -->
+  <text x="365" y="102" fill="#F8FAFC" class="font-title" font-size="38" font-weight="800" letter-spacing="2">VAN</text>
+  <rect x="470" y="78" width="105" height="26" rx="6" fill="#1E152F" stroke="#4C1D95" stroke-width="1"/>
+  <text x="522" y="95" fill="#C084FC" class="font-mono" font-size="12" font-weight="600" text-anchor="middle">vn002-tech</text>
+
+  <!-- Primary Role & Core Specialization -->
+  <text x="365" y="136" fill="#E2E8F0" class="font-title" font-size="18" font-weight="700" letter-spacing="1.5">AI ENGINEER</text>
+  <text x="365" y="162" fill="#94A3B8" class="font-title" font-size="14" font-weight="400">Machine Learning · AI Application Development · Backend Systems</text>
+
+  <!-- Tech Stack Pills -->
+  <g transform="translate(365, 185)">
+    <rect x="0" y="0" width="70" height="24" rx="5" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+    <text x="35" y="16" fill="#CBD5E1" class="font-mono" font-size="11" font-weight="500" text-anchor="middle">Python</text>
+
+    <rect x="78" y="0" width="78" height="24" rx="5" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+    <text x="117" y="16" fill="#CBD5E1" class="font-mono" font-size="11" font-weight="500" text-anchor="middle">PyTorch</text>
+
+    <rect x="164" y="0" width="102" height="24" rx="5" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+    <text x="215" y="16" fill="#CBD5E1" class="font-mono" font-size="11" font-weight="500" text-anchor="middle">Scikit-learn</text>
+
+    <rect x="274" y="0" width="74" height="24" rx="5" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+    <text x="311" y="16" fill="#CBD5E1" class="font-mono" font-size="11" font-weight="500" text-anchor="middle">FastAPI</text>
+
+    <rect x="356" y="0" width="94" height="24" rx="5" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+    <text x="403" y="16" fill="#CBD5E1" class="font-mono" font-size="11" font-weight="500" text-anchor="middle">PostgreSQL</text>
+
+    <rect x="458" y="0" width="70" height="24" rx="5" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+    <text x="493" y="16" fill="#CBD5E1" class="font-mono" font-size="11" font-weight="500" text-anchor="middle">Docker</text>
+  </g>
+
+  <!-- Horizontal Separation Line -->
+  <line x1="365" y1="225" x2="1140" y2="225" stroke="#1E293B" stroke-width="1"/>
+
+  <!-- Social & Contact Badges -->
+  <g transform="translate(365, 238)">
+    <rect x="0" y="0" width="180" height="34" rx="6" fill="#090E17" stroke="#1E293B" stroke-width="1"/>
+    <path d="M18 17C18 12.58 21.58 9 26 9C30.42 9 34 12.58 34 17C34 20.54 31.7 23.54 28.52 24.6C28.12 24.67 27.97 24.43 27.97 24.21C27.97 24.02 27.98 23.36 27.98 22.56C25.75 23.05 25.28 21.61 25.28 21.61C24.92 20.69 24.39 20.45 24.39 20.45C23.66 19.95 24.45 19.96 24.45 19.96C25.26 20.02 25.68 20.79 25.68 20.79C26.4 22.02 27.56 21.67 28.02 21.46C28.09 20.94 28.3 20.58 28.53 20.38C26.75 20.18 24.88 19.49 24.88 16.42C24.88 15.55 25.19 14.83 25.7 14.27C25.62 14.07 25.35 13.25 25.78 12.16C25.78 12.16 26.45 11.95 27.97 12.98C28.61 12.8 29.29 12.71 29.97 12.71C30.65 12.71 31.33 12.8 31.97 12.98C33.49 11.95 34.16 12.16 34.16 12.16C34.59 13.25 34.32 14.07 34.24 14.27C34.75 14.83 35.06 15.55 35.06 16.42C35.06 19.5 33.18 20.18 31.4 20.37C31.69 20.62 31.95 21.11 31.95 21.87C31.95 22.96 31.94 23.84 31.94 24.21C31.94 24.43 31.79 24.68 31.38 24.6C28.2 23.53 25.9 20.53 25.9 17H18Z" fill="#94A3B8" transform="translate(-10, -3) scale(0.9)"/>
+    <text x="40" y="21" fill="#E2E8F0" class="font-mono" font-size="12" font-weight="500">vn002-tech</text>
+
+    <rect x="192" y="0" width="130" height="34" rx="6" fill="#090E17" stroke="#1E293B" stroke-width="1"/>
+    <rect x="204" y="9" width="16" height="16" rx="3" fill="#2563EB"/>
+    <text x="212" y="21" fill="#FFFFFF" class="font-title" font-size="10" font-weight="800" text-anchor="middle">in</text>
+    <text x="228" y="21" fill="#E2E8F0" class="font-title" font-size="12" font-weight="500">LinkedIn</text>
+
+    <rect x="334" y="0" width="250" height="34" rx="6" fill="#090E17" stroke="#1E293B" stroke-width="1"/>
+    <path d="M348 11H364C365.1 11 366 11.9 366 13V23C366 24.1 365.1 25 364 25H348C346.9 25 346 24.1 346 23V13C346 11.9 346.9 11 348 11Z" stroke="#A855F7" stroke-width="1.3" fill="none"/>
+    <path d="M346 13L356 19L366 13" stroke="#A855F7" stroke-width="1.3" fill="none"/>
+    <text x="374" y="21" fill="#E2E8F0" class="font-mono" font-size="11.5" font-weight="500">wahidivansaputra@gmail.com</text>
+  </g>
+
+  <!-- Decorative Corner Accents -->
+  <line x1="1170" y1="20" x2="1185" y2="20" stroke="#334155" stroke-width="1"/>
+  <line x1="1185" y1="20" x2="1185" y2="35" stroke="#334155" stroke-width="1"/>
 </svg>
