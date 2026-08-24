@@ -1,18 +1,18 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/vn002-tech/vn002-tech/main/assets/ai-engineer-profile.svg?cachebust=1787579609" width="100%" alt="VAN — AI Engineer Banner" />
+<img src="https://raw.githubusercontent.com/vn002-tech/vn002-tech/main/assets/ai-engineer-profile.svg?cachebust=1787581477" width="100%" alt="VAN — AI Engineer Banner" />
 
 <br/><br/>
 
-<!-- Animated Typing SVG (Crisp Prussian Navy Typography) -->
+<!-- Animated Typing SVG (Radiant Warm Amber Gold Typography — 100% High Contrast on Dark Mode) -->
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&pause=1200&color=0F172A&center=true&vCenter=true&width=760&lines=AI+Engineering+%7C+Machine+Learning+%26+Data+Science;LLMs+%C2%B7+RAG+%C2%B7+Deep+Learning+%26+AI+Automation;Python+%7C+PyTorch+%7C+Scikit-learn+%7C+FastAPI+%7C+Docker;From+Data+Pipelines+to+Production-Ready+AI+Systems" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&pause=1200&color=FBBF24&center=true&vCenter=true&width=760&lines=AI+Engineering+%7C+Machine+Learning+%26+Data+Science;LLMs+%C2%B7+RAG+%C2%B7+Deep+Learning+%26+AI+Automation;Python+%7C+PyTorch+%7C+Scikit-learn+%7C+FastAPI+%7C+Docker;From+Data+Pipelines+to+Production-Ready+AI+Systems" alt="Typing SVG" />
 </a>
 
 <br/><br/>
 
 <!-- Action & Contact Badges -->
-<a href="https://github.com/vn002-tech"><img src="https://img.shields.io/badge/GitHub-vn002--tech-0F172A?style=for-the-badge&logo=github&logoColor=FFFFFF" alt="GitHub" /></a>
+<a href="https://github.com/vn002-tech"><img src="https://img.shields.io/badge/GitHub-vn002--tech-1E293B?style=for-the-badge&logo=github&logoColor=FFFFFF" alt="GitHub" /></a>
 &nbsp;
 <a href="https://linkedin.com"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 &nbsp;
@@ -21,7 +21,7 @@
 <br/><br/>
 
 <!-- 4-Pillar Core AI Engineering Matrix SVG Card -->
-<img src="https://raw.githubusercontent.com/vn002-tech/vn002-tech/main/assets/ai-pillars.svg?cachebust=1787579609" width="100%" alt="4-Pillar Core AI Engineering Domains" />
+<img src="https://raw.githubusercontent.com/vn002-tech/vn002-tech/main/assets/ai-pillars.svg?cachebust=1787581477" width="100%" alt="4-Pillar Core AI Engineering Domains" />
 
 </div>
 
@@ -31,7 +31,7 @@
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/vn002-tech/vn002-tech/main/assets/ai-engineering-pipeline.svg?cachebust=1787579609" width="100%" alt="AI Engineering Architecture Diagram" />
+<img src="https://raw.githubusercontent.com/vn002-tech/vn002-tech/main/assets/ai-engineering-pipeline.svg?cachebust=1787581477" width="100%" alt="AI Engineering Architecture Diagram" />
 
 <br/><br/>
 
@@ -46,12 +46,12 @@
 <div align="center">
 
 <!-- Cyber Speedster Racing Across Telemetry Waveform Track -->
-<img src="https://raw.githubusercontent.com/vn002-tech/vn002-tech/main/assets/ai-telemetry-track.svg?cachebust=1787579609" width="100%" alt="AI Inference Velocity Track with Cyber Car" />
+<img src="https://raw.githubusercontent.com/vn002-tech/vn002-tech/main/assets/ai-telemetry-track.svg?cachebust=1787581477" width="100%" alt="AI Inference Velocity Track with Cyber Car" />
 
 <br/><br/>
 
-<!-- Live GitHub Contribution Calendar (Royal Cobalt Blue) -->
-<img src="https://ghchart.rshah.org/0284C7/vn002-tech" width="100%" alt="vn002-tech Live GitHub Contribution Calendar" />
+<!-- Live GitHub Contribution Calendar (Warm Amber Gold on Dark Mode) -->
+<img src="https://ghchart.rshah.org/F59E0B/vn002-tech" width="100%" alt="vn002-tech Live GitHub Contribution Calendar" />
 
 </div>
 
@@ -64,7 +64,7 @@
 
 <br/><br/>
 
-<!-- Animated Wave Footer (Studio Ivory to Warm Sand Gradient) -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:faf9f5,50:ebe7de,100:d5cfc2&height=100&section=footer" width="100%" alt="Footer Wave" />
+<!-- Animated Wave Footer -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:090f1d,50:0f172a,100:1E3A5F&height=100&section=footer" width="100%" alt="Footer Wave" />
 
 </div>

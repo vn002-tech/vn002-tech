@@ -1,13 +1,22 @@
 <svg width="1000" height="148" viewBox="0 0 1000 148" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Studio Ivory Card Background Gradient -->
-    <linearGradient id="pil-white-card" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#FFFFFF"/>
-      <stop offset="100%" stop-color="#F8FAFC"/>
+    <!-- Deep Navy Card Background Gradient -->
+    <linearGradient id="pil-navy-card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="50%" stop-color="#141E33"/>
+      <stop offset="100%" stop-color="#0F172A"/>
     </linearGradient>
 
-    <filter id="card-soft-subtle" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0F172A" flood-opacity="0.05"/>
+    <!-- Focal Card Gradient -->
+    <linearGradient id="pil-focal-card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1E3A5F"/>
+      <stop offset="50%" stop-color="#132B47"/>
+      <stop offset="100%" stop-color="#0B1C30"/>
+    </linearGradient>
+
+    <filter id="pil-card-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
   </defs>
 
@@ -15,66 +24,66 @@
     .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
     .font-mono { font-family: 'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, monospace; }
 
-    @keyframes pulse-dot-light {
+    @keyframes pulse-dot {
       0%, 100% { opacity: 0.4; transform: scale(0.9); }
       50% { opacity: 1; transform: scale(1.2); }
     }
 
-    @keyframes radar-ring-light {
+    @keyframes radar-ring {
       0% { r: 3.5px; opacity: 1; }
       100% { r: 9px; opacity: 0; }
     }
 
     .anim-pulse {
-      animation: pulse-dot-light 2.2s ease-in-out infinite;
+      animation: pulse-dot 2.2s ease-in-out infinite;
     }
 
     .anim-radar {
-      animation: radar-ring-light 1.8s cubic-bezier(0, 0, 0.2, 1) infinite;
+      animation: radar-ring 1.8s cubic-bezier(0, 0, 0.2, 1) infinite;
     }
   </style>
 
-  <!-- Frame Background: Studio Porcelain Ivory -->
-  <rect x="2" y="2" width="996" height="144" rx="14" fill="#FAF9F5" stroke="#D1C7B7" stroke-width="1.5"/>
+  <!-- Frame Background: Deep Navy Slate -->
+  <rect x="2" y="2" width="996" height="144" rx="14" fill="#090F1D" stroke="#1E293B" stroke-width="1.5"/>
 
   <!-- ================= CARD 1: ML & DATA SCIENCE (GLACIER STEEL) ================= -->
   <g transform="translate(16, 14)">
-    <rect width="230" height="120" rx="10" fill="url(#pil-white-card)" stroke="#0284C7" stroke-width="1.4" filter="url(#card-soft-subtle)"/>
-    <circle cx="18" cy="20" r="4" fill="#0284C7" class="anim-pulse"/>
-    <text x="28" y="24" fill="#0284C7" class="font-mono" font-size="10.5" font-weight="700" letter-spacing="0.8">ML &amp; DATA SCIENCE</text>
-    <text x="16" y="49" fill="#0F172A" class="font-sans" font-size="13" font-weight="700">Predictive &amp; Analytics</text>
-    <text x="16" y="73" fill="#475569" class="font-sans" font-size="11">Feature Pipelines · XGBoost</text>
+    <rect width="230" height="120" rx="10" fill="url(#pil-navy-card)" stroke="#0284C7" stroke-width="1.2" stroke-opacity="0.8"/>
+    <circle cx="18" cy="20" r="4" fill="#38BDF8" class="anim-pulse"/>
+    <text x="28" y="24" fill="#7DD3FC" class="font-mono" font-size="10.5" font-weight="700" letter-spacing="0.8">ML &amp; DATA SCIENCE</text>
+    <text x="16" y="49" fill="#F8FAFC" class="font-sans" font-size="13" font-weight="700">Predictive &amp; Analytics</text>
+    <text x="16" y="73" fill="#94A3B8" class="font-sans" font-size="11">Feature Pipelines · XGBoost</text>
     <text x="16" y="93" fill="#64748B" class="font-sans" font-size="10.5">Statistical EDA &amp; Metrics</text>
   </g>
 
   <!-- ================= CARD 2: DEEP LEARNING (CHAMPAGNE AMBER) ================= -->
   <g transform="translate(260, 14)">
-    <rect width="230" height="120" rx="10" fill="url(#pil-white-card)" stroke="#D97706" stroke-width="1.4" filter="url(#card-soft-subtle)"/>
-    <circle cx="18" cy="20" r="4" fill="#D97706" class="anim-pulse"/>
-    <text x="28" y="24" fill="#B45309" class="font-mono" font-size="10.5" font-weight="700" letter-spacing="0.8">DEEP LEARNING</text>
-    <text x="16" y="49" fill="#0F172A" class="font-sans" font-size="13" font-weight="700">Neural Systems</text>
-    <text x="16" y="73" fill="#475569" class="font-sans" font-size="11">PyTorch · Tensors</text>
+    <rect width="230" height="120" rx="10" fill="url(#pil-navy-card)" stroke="#D97706" stroke-width="1.2" stroke-opacity="0.8"/>
+    <circle cx="18" cy="20" r="4" fill="#FBBF24" class="anim-pulse"/>
+    <text x="28" y="24" fill="#FDE68A" class="font-mono" font-size="10.5" font-weight="700" letter-spacing="0.8">DEEP LEARNING</text>
+    <text x="16" y="49" fill="#F8FAFC" class="font-sans" font-size="13" font-weight="700">Neural Systems</text>
+    <text x="16" y="73" fill="#94A3B8" class="font-sans" font-size="11">PyTorch · Tensors</text>
     <text x="16" y="93" fill="#64748B" class="font-sans" font-size="10.5">Dense Embeddings</text>
   </g>
 
-  <!-- ================= CARD 3: LLMs & AUTOMATION (SAGE EMERALD FOCAL) ================= -->
+  <!-- ================= CARD 3: LLMs & AUTOMATION (FOCAL SAGE TEAL) ================= -->
   <g transform="translate(504, 14)">
-    <rect width="230" height="120" rx="10" fill="url(#pil-white-card)" stroke="#059669" stroke-width="1.6" filter="url(#card-soft-subtle)"/>
-    <circle cx="18" cy="20" r="4" fill="#059669"/>
-    <circle cx="18" cy="20" r="4" fill="#10B981" class="anim-radar"/>
-    <text x="28" y="24" fill="#047857" class="font-mono" font-size="10.5" font-weight="700" letter-spacing="0.8">LLMs &amp; AUTOMATION</text>
-    <text x="16" y="49" fill="#0F172A" class="font-sans" font-size="13" font-weight="700">AI Automation</text>
-    <text x="16" y="73" fill="#047857" class="font-sans" font-size="11">RAG Pipelines · Vector DBs</text>
-    <text x="16" y="93" fill="#065F46" class="font-sans" font-size="10.5">Autonomous Workflows</text>
+    <rect width="230" height="120" rx="10" fill="url(#pil-focal-card)" stroke="#2DD4BF" stroke-width="1.4" filter="url(#pil-card-glow)"/>
+    <circle cx="18" cy="20" r="4" fill="#5EEAD4"/>
+    <circle cx="18" cy="20" r="4" fill="#2DD4BF" class="anim-radar"/>
+    <text x="28" y="24" fill="#99F6E4" class="font-mono" font-size="10.5" font-weight="700" letter-spacing="0.8">LLMs &amp; AUTOMATION</text>
+    <text x="16" y="49" fill="#FFFFFF" class="font-sans" font-size="13" font-weight="700">AI Automation</text>
+    <text x="16" y="73" fill="#CCFBF1" class="font-sans" font-size="11">RAG Pipelines · Vector DBs</text>
+    <text x="16" y="93" fill="#99F6E4" class="font-sans" font-size="10.5">Autonomous Workflows</text>
   </g>
 
-  <!-- ================= CARD 4: MLOPS & SYSTEMS (TERRACOTTA RUST) ================= -->
+  <!-- ================= CARD 4: MLOPS & SYSTEMS (TERRACOTTA COPPER) ================= -->
   <g transform="translate(748, 14)">
-    <rect width="236" height="120" rx="10" fill="url(#pil-white-card)" stroke="#EA580C" stroke-width="1.4" filter="url(#card-soft-subtle)"/>
-    <circle cx="18" cy="20" r="4" fill="#EA580C" class="anim-pulse"/>
-    <text x="28" y="24" fill="#C2410C" class="font-mono" font-size="10.5" font-weight="700" letter-spacing="0.8">MLOps &amp; SYSTEMS</text>
-    <text x="16" y="49" fill="#0F172A" class="font-sans" font-size="13" font-weight="700">Serving &amp; Production</text>
-    <text x="16" y="73" fill="#475569" class="font-sans" font-size="11">FastAPI · Docker Runtime</text>
+    <rect width="236" height="120" rx="10" fill="url(#pil-navy-card)" stroke="#EA580C" stroke-width="1.2" stroke-opacity="0.8"/>
+    <circle cx="18" cy="20" r="4" fill="#FB923C" class="anim-pulse"/>
+    <text x="28" y="24" fill="#FDBA74" class="font-mono" font-size="10.5" font-weight="700" letter-spacing="0.8">MLOps &amp; SYSTEMS</text>
+    <text x="16" y="49" fill="#F8FAFC" class="font-sans" font-size="13" font-weight="700">Serving &amp; Production</text>
+    <text x="16" y="73" fill="#94A3B8" class="font-sans" font-size="11">FastAPI · Docker Runtime</text>
     <text x="16" y="93" fill="#64748B" class="font-sans" font-size="10.5">ETL &amp; Data Integrity</text>
   </g>
 </svg>
