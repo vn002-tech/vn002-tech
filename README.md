@@ -1,37 +1,43 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,50:1e1b4b,100:0284c7&height=220&section=header&text=⚙️%20DATA%20ENGINEERING%20LAB&fontSize=34&fontColor=00f5ff&fontAlignY=36&desc=Building%20Scalable%20Data%20Pipelines%20%7C%20Real-Time%20Analytics%20%7C%20MLOps&descSize=14&descAlignY=58&descColor=94a3b8&animation=fadeIn" width="100%"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,50:1e1b4b,100:0284c7&height=220&section=header&text=🤖%20AI%20ENGINEERING%20LAB&fontSize=34&fontColor=00f5ff&fontAlignY=36&desc=Building%20Intelligent%20AI%20Systems%20%7C%20LLMs%20%7C%20RAG%20%7C%20MLOps&descSize=14&descAlignY=58&descColor=94a3b8&animation=fadeIn" width="100%"/>
 
   <br/>
 
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&pause=1000&color=00F5FF&center=true&vCenter=true&width=700&lines=🚀+Architecting+Enterprise+Data+Pipelines;⚡+PySpark+%7C+Airflow+%7C+dbt+%7C+Kafka+%7C+Snowflake;🤖+MLOps+%26+Real-Time+Fraud+Detection;☁️+Cloud+Data+Lakehouse+Architecture;📊+Transforming+Raw+Data+Into+Insights" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&pause=1000&color=00F5FF&center=true&vCenter=true&width=850&lines=🤖+Building+Production-Ready+AI+Applications;🧠+LLMs+%7C+RAG+%7C+AI+Agents+%7C+Machine+Learning;⚡+Python+%7C+PyTorch+%7C+FastAPI+%7C+LangChain;☁️+MLOps+%7C+LLMOps+%7C+Cloud+Deployment;🚀+Transforming+Ideas+Into+Intelligent+Products" alt="Typing SVG" />
   </a>
 
   <br/><br/>
 
   <h2>👨‍💻 VAN (vn002-tech)</h2>
-  <p><b>Data Engineer & MLOps Specialist</b> | Python · PySpark · Airflow · dbt · PostgreSQL</p>
+  <p><b>AI Engineer & MLOps Enthusiast</b> | Python · Machine Learning · LLMs · RAG · FastAPI</p>
 
   <br/>
 
-  <a href="https://github.com/vn002-tech"><img src="https://img.shields.io/badge/GitHub-vn002--tech-0f172a?style=for-the-badge&logo=github&logoColor=00f5ff" /></a>
-  <a href="https://linkedin.com/in/YOUR_LINKEDIN"><img src="https://img.shields.io/badge/LinkedIn-0f172a?style=for-the-badge&logo=linkedin&logoColor=00f5ff" /></a>
-  <a href="mailto:your_email@gmail.com"><img src="https://img.shields.io/badge/Email-0f172a?style=for-the-badge&logo=gmail&logoColor=00f5ff" /></a>
+  <a href="https://github.com/vn002-tech">
+    <img src="https://img.shields.io/badge/GitHub-vn002--tech-0f172a?style=for-the-badge&logo=github&logoColor=00f5ff" />
+  </a>
+  <a href="https://linkedin.com/in/YOUR_LINKEDIN">
+    <img src="https://img.shields.io/badge/LinkedIn-0f172a?style=for-the-badge&logo=linkedin&logoColor=00f5ff" />
+  </a>
+  <a href="mailto:your_email@gmail.com">
+    <img src="https://img.shields.io/badge/Email-0f172a?style=for-the-badge&logo=gmail&logoColor=00f5ff" />
+  </a>
 
   <br/><br/>
 
   <img src="https://img.shields.io/badge/Python-0f172a?style=flat-square&logo=python&logoColor=00f5ff" />
-  <img src="https://img.shields.io/badge/PySpark-0f172a?style=flat-square&logo=apachespark&logoColor=00f5ff" />
-  <img src="https://img.shields.io/badge/Airflow-0f172a?style=flat-square&logo=apacheairflow&logoColor=00f5ff" />
-  <img src="https://img.shields.io/badge/dbt-0f172a?style=flat-square&logo=dbt&logoColor=00f5ff" />
-  <img src="https://img.shields.io/badge/Kafka-0f172a?style=flat-square&logo=apachekafka&logoColor=00f5ff" />
-  <img src="https://img.shields.io/badge/PostgreSQL-0f172a?style=flat-square&logo=postgresql&logoColor=00f5ff" />
-  <img src="https://img.shields.io/badge/Snowflake-0f172a?style=flat-square&logo=snowflake&logoColor=00f5ff" />
+  <img src="https://img.shields.io/badge/PyTorch-0f172a?style=flat-square&logo=pytorch&logoColor=00f5ff" />
+  <img src="https://img.shields.io/badge/TensorFlow-0f172a?style=flat-square&logo=tensorflow&logoColor=00f5ff" />
+  <img src="https://img.shields.io/badge/Hugging%20Face-0f172a?style=flat-square&logo=huggingface&logoColor=00f5ff" />
+  <img src="https://img.shields.io/badge/LangChain-0f172a?style=flat-square&logo=langchain&logoColor=00f5ff" />
+  <img src="https://img.shields.io/badge/FastAPI-0f172a?style=flat-square&logo=fastapi&logoColor=00f5ff" />
+  <img src="https://img.shields.io/badge/Docker-0f172a?style=flat-square&logo=docker&logoColor=00f5ff" />
   <img src="https://img.shields.io/badge/AWS-0f172a?style=flat-square&logo=amazonaws&logoColor=00f5ff" />
 
   <br/><br/>
 
-  <img src="https://komarev.com/ghpvc/?username=vn002-tech&color=0284c7&style=for-the-badge&label=PIPELINE+VISITS" />
+  <img src="https://komarev.com/ghpvc/?username=vn002-tech&color=0284c7&style=for-the-badge&label=AI+LAB+VISITS" />
 </div>
 
 <br/>
@@ -44,12 +50,19 @@
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=vn002-tech&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=00f5ff&icon_color=818cf8&text_color=94a3b8" height="165" />
+
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=vn002-tech&layout=compact&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=00f5ff&text_color=94a3b8" height="165" />
+
   <br/><br/>
+
   <img src="https://streak-stats.demolab.com?user=vn002-tech&theme=tokyonight&hide_border=true&background=0f172a&ring=00f5ff&fire=818cf8&currStreakLabel=00f5ff" />
+
   <br/><br/>
+
   <img src="https://github-profile-trophy.vercel.app/?username=vn002-tech&theme=tokyonight&no-frame=true&no-bg=true&margin-w=10&column=7" />
+
   <br/><br/>
+
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=vn002-tech&theme=tokyo-night&bg_color=0f172a&color=00f5ff&line=818cf8&point=00f5ff&hide_border=true" width="100%" />
 </div>
 
@@ -66,157 +79,169 @@
 | 🔑 Key | 💡 Value |
 |:---|:---|
 | 👤 **Username** | `vn002-tech` |
-| 💼 **Role** | Data Engineer & MLOps Specialist |
+| 💼 **Role** | AI Engineer & MLOps Enthusiast |
 | 📍 **Location** | Indonesia 🇮🇩 |
-| 🎯 **Focus** | ETL/ELT · Stream Processing · Lakehouse |
-| ⚙️ **Stack** | PySpark · Airflow · dbt · PostgreSQL · Kafka |
-| 📚 **Learning** | Apache Flink · Databricks · Terraform |
-| 🚀 **Mission** | Transforming raw data into actionable insights |
+| 🎯 **Focus** | LLM Applications · RAG Systems · AI Agents · Machine Learning |
+| 🧠 **Core Stack** | Python · PyTorch · Hugging Face · FastAPI · LangChain |
+| ☁️ **Deployment** | Docker · Kubernetes · AWS/GCP · CI/CD |
+| 📚 **Learning** | LLMOps · LangGraph · Fine-Tuning · Multi-Agent Systems |
+| 🚀 **Mission** | Building useful, reliable, and scalable AI-powered products |
 
 </div>
 
 <br/>
 
-> *"Building robust, scalable data pipelines to transform high-volume transactional data into actionable insights."*
+> *"Building intelligent systems that turn data, language, and ideas into real-world impact."*
 
 <br/>
 
 ---
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0f172a,100:1e1b4b&height=55&text=🛠️%20Tech%20Stack&fontSize=22&fontColor=00f5ff&fontAlignY=50" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0f172a,100:1e1b4b&height=55&text=🛠️%20AI%20Engineering%20Stack&fontSize=22&fontColor=00f5ff&fontAlignY=50" width="100%"/>
 
 <br/>
 
 <div align="center">
-  <h3>⚙️ Languages & Databases</h3>
-  <img src="https://skillicons.dev/icons?i=python,bash,postgres,mysql,mongodb" />
 
-  <h3>🔥 Big Data, ETL & Orchestration</h3>
-  <img src="https://skillicons.dev/icons?i=kafka,kubernetes,git,github,linux" />
-  <p><i>PySpark · Apache Airflow · Apache Flink · dbt · Great Expectations</i></p>
+  <h3>🐍 Programming & Backend</h3>
+  <img src="https://skillicons.dev/icons?i=python,fastapi,flask,postgres,mongodb" />
 
-  <h3>☁️ Cloud & Infrastructure</h3>
-  <img src="https://skillicons.dev/icons?i=aws,gcp,kubernetes,linux,vscode" />
+  <h3>🧠 Machine Learning & Deep Learning</h3>
+  <img src="https://skillicons.dev/icons?i=pytorch,tensorflow,sklearn" />
+  <p><i>Hugging Face · Transformers · Scikit-learn · XGBoost · Pandas · NumPy</i></p>
+
+  <h3>🤖 LLM, RAG & AI Agents</h3>
+  <p><i>LangChain · LangGraph · LlamaIndex · OpenAI API · Gemini API · Ollama · ChromaDB · FAISS · Pinecone</i></p>
+
+  <h3>☁️ MLOps, LLMOps & Deployment</h3>
+  <img src="https://skillicons.dev/icons?i=docker,kubernetes,aws,gcp,githubactions,linux" />
+  <p><i>MLflow · DVC · Weights & Biases · GitHub Actions · Streamlit · Gradio</i></p>
 
   <br/>
 
-  <img src="https://img.shields.io/badge/Data%20Engineering-Expert-0f172a?style=for-the-badge&logo=apachespark&logoColor=00f5ff" />
-  <img src="https://img.shields.io/badge/MLOps-Advanced-0f172a?style=for-the-badge&logo=python&logoColor=818cf8" />
-  <img src="https://img.shields.io/badge/Cloud%20Architecture-Intermediate-0f172a?style=for-the-badge&logo=amazonaws&logoColor=34d399" />
-  <img src="https://img.shields.io/badge/Stream%20Processing-Advanced-0f172a?style=for-the-badge&logo=apachekafka&logoColor=fbbf24" />
+  <img src="https://img.shields.io/badge/AI%20Engineering-Focused-0f172a?style=for-the-badge&logo=openai&logoColor=00f5ff" />
+  <img src="https://img.shields.io/badge/LLM%20Applications-Focused-0f172a?style=for-the-badge&logo=langchain&logoColor=818cf8" />
+  <img src="https://img.shields.io/badge/Machine%20Learning-Active-0f172a?style=for-the-badge&logo=pytorch&logoColor=34d399" />
+  <img src="https://img.shields.io/badge/MLOps%20%26%20LLMOps-Learning-0f172a?style=for-the-badge&logo=docker&logoColor=fbbf24" />
+
 </div>
 
 <br/>
 
 ---
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0f172a,100:1e1b4b&height=55&text=🕸️%20Data%20Mesh%20Architecture&fontSize=22&fontColor=00f5ff&fontAlignY=50" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0f172a,100:1e1b4b&height=55&text=🧠%20AI%20Application%20Architecture&fontSize=22&fontColor=00f5ff&fontAlignY=50" width="100%"/>
 
 <br/>
 
 ```mermaid
 graph LR
-    classDef src  fill:#0f172a,stroke:#00f5ff,stroke-width:2px,color:#fff
-    classDef ing  fill:#1e1b4b,stroke:#818cf8,stroke-width:2px,color:#fff
-    classDef proc fill:#0c2a4a,stroke:#38bdf8,stroke-width:2px,color:#fff
-    classDef stor fill:#0f2a1e,stroke:#34d399,stroke-width:2px,color:#fff
-    classDef qual fill:#1a1a3e,stroke:#6ee7b7,stroke-width:2px,color:#fff
-    classDef serv fill:#1a0f2a,stroke:#c084fc,stroke-width:2px,color:#fff
+    classDef user fill:#0f172a,stroke:#00f5ff,stroke-width:2px,color:#fff
+    classDef app fill:#1e1b4b,stroke:#818cf8,stroke-width:2px,color:#fff
+    classDef ai fill:#0c2a4a,stroke:#38bdf8,stroke-width:2px,color:#fff
+    classDef data fill:#0f2a1e,stroke:#34d399,stroke-width:2px,color:#fff
+    classDef ops fill:#1a1a3e,stroke:#6ee7b7,stroke-width:2px,color:#fff
+    classDef out fill:#1a0f2a,stroke:#c084fc,stroke-width:2px,color:#fff
 
-    A1["🗄️ PostgreSQL/MySQL"]:::src
-    A2["📡 REST APIs/SaaS"]:::src
-    A3["⚡ Kafka Events"]:::src
-    A4["📂 CSV/Parquet/JSON"]:::src
-    A5["🌐 IoT/Web Scraping"]:::src
+    A1["👤 Users"]:::user
+    A2["🌐 Web / Mobile App"]:::user
+    A3["🔌 External APIs"]:::user
 
-    B1["🔄 Debezium CDC"]:::ing
-    B2["🔌 Airbyte/Fivetran"]:::ing
-    B3["📥 Batch Loader"]:::ing
+    B1["⚡ FastAPI Backend"]:::app
+    B2["💬 Streamlit / Gradio UI"]:::app
+    B3["🔐 Authentication & Rate Limit"]:::app
 
-    C1["⚙️ Apache Airflow"]:::proc
-    C2["⚡ Dagster/Prefect"]:::proc
-    D1["🚀 PySpark Batch"]:::proc
-    D2["🌊 Flink Stream"]:::proc
-    D3["🐼 Pandas/Polars"]:::proc
+    C1["🧠 LLM Gateway"]:::ai
+    C2["🔗 LangChain / LangGraph"]:::ai
+    C3["🤖 AI Agent Orchestrator"]:::ai
+    C4["🧮 ML Prediction Service"]:::ai
 
-    E1["☁️ AWS S3 / GCS"]:::stor
-    E2["❄️ Snowflake DWH"]:::stor
-    E3["🏠 Delta Lake"]:::stor
-    E4["🐘 PostgreSQL OLAP"]:::stor
+    D1["📄 Documents / PDFs / CSV"]:::data
+    D2["✂️ Chunking & Embeddings"]:::data
+    D3["🗂️ Vector Database"]:::data
+    D4["🐘 PostgreSQL / MongoDB"]:::data
 
-    F1["🔧 dbt Models"]:::qual
-    F2["🛡️ Great Expectations"]:::qual
-    F3["📋 Data Catalog"]:::qual
+    E1["📊 MLflow Experiment Tracking"]:::ops
+    E2["🐳 Docker Deployment"]:::ops
+    E3["☁️ Cloud Infrastructure"]:::ops
+    E4["📈 Monitoring & Evaluation"]:::ops
 
-    G1["📊 Streamlit Dashboard"]:::serv
-    G2["📈 PowerBI/Tableau"]:::serv
-    G3["🤖 Fraud Detection ML"]:::serv
-    G4["🧠 MLflow Feature Store"]:::serv
-    G5["🔄 Reverse ETL APIs"]:::serv
+    F1["💡 AI Assistant"]:::out
+    F2["🔎 RAG Search Results"]:::out
+    F3["📋 Automated Reports"]:::out
+    F4["🎯 Predictions & Insights"]:::out
 
-    A1-->B1 & B2
-    A2-->B2 & B3
-    A3-->B1 & D2
-    A4-->B3
-    A5-->B2 & B3
+    A1 --> A2
+    A2 --> B2
+    A3 --> B1
+    B2 --> B1
+    B1 --> B3
+    B3 --> C1
 
-    B1-->C1
-    B2-->C1 & C2
-    B3-->C1 & C2
+    C1 --> C2
+    C2 --> C3
+    C2 --> C4
 
-    C1-->D1 & D3
-    C2-->D1 & D2
+    D1 --> D2
+    D2 --> D3
+    D2 --> D4
 
-    D1-->E1 & E3
-    D2-->E2 & E3
-    D3-->E1 & E4
+    C2 --> D3
+    C3 --> D3
+    C4 --> D4
 
-    E1-->F1
-    E2-->F1
-    E3-->F1
-    E4-->F2
-    F1-->F2-->F3
+    C1 --> F1
+    C2 --> F2
+    C3 --> F3
+    C4 --> F4
 
-    F3-->G1 & G2 & G3 & G5
-    G3-->G4-->G5
-    E2-->G2
-    E4-->G1
+    C1 --> E1
+    C2 --> E4
+    C4 --> E1
+    E1 --> E2
+    E2 --> E3
+    E3 --> E4
 ```
 
 <br/>
 
 ---
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0f172a,100:1e1b4b&height=55&text=🚀%20Featured%20Projects&fontSize=22&fontColor=00f5ff&fontAlignY=50" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0f172a,100:1e1b4b&height=55&text=🚀%20Featured%20AI%20Projects&fontSize=22&fontColor=00f5ff&fontAlignY=50" width="100%"/>
 
 <br/>
 
 | 🔖 Project | ⚙️ Stack | 📝 Description |
 | :--- | :--- | :--- |
-| 🛡️ **[Bank Fraud Detection System](https://github.com/vn002-tech/Transaksi_bank)** | `Python` `XGBoost` `Streamlit` `PostgreSQL` | End-to-end ML pipeline with real-time anomaly detection dashboard. |
-| ⚡ **[Real-Time Streaming Ingestion](https://github.com/vn002-tech)** | `PySpark` `Kafka` `PostgreSQL` | High-throughput streaming data pipeline for financial transaction logs. |
-| ☁️ **[Automated ETL Orchestration](https://github.com/vn002-tech)** | `Airflow` `dbt` `Snowflake` | End-to-end data transformation & modern data warehousing pipeline. |
-| 🔍 **[Data Quality Framework](https://github.com/vn002-tech)** | `Great Expectations` `dbt` `Python` | Automated data validation & quality monitoring across pipeline layers. |
+| 🛡️ **[Bank Fraud Detection System](https://github.com/vn002-tech/Transaksi_bank)** | `Python` `XGBoost` `Streamlit` `PostgreSQL` | End-to-end machine learning system for fraud classification and transaction anomaly monitoring |
+| 💬 **[AI Document Assistant](https://github.com/vn002-tech)** | `Python` `LangChain` `FAISS` `FastAPI` | RAG-based application that answers questions from uploaded documents with contextual retrieval |
+| 🤖 **[AI Chatbot API](https://github.com/vn002-tech)** | `FastAPI` `LLM API` `Docker` `PostgreSQL` | Production-oriented conversational AI API with chat history and scalable deployment structure |
+| 📊 **[ML Prediction Dashboard](https://github.com/vn002-tech)** | `Scikit-learn` `Streamlit` `MLflow` | Interactive dashboard for model inference, experiment tracking, and prediction visualization |
+| 🧠 **[Multi-Agent Research System](https://github.com/vn002-tech)** | `LangGraph` `Python` `LLM` `Tavily` | Agent workflow that coordinates research, analysis, and structured response generation |
 
 <br/>
 
 ---
 
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0f172a,100:1e1b4b&height=55&text=⚔️%20Fallen%20Knight%20Animation&fontSize=22&fontColor=00f5ff&fontAlignY=50" width="100%"/>
+
+<br/>
+
 <div align="center">
 
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/vn002-tech/vn002-tech/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/vn002-tech/vn002-tech/output/github-contribution-grid-snake.svg" />
-    <img alt="Snake animation" src="https://raw.githubusercontent.com/vn002-tech/vn002-tech/output/github-contribution-grid-snake.svg" />
-  </picture>
-
-  <br/>
-
-  <img src="https://skillicons.dev/icons?i=vscode,postgres,bash,linux" height="45" />
+  <img
+    src="https://raw.githubusercontent.com/vn002-tech/vn002-tech/main/assets/fallen-knight.svg"
+    alt="Fallen Knight Animation"
+    width="100%"
+  />
 
   <br/><br/>
 
-  <sub><i>"In God we trust, all others must bring data." — W. Edwards Deming</i></sub>
+  <img src="https://skillicons.dev/icons?i=vscode,github,docker,linux,python" height="45" />
+
+  <br/><br/>
+
+  <sub><i>"Even when systems fall, engineers rebuild them stronger." — AI Engineering Mindset</i></sub>
 
   <br/><br/>
 
