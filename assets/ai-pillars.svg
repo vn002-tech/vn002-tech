@@ -1,21 +1,20 @@
 <svg width="1000" height="148" viewBox="0 0 1000 148" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Dark Card Background Gradient -->
-    <linearGradient id="pil-card-grad" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#111827"/>
-      <stop offset="50%" stop-color="#0E1422"/>
-      <stop offset="100%" stop-color="#080C14"/>
+    <!-- Dark Petrol Card Background Gradient -->
+    <linearGradient id="pil-petrol-card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111B28"/>
+      <stop offset="50%" stop-color="#0E1622"/>
+      <stop offset="100%" stop-color="#080E17"/>
     </linearGradient>
 
-    <!-- Glowing LLM Card Gradient -->
-    <linearGradient id="pil-llm-grad" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#24123E"/>
-      <stop offset="50%" stop-color="#170E2A"/>
-      <stop offset="100%" stop-color="#0C0816"/>
+    <!-- Glowing Sage Teal Card Gradient -->
+    <linearGradient id="pil-teal-card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#132F2E"/>
+      <stop offset="50%" stop-color="#0E2222"/>
+      <stop offset="100%" stop-color="#081414"/>
     </linearGradient>
 
-    <!-- Glow Filter -->
-    <filter id="pil-glow" x="-20%" y="-20%" width="140%" height="140%">
+    <filter id="pil-glow-teal" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur stdDeviation="3" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
@@ -45,44 +44,44 @@
   </style>
 
   <!-- Frame Background -->
-  <rect x="2" y="2" width="996" height="144" rx="14" fill="#080C14" stroke="#1E293B" stroke-width="1.5"/>
+  <rect x="2" y="2" width="996" height="144" rx="14" fill="#080E17" stroke="#1E2C3D" stroke-width="1.5"/>
 
-  <!-- ================= CARD 1: ML & DATA SCIENCE ================= -->
+  <!-- ================= CARD 1: ML & DATA SCIENCE (GLACIER STEEL BLUE) ================= -->
   <g transform="translate(16, 14)">
-    <rect width="230" height="120" rx="10" fill="url(#pil-card-grad)" stroke="#2563EB" stroke-width="1.2" stroke-opacity="0.8"/>
-    <circle cx="18" cy="20" r="4" fill="#60A5FA" class="anim-pulse"/>
-    <text x="28" y="24" fill="#93C5FD" class="font-mono" font-size="10.5" font-weight="700" letter-spacing="0.8">ML &amp; DATA SCIENCE</text>
+    <rect width="230" height="120" rx="10" fill="url(#pil-petrol-card)" stroke="#0284C7" stroke-width="1.2" stroke-opacity="0.8"/>
+    <circle cx="18" cy="20" r="4" fill="#38BDF8" class="anim-pulse"/>
+    <text x="28" y="24" fill="#7DD3FC" class="font-mono" font-size="10.5" font-weight="700" letter-spacing="0.8">ML &amp; DATA SCIENCE</text>
     <text x="16" y="49" fill="#F8FAFC" class="font-sans" font-size="13" font-weight="700">Predictive &amp; Analytics</text>
     <text x="16" y="73" fill="#94A3B8" class="font-sans" font-size="11">Feature Pipelines · XGBoost</text>
     <text x="16" y="93" fill="#64748B" class="font-sans" font-size="10.5">Statistical EDA &amp; Metrics</text>
   </g>
 
-  <!-- ================= CARD 2: DEEP LEARNING ================= -->
+  <!-- ================= CARD 2: DEEP LEARNING (CHAMPAGNE AMBER) ================= -->
   <g transform="translate(260, 14)">
-    <rect width="230" height="120" rx="10" fill="url(#pil-card-grad)" stroke="#7C3AED" stroke-width="1.2" stroke-opacity="0.8"/>
-    <circle cx="18" cy="20" r="4" fill="#A855F7" class="anim-pulse"/>
-    <text x="28" y="24" fill="#C084FC" class="font-mono" font-size="10.5" font-weight="700" letter-spacing="0.8">DEEP LEARNING</text>
+    <rect width="230" height="120" rx="10" fill="url(#pil-petrol-card)" stroke="#D97706" stroke-width="1.2" stroke-opacity="0.8"/>
+    <circle cx="18" cy="20" r="4" fill="#FBBF24" class="anim-pulse"/>
+    <text x="28" y="24" fill="#FDE68A" class="font-mono" font-size="10.5" font-weight="700" letter-spacing="0.8">DEEP LEARNING</text>
     <text x="16" y="49" fill="#F8FAFC" class="font-sans" font-size="13" font-weight="700">Neural Systems</text>
     <text x="16" y="73" fill="#94A3B8" class="font-sans" font-size="11">PyTorch · Tensors</text>
     <text x="16" y="93" fill="#64748B" class="font-sans" font-size="10.5">Dense Embeddings</text>
   </g>
 
-  <!-- ================= CARD 3: LLMs & AUTOMATION (FOCAL) ================= -->
+  <!-- ================= CARD 3: LLMs & AUTOMATION (DEEP SAGE TEAL FOCAL) ================= -->
   <g transform="translate(504, 14)">
-    <rect width="230" height="120" rx="10" fill="url(#pil-llm-grad)" stroke="#C084FC" stroke-width="1.4" filter="url(#pil-glow)"/>
-    <circle cx="18" cy="20" r="4" fill="#E879F9"/>
-    <circle cx="18" cy="20" r="4" fill="#C084FC" class="anim-radar"/>
-    <text x="28" y="24" fill="#F0ABFC" class="font-mono" font-size="10.5" font-weight="700" letter-spacing="0.8">LLMs &amp; AUTOMATION</text>
+    <rect width="230" height="120" rx="10" fill="url(#pil-teal-card)" stroke="#2DD4BF" stroke-width="1.4" filter="url(#pil-glow-teal)"/>
+    <circle cx="18" cy="20" r="4" fill="#5EEAD4"/>
+    <circle cx="18" cy="20" r="4" fill="#2DD4BF" class="anim-radar"/>
+    <text x="28" y="24" fill="#99F6E4" class="font-mono" font-size="10.5" font-weight="700" letter-spacing="0.8">LLMs &amp; AUTOMATION</text>
     <text x="16" y="49" fill="#FFFFFF" class="font-sans" font-size="13" font-weight="700">AI Automation</text>
-    <text x="16" y="73" fill="#E9D5FF" class="font-sans" font-size="11">RAG Pipelines · Vector DBs</text>
-    <text x="16" y="93" fill="#D8B4FE" class="font-sans" font-size="10.5">Autonomous Workflows</text>
+    <text x="16" y="73" fill="#CCFBF1" class="font-sans" font-size="11">RAG Pipelines · Vector DBs</text>
+    <text x="16" y="93" fill="#99F6E4" class="font-sans" font-size="10.5">Autonomous Workflows</text>
   </g>
 
-  <!-- ================= CARD 4: MLOPS & SYSTEMS ================= -->
+  <!-- ================= CARD 4: MLOPS & SYSTEMS (TERRACOTTA COPPER) ================= -->
   <g transform="translate(748, 14)">
-    <rect width="236" height="120" rx="10" fill="url(#pil-card-grad)" stroke="#10B981" stroke-width="1.2" stroke-opacity="0.8"/>
-    <circle cx="18" cy="20" r="4" fill="#34D399" class="anim-pulse"/>
-    <text x="28" y="24" fill="#6EE7B7" class="font-mono" font-size="10.5" font-weight="700" letter-spacing="0.8">MLOps &amp; SYSTEMS</text>
+    <rect width="236" height="120" rx="10" fill="url(#pil-petrol-card)" stroke="#EA580C" stroke-width="1.2" stroke-opacity="0.8"/>
+    <circle cx="18" cy="20" r="4" fill="#FB923C" class="anim-pulse"/>
+    <text x="28" y="24" fill="#FDBA74" class="font-mono" font-size="10.5" font-weight="700" letter-spacing="0.8">MLOps &amp; SYSTEMS</text>
     <text x="16" y="49" fill="#F8FAFC" class="font-sans" font-size="13" font-weight="700">Serving &amp; Production</text>
     <text x="16" y="73" fill="#94A3B8" class="font-sans" font-size="11">FastAPI · Docker Runtime</text>
     <text x="16" y="93" fill="#64748B" class="font-sans" font-size="10.5">ETL &amp; Data Integrity</text>

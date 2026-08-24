@@ -1,27 +1,27 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/vn002-tech/vn002-tech/main/assets/ai-engineer-profile.svg?cachebust=1787579028" width="100%" alt="VAN — AI Engineer Banner" />
+<img src="https://raw.githubusercontent.com/vn002-tech/vn002-tech/main/assets/ai-engineer-profile.svg?cachebust=1787579224" width="100%" alt="VAN — AI Engineer Banner" />
 
 <br/><br/>
 
-<!-- Animated Typing SVG (Clean Professional Typography) -->
+<!-- Animated Typing SVG (Warm Champagne Gold Typography) -->
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&pause=1200&color=C084FC&center=true&vCenter=true&width=760&lines=AI+Engineering+%7C+Machine+Learning+%26+Data+Science;LLMs+%C2%B7+RAG+%C2%B7+Deep+Learning+%26+AI+Automation;Python+%7C+PyTorch+%7C+Scikit-learn+%7C+FastAPI+%7C+Docker;From+Data+Pipelines+to+Production-Ready+AI+Systems" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&pause=1200&color=FBBF24&center=true&vCenter=true&width=760&lines=AI+Engineering+%7C+Machine+Learning+%26+Data+Science;LLMs+%C2%B7+RAG+%C2%B7+Deep+Learning+%26+AI+Automation;Python+%7C+PyTorch+%7C+Scikit-learn+%7C+FastAPI+%7C+Docker;From+Data+Pipelines+to+Production-Ready+AI+Systems" alt="Typing SVG" />
 </a>
 
 <br/><br/>
 
 <!-- Action & Contact Badges -->
-<a href="https://github.com/vn002-tech"><img src="https://img.shields.io/badge/GitHub-vn002--tech-0B0F17?style=for-the-badge&logo=github&logoColor=F8FAFC" alt="GitHub" /></a>
+<a href="https://github.com/vn002-tech"><img src="https://img.shields.io/badge/GitHub-vn002--tech-0E1724?style=for-the-badge&logo=github&logoColor=F8FAFC" alt="GitHub" /></a>
 &nbsp;
-<a href="https://linkedin.com"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+<a href="https://linkedin.com"><img src="https://img.shields.io/badge/LinkedIn-Connect-0284C7?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 &nbsp;
-<a href="mailto:wahidivansaputra@gmail.com"><img src="https://img.shields.io/badge/Email-wahidivansaputra-7C3AED?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+<a href="mailto:wahidivansaputra@gmail.com"><img src="https://img.shields.io/badge/Email-wahidivansaputra-D97706?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
 
 <br/><br/>
 
 <!-- 4-Pillar Core AI Engineering Matrix SVG Card -->
-<img src="https://raw.githubusercontent.com/vn002-tech/vn002-tech/main/assets/ai-pillars.svg?cachebust=1787579028" width="100%" alt="4-Pillar Core AI Engineering Domains" />
+<img src="https://raw.githubusercontent.com/vn002-tech/vn002-tech/main/assets/ai-pillars.svg?cachebust=1787579224" width="100%" alt="4-Pillar Core AI Engineering Domains" />
 
 </div>
 
@@ -31,7 +31,7 @@
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/vn002-tech/vn002-tech/main/assets/ai-engineering-pipeline.svg?cachebust=1787579028" width="100%" alt="AI Engineering Architecture Diagram" />
+<img src="https://raw.githubusercontent.com/vn002-tech/vn002-tech/main/assets/ai-engineering-pipeline.svg?cachebust=1787579224" width="100%" alt="AI Engineering Architecture Diagram" />
 
 <br/><br/>
 
@@ -46,12 +46,12 @@
 <div align="center">
 
 <!-- Cyber Speedster Racing Across Telemetry Waveform Track -->
-<img src="https://raw.githubusercontent.com/vn002-tech/vn002-tech/main/assets/ai-telemetry-track.svg?cachebust=1787579028" width="100%" alt="AI Inference Velocity Track with Cyber Car" />
+<img src="https://raw.githubusercontent.com/vn002-tech/vn002-tech/main/assets/ai-telemetry-track.svg?cachebust=1787579224" width="100%" alt="AI Inference Velocity Track with Cyber Car" />
 
 <br/><br/>
 
-<!-- Live GitHub Contribution Calendar (Purple Obsidian Theme) -->
-<img src="https://ghchart.rshah.org/A855F7/vn002-tech" width="100%" alt="vn002-tech Live GitHub Contribution Calendar" />
+<!-- Live GitHub Contribution Calendar (Warm Champagne Amber Gold) -->
+<img src="https://ghchart.rshah.org/F59E0B/vn002-tech" width="100%" alt="vn002-tech Live GitHub Contribution Calendar" />
 
 </div>
 
@@ -64,7 +64,7 @@
 
 <br/><br/>
 
-<!-- Animated Wave Footer -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0b0f17,50:2E1065,100:6D28D9&height=100&section=footer" width="100%" alt="Footer Wave" />
+<!-- Animated Wave Footer (Deep Petrol to Ocean Charcoal) -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:080e17,50:131f30,100:1E3A5F&height=100&section=footer" width="100%" alt="Footer Wave" />
 
 </div>
