@@ -15,7 +15,8 @@ CACHE_KEY = int(time.time())
 def generate_svg_banner() -> str:
     """
     Generates a luxury, deep purple geometric layered executive card SVG banner (Pinterest style)
-    with a high-contrast Electric Cyan Quantum Neural Synapse Lattice on the left side.
+    with a vibrant, high-contrast Neon Emerald Green Quantum Neural Lattice on the left side
+    that pops completely against the deep obsidian purple background.
     """
     return """<svg width="1200" height="310" viewBox="0 0 1200 310" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
@@ -50,15 +51,15 @@ def generate_svg_banner() -> str:
       <stop offset="100%" stop-color="#0D0417" stop-opacity="0.8"/>
     </linearGradient>
 
-    <!-- High-Contrast Cyan Glow Filter for Left Neural Core -->
-    <filter id="cyan-glow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="4" result="blur" />
+    <!-- High-Contrast Neon Emerald / Laser Mint Glow Filters -->
+    <filter id="green-glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
 
-    <radialGradient id="cyan-core-ambient" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#00F2FE" stop-opacity="0.22"/>
-      <stop offset="100%" stop-color="#00F2FE" stop-opacity="0"/>
+    <radialGradient id="green-core-ambient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00FF88" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#00FF88" stop-opacity="0"/>
     </radialGradient>
 
     <radialGradient id="card-ambient-light" cx="65%" cy="30%" r="60%">
@@ -75,19 +76,24 @@ def generate_svg_banner() -> str:
     .font-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
     .font-mono { font-family: 'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
 
-    @keyframes pulse-cyan-core {
-      0%, 100% { transform: scale(1); opacity: 0.9; filter: drop-shadow(0 0 5px #00F2FE); }
-      50% { transform: scale(1.18); opacity: 1; filter: drop-shadow(0 0 14px #38BDF8); }
+    @keyframes pulse-green-core {
+      0%, 100% { transform: scale(1); opacity: 0.95; filter: drop-shadow(0 0 6px #00FF88); }
+      50% { transform: scale(1.22); opacity: 1; filter: drop-shadow(0 0 18px #00FFAA); }
     }
 
-    @keyframes flow-cyan-data {
-      0% { stroke-dashoffset: 24; }
+    @keyframes flow-green-data {
+      0% { stroke-dashoffset: 28; }
       100% { stroke-dashoffset: 0; }
     }
 
-    @keyframes orbit-rotate {
+    @keyframes hex-rotate {
       0% { transform: rotate(0deg); }
       100% { transform: rotate(360deg); }
+    }
+
+    @keyframes radar-ping-green {
+      0% { r: 6px; opacity: 1; stroke: #00FF88; }
+      100% { r: 32px; opacity: 0; stroke: #00FFAA; }
     }
 
     @keyframes radar-ping {
@@ -95,19 +101,23 @@ def generate_svg_banner() -> str:
       75%, 100% { r: 8px; opacity: 0; }
     }
 
-    .anim-cyan-pulse {
+    .anim-green-pulse {
       transform-origin: 180px 155px;
-      animation: pulse-cyan-core 2.8s ease-in-out infinite;
+      animation: pulse-green-core 2.5s ease-in-out infinite;
     }
 
-    .anim-cyan-flow {
-      stroke-dasharray: 5 4;
-      animation: flow-cyan-data 1.2s linear infinite;
+    .anim-green-flow {
+      stroke-dasharray: 6 5;
+      animation: flow-green-data 1s linear infinite;
     }
 
-    .anim-orbit {
+    .anim-hex-orbit {
       transform-origin: 180px 155px;
-      animation: orbit-rotate 12s linear infinite;
+      animation: hex-rotate 16s linear infinite;
+    }
+
+    .anim-green-radar {
+      animation: radar-ping-green 2.2s cubic-bezier(0, 0, 0.2, 1) infinite;
     }
 
     .anim-radar {
@@ -138,74 +148,78 @@ def generate_svg_banner() -> str:
   <polygon points="840,0 1200,0 1200,240 960,310 800,310" fill="url(#ribbon-right-dark)"/>
   <line x1="840" y1="0" x2="1200" y2="240" stroke="#7C3AED" stroke-width="1" opacity="0.4"/>
 
-  <!-- ================= LEFT: HIGH-CONTRAST ELECTRIC CYAN NEURAL MATRIX ================= -->
-  <!-- Ambient Cyan Core Halo -->
-  <circle cx="180" cy="155" r="140" fill="url(#cyan-core-ambient)"/>
+  <!-- ================= LEFT: 100% CONTRAST EMERALD & NEON MINT QUANTUM AI MATRIX ================= -->
+  <!-- Ambient Emerald Green Core Flare -->
+  <circle cx="180" cy="155" r="135" fill="url(#green-core-ambient)"/>
 
-  <g id="neural-matrix">
-    <!-- Neural Synapse Connections (Layer 1 Ingest -> Hidden 1) -->
-    <line x1="45" y1="95" x2="105" y2="75" stroke="#0E7490" stroke-width="1.5" class="anim-cyan-flow"/>
-    <line x1="45" y1="95" x2="105" y2="125" stroke="#0369A1" stroke-width="1.2"/>
-    <line x1="30" y1="155" x2="105" y2="125" stroke="#0E7490" stroke-width="1.5" class="anim-cyan-flow"/>
-    <line x1="30" y1="155" x2="105" y2="185" stroke="#0E7490" stroke-width="1.5" class="anim-cyan-flow"/>
-    <line x1="45" y1="215" x2="105" y2="185" stroke="#0369A1" stroke-width="1.2"/>
-    <line x1="45" y1="215" x2="105" y2="235" stroke="#0E7490" stroke-width="1.5" class="anim-cyan-flow"/>
-
-    <!-- Synapse Connections (Hidden 1 -> Quantum Core) -->
-    <line x1="105" y1="75" x2="180" y2="155" stroke="#00F2FE" stroke-width="1.8" opacity="0.8" class="anim-cyan-flow"/>
-    <line x1="105" y1="125" x2="180" y2="155" stroke="#38BDF8" stroke-width="2.2" class="anim-cyan-flow"/>
-    <line x1="105" y1="185" x2="180" y2="155" stroke="#38BDF8" stroke-width="2.2" class="anim-cyan-flow"/>
-    <line x1="105" y1="235" x2="180" y2="155" stroke="#00F2FE" stroke-width="1.8" opacity="0.8" class="anim-cyan-flow"/>
-
-    <!-- Synapse Connections (Quantum Core -> Hidden 2) -->
-    <line x1="180" y1="155" x2="255" y2="85" stroke="#00F2FE" stroke-width="1.8" opacity="0.8" class="anim-cyan-flow"/>
-    <line x1="180" y1="155" x2="255" y2="155" stroke="#38BDF8" stroke-width="2.4" class="anim-cyan-flow"/>
-    <line x1="180" y1="155" x2="255" y2="225" stroke="#00F2FE" stroke-width="1.8" opacity="0.8" class="anim-cyan-flow"/>
-
-    <!-- Synapse Connections (Hidden 2 -> Output Layer) -->
-    <line x1="255" y1="85" x2="315" y2="115" stroke="#0E7490" stroke-width="1.5" class="anim-cyan-flow"/>
-    <line x1="255" y1="155" x2="315" y2="115" stroke="#38BDF8" stroke-width="1.5"/>
-    <line x1="255" y1="155" x2="315" y2="195" stroke="#38BDF8" stroke-width="1.5"/>
-    <line x1="255" y1="225" x2="315" y2="195" stroke="#0E7490" stroke-width="1.5" class="anim-cyan-flow"/>
-
-    <!-- Diagonal Inter-Layer Cross Bracing -->
-    <line x1="105" y1="75" x2="105" y2="125" stroke="#155E75" stroke-width="1" opacity="0.5"/>
-    <line x1="105" y1="125" x2="105" y2="185" stroke="#155E75" stroke-width="1" opacity="0.5"/>
-    <line x1="105" y1="185" x2="105" y2="235" stroke="#155E75" stroke-width="1" opacity="0.5"/>
-    <line x1="255" y1="85" x2="255" y2="155" stroke="#155E75" stroke-width="1" opacity="0.5"/>
-    <line x1="255" y1="155" x2="255" y2="225" stroke="#155E75" stroke-width="1" opacity="0.5"/>
-
-    <!-- Layer 1 Nodes (Input Tier) -->
-    <circle cx="45" cy="95" r="5" fill="#082F49" stroke="#0284C7" stroke-width="2"/>
-    <circle cx="30" cy="155" r="6" fill="#082F49" stroke="#00F2FE" stroke-width="2"/>
-    <circle cx="45" cy="215" r="5" fill="#082F49" stroke="#0284C7" stroke-width="2"/>
-
-    <!-- Layer 2 Nodes (Hidden 1) -->
-    <circle cx="105" cy="75" r="5.5" fill="#0C4A6E" stroke="#38BDF8" stroke-width="2"/>
-    <circle cx="105" cy="125" r="6" fill="#082F49" stroke="#00F2FE" stroke-width="2"/>
-    <circle cx="105" cy="185" r="6" fill="#082F49" stroke="#00F2FE" stroke-width="2"/>
-    <circle cx="105" cy="235" r="5.5" fill="#0C4A6E" stroke="#38BDF8" stroke-width="2"/>
-
-    <!-- Central Quantum Core (Hyper-Optimized Focal Reactor) -->
-    <!-- Rotating Orbital Ring -->
-    <g class="anim-orbit">
-      <circle cx="180" cy="155" r="26" fill="none" stroke="#00F2FE" stroke-width="1.2" stroke-dasharray="6 8" opacity="0.75"/>
-      <circle cx="180" cy="129" r="3" fill="#00F2FE" filter="url(#cyan-glow)"/>
-      <circle cx="180" cy="181" r="3" fill="#38BDF8" filter="url(#cyan-glow)"/>
+  <!-- Isometric Hexagonal Lattice Frame (Center: 180, 155) -->
+  <g id="green-quantum-lattice">
+    <!-- Rotating Hexagonal Orbit Ring -->
+    <g class="anim-hex-orbit">
+      <polygon points="180,95 235,125 235,185 180,215 125,185 125,125" fill="none" stroke="#00FF88" stroke-width="1.4" stroke-dasharray="6 8" opacity="0.85" filter="url(#green-glow)"/>
+      <circle cx="180" cy="95" r="3.5" fill="#00FF88"/>
+      <circle cx="235" cy="185" r="3.5" fill="#00FFAA"/>
+      <circle cx="125" cy="185" r="3.5" fill="#00FF88"/>
     </g>
 
-    <!-- Breathing Central Core Pulse -->
-    <circle cx="180" cy="155" r="14" fill="#083344" stroke="#00F2FE" stroke-width="2.5" class="anim-cyan-pulse" filter="url(#cyan-glow)"/>
-    <circle cx="180" cy="155" r="5" fill="#FFFFFF"/>
+    <!-- Radar Waves Expanding From Center -->
+    <circle cx="180" cy="155" r="12" fill="none" stroke="#00FF88" stroke-width="1.5" class="anim-green-radar"/>
 
-    <!-- Layer 3 Nodes (Hidden 2) -->
-    <circle cx="255" cy="85" r="5.5" fill="#0C4A6E" stroke="#38BDF8" stroke-width="2"/>
-    <circle cx="255" cy="155" r="7" fill="#082F49" stroke="#00F2FE" stroke-width="2.2"/>
-    <circle cx="255" cy="225" r="5.5" fill="#0C4A6E" stroke="#38BDF8" stroke-width="2"/>
+    <!-- Synapse Line Connections (Layer 1 Ingestion -> Outer Hex Nodes) -->
+    <line x1="35" y1="95" x2="100" y2="65" stroke="#059669" stroke-width="1.8" class="anim-green-flow"/>
+    <line x1="35" y1="95" x2="100" y2="125" stroke="#10B981" stroke-width="1.5"/>
+    <line x1="25" y1="155" x2="100" y2="125" stroke="#00FF88" stroke-width="2.2" class="anim-green-flow"/>
+    <line x1="25" y1="155" x2="100" y2="185" stroke="#00FF88" stroke-width="2.2" class="anim-green-flow"/>
+    <line x1="35" y1="215" x2="100" y2="185" stroke="#10B981" stroke-width="1.5"/>
+    <line x1="35" y1="215" x2="100" y2="245" stroke="#059669" stroke-width="1.8" class="anim-green-flow"/>
 
-    <!-- Layer 4 Nodes (Output Convergence) -->
-    <circle cx="315" cy="115" r="5.5" fill="#082F49" stroke="#0284C7" stroke-width="2"/>
-    <circle cx="315" cy="195" r="5.5" fill="#082F49" stroke="#0284C7" stroke-width="2"/>
+    <!-- Synapses To Central Quantum Core (x=180, y=155) -->
+    <line x1="100" y1="65" x2="180" y2="155" stroke="#00FF88" stroke-width="2" opacity="0.9" class="anim-green-flow"/>
+    <line x1="100" y1="125" x2="180" y2="155" stroke="#00FF88" stroke-width="2.5" class="anim-green-flow" filter="url(#green-glow)"/>
+    <line x1="100" y1="185" x2="180" y2="155" stroke="#00FF88" stroke-width="2.5" class="anim-green-flow" filter="url(#green-glow)"/>
+    <line x1="100" y1="245" x2="180" y2="155" stroke="#00FF88" stroke-width="2" opacity="0.9" class="anim-green-flow"/>
+
+    <!-- Synapses From Core -> Right Hidden Layer (x=260) -->
+    <line x1="180" y1="155" x2="260" y2="75" stroke="#00FF88" stroke-width="2" opacity="0.9" class="anim-green-flow"/>
+    <line x1="180" y1="155" x2="260" y2="155" stroke="#00FF88" stroke-width="2.8" class="anim-green-flow" filter="url(#green-glow)"/>
+    <line x1="180" y1="155" x2="260" y2="235" stroke="#00FF88" stroke-width="2" opacity="0.9" class="anim-green-flow"/>
+
+    <!-- Synapses Right Hidden Layer -> Output Nodes (x=325) -->
+    <line x1="260" y1="75" x2="325" y2="115" stroke="#059669" stroke-width="1.8" class="anim-green-flow"/>
+    <line x1="260" y1="155" x2="325" y2="115" stroke="#10B981" stroke-width="1.8"/>
+    <line x1="260" y1="155" x2="325" y2="195" stroke="#10B981" stroke-width="1.8"/>
+    <line x1="260" y1="235" x2="325" y2="195" stroke="#059669" stroke-width="1.8" class="anim-green-flow"/>
+
+    <!-- Diagonal Stabilizer Braces -->
+    <line x1="100" y1="65" x2="100" y2="125" stroke="#064E3B" stroke-width="1.2"/>
+    <line x1="100" y1="125" x2="100" y2="185" stroke="#064E3B" stroke-width="1.2"/>
+    <line x1="100" y1="185" x2="100" y2="245" stroke="#064E3B" stroke-width="1.2"/>
+    <line x1="260" y1="75" x2="260" y2="155" stroke="#064E3B" stroke-width="1.2"/>
+    <line x1="260" y1="155" x2="260" y2="235" stroke="#064E3B" stroke-width="1.2"/>
+
+    <!-- Tier 1 Input Nodes -->
+    <circle cx="35" cy="95" r="5.5" fill="#022C22" stroke="#059669" stroke-width="2.2"/>
+    <circle cx="25" cy="155" r="6.5" fill="#022C22" stroke="#00FF88" stroke-width="2.5" filter="url(#green-glow)"/>
+    <circle cx="35" cy="215" r="5.5" fill="#022C22" stroke="#059669" stroke-width="2.2"/>
+
+    <!-- Tier 2 Hidden Nodes -->
+    <circle cx="100" cy="65" r="6" fill="#064E3B" stroke="#10B981" stroke-width="2.2"/>
+    <circle cx="100" cy="125" r="6.5" fill="#022C22" stroke="#00FF88" stroke-width="2.5" filter="url(#green-glow)"/>
+    <circle cx="100" cy="185" r="6.5" fill="#022C22" stroke="#00FF88" stroke-width="2.5" filter="url(#green-glow)"/>
+    <circle cx="100" cy="245" r="6" fill="#064E3B" stroke="#10B981" stroke-width="2.2"/>
+
+    <!-- Tier 3 Central Quantum Reactor Core (Glowing Neon Emerald Nuclear Center) -->
+    <circle cx="180" cy="155" r="15" fill="#022C22" stroke="#00FF88" stroke-width="3" class="anim-green-pulse" filter="url(#green-glow)"/>
+    <circle cx="180" cy="155" r="5.5" fill="#FFFFFF"/>
+
+    <!-- Tier 4 Hidden Nodes -->
+    <circle cx="260" cy="75" r="6" fill="#064E3B" stroke="#10B981" stroke-width="2.2"/>
+    <circle cx="260" cy="155" r="7.5" fill="#022C22" stroke="#00FF88" stroke-width="2.8" filter="url(#green-glow)"/>
+    <circle cx="260" cy="235" r="6" fill="#064E3B" stroke="#10B981" stroke-width="2.2"/>
+
+    <!-- Tier 5 Output Nodes -->
+    <circle cx="325" cy="115" r="6" fill="#022C22" stroke="#059669" stroke-width="2.2"/>
+    <circle cx="325" cy="195" r="6" fill="#022C22" stroke="#059669" stroke-width="2.2"/>
   </g>
 
   <!-- Vertical Dividing Shadow Line -->
@@ -687,7 +701,7 @@ def generate_readme() -> str:
     """Generates the comprehensive, professional GitHub Profile README without informal emojis."""
     return f"""<div align="center">
 
-<img src="./assets/ai-engineer-profile.svg?raw=true&v={CACHE_KEY}" width="100%" alt="VAN — AI Engineer Banner" />
+<img src="https://raw.githubusercontent.com/vn002-tech/vn002-tech/main/assets/ai-engineer-profile.svg?cachebust={CACHE_KEY}" width="100%" alt="VAN — AI Engineer Banner" />
 
 <br/><br/>
 
@@ -708,7 +722,7 @@ def generate_readme() -> str:
 <br/><br/>
 
 <!-- 4-Pillar Core AI Engineering Matrix SVG Card -->
-<img src="./assets/ai-pillars.svg?raw=true&v={CACHE_KEY}" width="100%" alt="4-Pillar Core AI Engineering Domains" />
+<img src="https://raw.githubusercontent.com/vn002-tech/vn002-tech/main/assets/ai-pillars.svg?cachebust={CACHE_KEY}" width="100%" alt="4-Pillar Core AI Engineering Domains" />
 
 </div>
 
@@ -718,7 +732,7 @@ def generate_readme() -> str:
 
 <div align="center">
 
-<img src="./assets/ai-engineering-pipeline.svg?raw=true&v={CACHE_KEY}" width="100%" alt="AI Engineering Architecture Diagram" />
+<img src="https://raw.githubusercontent.com/vn002-tech/vn002-tech/main/assets/ai-engineering-pipeline.svg?cachebust={CACHE_KEY}" width="100%" alt="AI Engineering Architecture Diagram" />
 
 <br/><br/>
 
@@ -733,7 +747,7 @@ def generate_readme() -> str:
 <div align="center">
 
 <!-- Cyber Speedster Racing Across Telemetry Waveform Track -->
-<img src="./assets/ai-telemetry-track.svg?raw=true&v={CACHE_KEY}" width="100%" alt="AI Inference Velocity Track with Cyber Car" />
+<img src="https://raw.githubusercontent.com/vn002-tech/vn002-tech/main/assets/ai-telemetry-track.svg?cachebust={CACHE_KEY}" width="100%" alt="AI Inference Velocity Track with Cyber Car" />
 
 <br/><br/>
 
