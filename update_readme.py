@@ -560,9 +560,9 @@ def generate_telemetry_track_svg() -> str:
 
   <!-- ================= RACING CYBER CAR ================= -->
   <g id="cyber-speedster">
-    <!-- Exhaust Flame Glow / Particle Tail -->
-    <ellipse cx="-22" cy="0" rx="10" ry="3" fill="#F43F5E" opacity="0.7" filter="url(#car-glow)"/>
-    <ellipse cx="-16" cy="0" rx="6" ry="2" fill="#FDE047" opacity="0.9"/>
+    <!-- Clean Futuristic LED Tail Lights (No flame) -->
+    <rect x="-17" y="-5" width="2.5" height="3" rx="1" fill="#F43F5E" filter="url(#car-glow)"/>
+    <rect x="-17" y="2" width="2.5" height="3" rx="1" fill="#F43F5E" filter="url(#car-glow)"/>
 
     <!-- Car Body -->
     <rect x="-16" y="-6" width="32" height="12" rx="4" fill="#0F172A" stroke="#C084FC" stroke-width="1.4"/>
@@ -576,7 +576,7 @@ def generate_telemetry_track_svg() -> str:
     <circle cx="16" cy="3" r="1.8" fill="#E0F2FE"/>
 
     <!-- Rear Spoiler -->
-    <line x1="-15" y1="-7" x2="-15" y2="7" stroke="#F43F5E" stroke-width="2" stroke-linecap="round"/>
+    <line x1="-15" y1="-7" x2="-15" y2="7" stroke="#A855F7" stroke-width="1.8" stroke-linecap="round"/>
 
     <!-- Neon Wheels -->
     <circle cx="-10" cy="-6" r="2" fill="#C084FC"/>
@@ -655,11 +655,6 @@ def generate_readme() -> str:
 <img src="https://github-readme-stats.vercel.app/api?username=vn002-tech&show_icons=true&include_all_commits=true&count_private=true&theme=tokyonight&hide_border=true&bg_color=0b0f17&title_color=c084fc&icon_color=a855f7&text_color=cbd5e1" height="150" alt="GitHub Stats" />
 &nbsp;&nbsp;
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=vn002-tech&layout=compact&theme=tokyonight&hide_border=true&bg_color=0b0f17&title_color=c084fc&text_color=cbd5e1" height="150" alt="Top Languages" />
-
-<br/><br/>
-
-<!-- Animated Live Streak Stats -->
-<img src="https://streak-stats.demolab.com?user=vn002-tech&hide_border=true&background=0b0f17&ring=A855F7&fire=C084FC&currStreakLabel=C084FC&sideLabels=CBD5E1&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=64748B" width="95%" alt="Streak Stats" />
 
 <br/><br/>
 
