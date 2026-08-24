@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/ai-engineer-profile.svg?raw=true&v=1787578615" width="100%" alt="VAN — AI Engineer Banner" />
+<img src="./assets/ai-engineer-profile.svg?raw=true&v=1787578865" width="100%" alt="VAN — AI Engineer Banner" />
 
 <br/><br/>
 
@@ -21,7 +21,7 @@
 <br/><br/>
 
 <!-- 4-Pillar Core AI Engineering Matrix SVG Card -->
-<img src="./assets/ai-pillars.svg?raw=true&v=1787578615" width="100%" alt="4-Pillar Core AI Engineering Domains" />
+<img src="./assets/ai-pillars.svg?raw=true&v=1787578865" width="100%" alt="4-Pillar Core AI Engineering Domains" />
 
 </div>
 
@@ -31,7 +31,7 @@
 
 <div align="center">
 
-<img src="./assets/ai-engineering-pipeline.svg?raw=true&v=1787578615" width="100%" alt="AI Engineering Architecture Diagram" />
+<img src="./assets/ai-engineering-pipeline.svg?raw=true&v=1787578865" width="100%" alt="AI Engineering Architecture Diagram" />
 
 <br/><br/>
 
@@ -46,7 +46,7 @@
 <div align="center">
 
 <!-- Cyber Speedster Racing Across Telemetry Waveform Track -->
-<img src="./assets/ai-telemetry-track.svg?raw=true&v=1787578615" width="100%" alt="AI Inference Velocity Track with Cyber Car" />
+<img src="./assets/ai-telemetry-track.svg?raw=true&v=1787578865" width="100%" alt="AI Inference Velocity Track with Cyber Car" />
 
 <br/><br/>
 

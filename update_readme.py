@@ -15,14 +15,14 @@ CACHE_KEY = int(time.time())
 def generate_svg_banner() -> str:
     """
     Generates a luxury, deep purple geometric layered executive card SVG banner (Pinterest style)
-    with the animated neural network mesh cluster on the left side preserved and enhanced.
+    with a high-contrast Electric Cyan Quantum Neural Synapse Lattice on the left side.
     """
     return """<svg width="1200" height="310" viewBox="0 0 1200 310" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <!-- Background Gradient -->
     <linearGradient id="card-bg" x1="0" y1="0" x2="1200" y2="310" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#08040F"/>
-      <stop offset="35%" stop-color="#120822"/>
+      <stop offset="0%" stop-color="#07030E"/>
+      <stop offset="35%" stop-color="#110720"/>
       <stop offset="70%" stop-color="#190A2E"/>
       <stop offset="100%" stop-color="#06020C"/>
     </linearGradient>
@@ -50,21 +50,21 @@ def generate_svg_banner() -> str:
       <stop offset="100%" stop-color="#0D0417" stop-opacity="0.8"/>
     </linearGradient>
 
-    <!-- Radial Glows -->
-    <radialGradient id="core-glow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#9333EA" stop-opacity="0.25"/>
-      <stop offset="100%" stop-color="#9333EA" stop-opacity="0"/>
+    <!-- High-Contrast Cyan Glow Filter for Left Neural Core -->
+    <filter id="cyan-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <radialGradient id="cyan-core-ambient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00F2FE" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#00F2FE" stop-opacity="0"/>
     </radialGradient>
 
     <radialGradient id="card-ambient-light" cx="65%" cy="30%" r="60%">
       <stop offset="0%" stop-color="#A855F7" stop-opacity="0.15"/>
       <stop offset="100%" stop-color="#08040F" stop-opacity="0"/>
     </radialGradient>
-
-    <filter id="soft-blur" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="5" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
-    </filter>
 
     <filter id="ribbon-shadow" x="-30%" y="-30%" width="160%" height="160%">
       <feDropShadow dx="-6" dy="10" stdDeviation="8" flood-color="#000000" flood-opacity="0.85"/>
@@ -75,14 +75,19 @@ def generate_svg_banner() -> str:
     .font-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
     .font-mono { font-family: 'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
 
-    @keyframes pulse-core {
-      0%, 100% { transform: scale(1); opacity: 0.85; filter: drop-shadow(0 0 4px #A855F7); }
-      50% { transform: scale(1.18); opacity: 1; filter: drop-shadow(0 0 12px #C084FC); }
+    @keyframes pulse-cyan-core {
+      0%, 100% { transform: scale(1); opacity: 0.9; filter: drop-shadow(0 0 5px #00F2FE); }
+      50% { transform: scale(1.18); opacity: 1; filter: drop-shadow(0 0 14px #38BDF8); }
     }
 
-    @keyframes flow-data {
+    @keyframes flow-cyan-data {
       0% { stroke-dashoffset: 24; }
       100% { stroke-dashoffset: 0; }
+    }
+
+    @keyframes orbit-rotate {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
     }
 
     @keyframes radar-ping {
@@ -90,27 +95,23 @@ def generate_svg_banner() -> str:
       75%, 100% { r: 8px; opacity: 0; }
     }
 
-    @keyframes glow-line {
-      0%, 100% { stroke-opacity: 0.35; }
-      50% { stroke-opacity: 0.95; }
+    .anim-cyan-pulse {
+      transform-origin: 180px 155px;
+      animation: pulse-cyan-core 2.8s ease-in-out infinite;
     }
 
-    .anim-pulse {
-      transform-origin: 170px 120px;
-      animation: pulse-core 3s ease-in-out infinite;
+    .anim-cyan-flow {
+      stroke-dasharray: 5 4;
+      animation: flow-cyan-data 1.2s linear infinite;
     }
 
-    .anim-flow {
-      stroke-dasharray: 4 4;
-      animation: flow-data 1.5s linear infinite;
+    .anim-orbit {
+      transform-origin: 180px 155px;
+      animation: orbit-rotate 12s linear infinite;
     }
 
     .anim-radar {
       animation: radar-ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
-    }
-
-    .anim-glow {
-      animation: glow-line 2.5s ease-in-out infinite;
     }
   </style>
 
@@ -119,10 +120,8 @@ def generate_svg_banner() -> str:
 
   <!-- Ambient Luxury Backlights -->
   <rect x="2" y="2" width="1196" height="306" rx="18" fill="url(#card-ambient-light)"/>
-  <circle cx="450" cy="140" r="180" fill="url(#core-glow)"/>
-  <circle cx="1060" cy="90" r="160" fill="url(#core-glow)"/>
 
-  <!-- ================= LUXURY GEOMETRIC LAYERED RIBBONS (PINTEREST BUSINESS CARD STYLE) ================= -->
+  <!-- ================= LUXURY GEOMETRIC LAYERED RIBBONS (PINTEREST STYLE) ================= -->
   <!-- Layer 1: Dark Purple Background Angled Band -->
   <polygon points="240,0 370,0 100,310 0,310 0,260 210,0" fill="url(#ribbon-dark-1)"/>
 
@@ -139,56 +138,97 @@ def generate_svg_banner() -> str:
   <polygon points="840,0 1200,0 1200,240 960,310 800,310" fill="url(#ribbon-right-dark)"/>
   <line x1="840" y1="0" x2="1200" y2="240" stroke="#7C3AED" stroke-width="1" opacity="0.4"/>
 
-  <!-- ================= LEFT: ANIMATED NEURAL NETWORK MESH (PRESERVED) ================= -->
-  <g opacity="0.95" transform="translate(35, 45)">
-    <!-- Connections -->
-    <line x1="30" y1="120" x2="95" y2="60" stroke="#4C1D95" stroke-width="1.5" class="anim-flow"/>
-    <line x1="30" y1="120" x2="95" y2="180" stroke="#4C1D95" stroke-width="1.5"/>
-    <line x1="95" y1="60" x2="170" y2="38" stroke="#6B21A8" stroke-width="1.5"/>
-    <line x1="95" y1="60" x2="170" y2="120" stroke="#A855F7" stroke-width="2" class="anim-glow"/>
-    <line x1="95" y1="180" x2="170" y2="120" stroke="#A855F7" stroke-width="2" class="anim-glow"/>
-    <line x1="95" y1="180" x2="170" y2="202" stroke="#6B21A8" stroke-width="1.5"/>
-    <line x1="170" y1="38" x2="245" y2="80" stroke="#4C1D95" stroke-width="1.5"/>
-    <line x1="170" y1="120" x2="245" y2="80" stroke="#C084FC" stroke-width="2" class="anim-flow"/>
-    <line x1="170" y1="120" x2="245" y2="160" stroke="#C084FC" stroke-width="2" class="anim-flow"/>
-    <line x1="170" y1="202" x2="245" y2="160" stroke="#4C1D95" stroke-width="1.5"/>
+  <!-- ================= LEFT: HIGH-CONTRAST ELECTRIC CYAN NEURAL MATRIX ================= -->
+  <!-- Ambient Cyan Core Halo -->
+  <circle cx="180" cy="155" r="140" fill="url(#cyan-core-ambient)"/>
 
-    <!-- Outer Nodes -->
-    <circle cx="30" cy="120" r="5.5" fill="#170B2C" stroke="#8B5CF6" stroke-width="2"/>
-    <circle cx="95" cy="60" r="6.5" fill="#170B2C" stroke="#A855F7" stroke-width="2"/>
-    <circle cx="95" cy="180" r="6.5" fill="#170B2C" stroke="#A855F7" stroke-width="2"/>
-    <circle cx="170" cy="38" r="5.5" fill="#170B2C" stroke="#8B5CF6" stroke-width="2"/>
-    
-    <!-- Central Pulsing Core Node -->
-    <circle cx="170" cy="120" r="11" fill="#581C87" stroke="#E879F9" stroke-width="2.5" class="anim-pulse" filter="url(#soft-blur)"/>
-    <circle cx="170" cy="120" r="4" fill="#FFFFFF"/>
-    
-    <circle cx="170" cy="202" r="5.5" fill="#170B2C" stroke="#8B5CF6" stroke-width="2"/>
-    <circle cx="245" cy="80" r="7" fill="#170B2C" stroke="#C084FC" stroke-width="2"/>
-    <circle cx="245" cy="160" r="7" fill="#170B2C" stroke="#C084FC" stroke-width="2"/>
+  <g id="neural-matrix">
+    <!-- Neural Synapse Connections (Layer 1 Ingest -> Hidden 1) -->
+    <line x1="45" y1="95" x2="105" y2="75" stroke="#0E7490" stroke-width="1.5" class="anim-cyan-flow"/>
+    <line x1="45" y1="95" x2="105" y2="125" stroke="#0369A1" stroke-width="1.2"/>
+    <line x1="30" y1="155" x2="105" y2="125" stroke="#0E7490" stroke-width="1.5" class="anim-cyan-flow"/>
+    <line x1="30" y1="155" x2="105" y2="185" stroke="#0E7490" stroke-width="1.5" class="anim-cyan-flow"/>
+    <line x1="45" y1="215" x2="105" y2="185" stroke="#0369A1" stroke-width="1.2"/>
+    <line x1="45" y1="215" x2="105" y2="235" stroke="#0E7490" stroke-width="1.5" class="anim-cyan-flow"/>
+
+    <!-- Synapse Connections (Hidden 1 -> Quantum Core) -->
+    <line x1="105" y1="75" x2="180" y2="155" stroke="#00F2FE" stroke-width="1.8" opacity="0.8" class="anim-cyan-flow"/>
+    <line x1="105" y1="125" x2="180" y2="155" stroke="#38BDF8" stroke-width="2.2" class="anim-cyan-flow"/>
+    <line x1="105" y1="185" x2="180" y2="155" stroke="#38BDF8" stroke-width="2.2" class="anim-cyan-flow"/>
+    <line x1="105" y1="235" x2="180" y2="155" stroke="#00F2FE" stroke-width="1.8" opacity="0.8" class="anim-cyan-flow"/>
+
+    <!-- Synapse Connections (Quantum Core -> Hidden 2) -->
+    <line x1="180" y1="155" x2="255" y2="85" stroke="#00F2FE" stroke-width="1.8" opacity="0.8" class="anim-cyan-flow"/>
+    <line x1="180" y1="155" x2="255" y2="155" stroke="#38BDF8" stroke-width="2.4" class="anim-cyan-flow"/>
+    <line x1="180" y1="155" x2="255" y2="225" stroke="#00F2FE" stroke-width="1.8" opacity="0.8" class="anim-cyan-flow"/>
+
+    <!-- Synapse Connections (Hidden 2 -> Output Layer) -->
+    <line x1="255" y1="85" x2="315" y2="115" stroke="#0E7490" stroke-width="1.5" class="anim-cyan-flow"/>
+    <line x1="255" y1="155" x2="315" y2="115" stroke="#38BDF8" stroke-width="1.5"/>
+    <line x1="255" y1="155" x2="315" y2="195" stroke="#38BDF8" stroke-width="1.5"/>
+    <line x1="255" y1="225" x2="315" y2="195" stroke="#0E7490" stroke-width="1.5" class="anim-cyan-flow"/>
+
+    <!-- Diagonal Inter-Layer Cross Bracing -->
+    <line x1="105" y1="75" x2="105" y2="125" stroke="#155E75" stroke-width="1" opacity="0.5"/>
+    <line x1="105" y1="125" x2="105" y2="185" stroke="#155E75" stroke-width="1" opacity="0.5"/>
+    <line x1="105" y1="185" x2="105" y2="235" stroke="#155E75" stroke-width="1" opacity="0.5"/>
+    <line x1="255" y1="85" x2="255" y2="155" stroke="#155E75" stroke-width="1" opacity="0.5"/>
+    <line x1="255" y1="155" x2="255" y2="225" stroke="#155E75" stroke-width="1" opacity="0.5"/>
+
+    <!-- Layer 1 Nodes (Input Tier) -->
+    <circle cx="45" cy="95" r="5" fill="#082F49" stroke="#0284C7" stroke-width="2"/>
+    <circle cx="30" cy="155" r="6" fill="#082F49" stroke="#00F2FE" stroke-width="2"/>
+    <circle cx="45" cy="215" r="5" fill="#082F49" stroke="#0284C7" stroke-width="2"/>
+
+    <!-- Layer 2 Nodes (Hidden 1) -->
+    <circle cx="105" cy="75" r="5.5" fill="#0C4A6E" stroke="#38BDF8" stroke-width="2"/>
+    <circle cx="105" cy="125" r="6" fill="#082F49" stroke="#00F2FE" stroke-width="2"/>
+    <circle cx="105" cy="185" r="6" fill="#082F49" stroke="#00F2FE" stroke-width="2"/>
+    <circle cx="105" cy="235" r="5.5" fill="#0C4A6E" stroke="#38BDF8" stroke-width="2"/>
+
+    <!-- Central Quantum Core (Hyper-Optimized Focal Reactor) -->
+    <!-- Rotating Orbital Ring -->
+    <g class="anim-orbit">
+      <circle cx="180" cy="155" r="26" fill="none" stroke="#00F2FE" stroke-width="1.2" stroke-dasharray="6 8" opacity="0.75"/>
+      <circle cx="180" cy="129" r="3" fill="#00F2FE" filter="url(#cyan-glow)"/>
+      <circle cx="180" cy="181" r="3" fill="#38BDF8" filter="url(#cyan-glow)"/>
+    </g>
+
+    <!-- Breathing Central Core Pulse -->
+    <circle cx="180" cy="155" r="14" fill="#083344" stroke="#00F2FE" stroke-width="2.5" class="anim-cyan-pulse" filter="url(#cyan-glow)"/>
+    <circle cx="180" cy="155" r="5" fill="#FFFFFF"/>
+
+    <!-- Layer 3 Nodes (Hidden 2) -->
+    <circle cx="255" cy="85" r="5.5" fill="#0C4A6E" stroke="#38BDF8" stroke-width="2"/>
+    <circle cx="255" cy="155" r="7" fill="#082F49" stroke="#00F2FE" stroke-width="2.2"/>
+    <circle cx="255" cy="225" r="5.5" fill="#0C4A6E" stroke="#38BDF8" stroke-width="2"/>
+
+    <!-- Layer 4 Nodes (Output Convergence) -->
+    <circle cx="315" cy="115" r="5.5" fill="#082F49" stroke="#0284C7" stroke-width="2"/>
+    <circle cx="315" cy="195" r="5.5" fill="#082F49" stroke="#0284C7" stroke-width="2"/>
   </g>
 
   <!-- Vertical Dividing Shadow Line -->
-  <line x1="355" y1="30" x2="355" y2="280" stroke="#3B1466" stroke-width="1.5" opacity="0.6"/>
+  <line x1="360" y1="30" x2="360" y2="280" stroke="#3B1466" stroke-width="1.5" opacity="0.6"/>
 
   <!-- ================= RIGHT: IDENTITY & EXECUTIVE CARD CONTENT ================= -->
   <!-- Top Status Badge with Radar Ping -->
-  <rect x="385" y="32" width="265" height="26" rx="13" fill="#1C0B33" stroke="#7C3AED" stroke-width="1.2"/>
-  <circle cx="402" cy="45" r="3.5" fill="#C084FC"/>
-  <circle cx="402" cy="45" r="3.5" fill="#E879F9" class="anim-radar"/>
-  <text x="416" y="49" fill="#E9D5FF" class="font-mono" font-size="10.5" font-weight="700" letter-spacing="1.2">AI ENGINEERING &amp; DATA SCIENCE</text>
+  <rect x="390" y="32" width="265" height="26" rx="13" fill="#1C0B33" stroke="#7C3AED" stroke-width="1.2"/>
+  <circle cx="407" cy="45" r="3.5" fill="#C084FC"/>
+  <circle cx="407" cy="45" r="3.5" fill="#E879F9" class="anim-radar"/>
+  <text x="421" y="49" fill="#E9D5FF" class="font-mono" font-size="10.5" font-weight="700" letter-spacing="1.2">AI ENGINEERING &amp; DATA SCIENCE</text>
 
   <!-- Name & Identifier -->
-  <text x="385" y="104" fill="#FFFFFF" class="font-title" font-size="42" font-weight="800" letter-spacing="2">VAN</text>
-  <rect x="500" y="80" width="112" height="28" rx="7" fill="#2A0E4E" stroke="#9333EA" stroke-width="1.2"/>
-  <text x="556" y="98" fill="#E879F9" class="font-mono" font-size="12.5" font-weight="700" text-anchor="middle">vn002-tech</text>
+  <text x="390" y="104" fill="#FFFFFF" class="font-title" font-size="42" font-weight="800" letter-spacing="2">VAN</text>
+  <rect x="505" y="80" width="112" height="28" rx="7" fill="#2A0E4E" stroke="#9333EA" stroke-width="1.2"/>
+  <text x="561" y="98" fill="#E879F9" class="font-mono" font-size="12.5" font-weight="700" text-anchor="middle">vn002-tech</text>
 
   <!-- Primary Role -->
-  <text x="385" y="138" fill="#F3E8FF" class="font-title" font-size="18.5" font-weight="700" letter-spacing="1.5">AI ENGINEER</text>
-  <text x="385" y="162" fill="#C4B5FD" class="font-title" font-size="13.5" font-weight="400">AI Engineering · Machine Learning &amp; Data Science · LLMs &amp; Automation</text>
+  <text x="390" y="138" fill="#F3E8FF" class="font-title" font-size="18.5" font-weight="700" letter-spacing="1.5">AI ENGINEER</text>
+  <text x="390" y="162" fill="#C4B5FD" class="font-title" font-size="13.5" font-weight="400">AI Engineering · Machine Learning &amp; Data Science · LLMs &amp; Automation</text>
 
   <!-- Tech Stack Pills with Purple Bevel Borders -->
-  <g transform="translate(385, 184)">
+  <g transform="translate(390, 184)">
     <rect x="0" y="0" width="72" height="25" rx="6" fill="#180A2E" stroke="#6B21A8" stroke-width="1"/>
     <text x="36" y="17" fill="#E9D5FF" class="font-mono" font-size="11" font-weight="600" text-anchor="middle">Python</text>
 
@@ -209,10 +249,10 @@ def generate_svg_banner() -> str:
   </g>
 
   <!-- Horizontal Luxury Divider -->
-  <line x1="385" y1="226" x2="1150" y2="226" stroke="#3B1466" stroke-width="1"/>
+  <line x1="390" y1="226" x2="1150" y2="226" stroke="#3B1466" stroke-width="1"/>
 
   <!-- Social & Contact Badges (Executive Card Style) -->
-  <g transform="translate(385, 240)">
+  <g transform="translate(390, 240)">
     <rect x="0" y="0" width="170" height="34" rx="7" fill="#150826" stroke="#4C1D95" stroke-width="1"/>
     <path d="M18 17C18 12.58 21.58 9 26 9C30.42 9 34 12.58 34 17C34 20.54 31.7 23.54 28.52 24.6C28.12 24.67 27.97 24.43 27.97 24.21C27.97 24.02 27.98 23.36 27.98 22.56C25.75 23.05 25.28 21.61 25.28 21.61C24.92 20.69 24.39 20.45 24.39 20.45C23.66 19.95 24.45 19.96 24.45 19.96C25.26 20.02 25.68 20.79 25.68 20.79C26.4 22.02 27.56 21.67 28.02 21.46C28.09 20.94 28.3 20.58 28.53 20.38C26.75 20.18 24.88 19.49 24.88 16.42C24.88 15.55 25.19 14.83 25.7 14.27C25.62 14.07 25.35 13.25 25.78 12.16C25.78 12.16 26.45 11.95 27.97 12.98C28.61 12.8 29.29 12.71 29.97 12.71C30.65 12.71 31.33 12.8 31.97 12.98C33.49 11.95 34.16 12.16 34.16 12.16C34.59 13.25 34.32 14.07 34.24 14.27C34.75 14.83 35.06 15.55 35.06 16.42C35.06 19.5 33.18 20.18 31.4 20.37C31.69 20.62 31.95 21.11 31.95 21.87C31.95 22.96 31.94 23.84 31.94 24.21C31.94 24.43 31.79 24.68 31.38 24.6C28.2 23.53 25.9 20.53 25.9 17H18Z" fill="#C084FC" transform="translate(-8, -3) scale(0.85)"/>
     <text x="40" y="21" fill="#F3E8FF" class="font-mono" font-size="12" font-weight="600">vn002-tech</text>
