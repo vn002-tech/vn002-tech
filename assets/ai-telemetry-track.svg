@@ -62,8 +62,8 @@
     <line x1="800" y1="40" x2="800" y2="190"/>
   </g>
 
-  <!-- HUD Header -->
-  <text x="40" y="32" fill="#38BDF8" class="font-mono" font-size="11" font-weight="700" letter-spacing="1.5">🏎️ TELEMETRY CIRCUIT // INFERENCE ACCELERATION TRACK</text>
+  <!-- HUD Header without emojis -->
+  <text x="40" y="32" fill="#38BDF8" class="font-mono" font-size="11" font-weight="700" letter-spacing="1.5">TELEMETRY CIRCUIT // INFERENCE ACCELERATION TRACK</text>
   <text x="960" y="32" fill="#A855F7" class="font-mono" font-size="10" font-weight="600" text-anchor="end">SYSTEM STATUS: HIGH VELOCITY</text>
 
   <!-- Filled Area Under Graph Track -->

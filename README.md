@@ -1,12 +1,12 @@
 <div align="center">
 
-<img src="./assets/ai-engineer-profile.svg" width="100%" alt="VAN — AI Engineer Banner" />
+<img src="./assets/ai-engineer-profile.svg?raw=true&v=1787578615" width="100%" alt="VAN — AI Engineer Banner" />
 
 <br/><br/>
 
-<!-- Animated Typing SVG -->
+<!-- Animated Typing SVG (Clean Professional Typography) -->
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&pause=1200&color=C084FC&center=true&vCenter=true&width=760&lines=%E2%9A%A1+AI+Engineering+%7C+Machine+Learning+%26+Data+Science;%F0%9F%A7%A0+LLMs+%C2%B7+RAG+%C2%B7+Deep+Learning+%26+AI+Automation;%F0%9F%9B%A0%EF%B8%8F+Python+%7C+PyTorch+%7C+Scikit-learn+%7C+FastAPI+%7C+Docker;%F0%9F%93%8A+From+Data+Pipelines+to+Production-Ready+AI+Systems" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&pause=1200&color=C084FC&center=true&vCenter=true&width=760&lines=AI+Engineering+%7C+Machine+Learning+%26+Data+Science;LLMs+%C2%B7+RAG+%C2%B7+Deep+Learning+%26+AI+Automation;Python+%7C+PyTorch+%7C+Scikit-learn+%7C+FastAPI+%7C+Docker;From+Data+Pipelines+to+Production-Ready+AI+Systems" alt="Typing SVG" />
 </a>
 
 <br/><br/>
@@ -21,17 +21,17 @@
 <br/><br/>
 
 <!-- 4-Pillar Core AI Engineering Matrix SVG Card -->
-<img src="./assets/ai-pillars.svg" width="100%" alt="4-Pillar Core AI Engineering Domains" />
+<img src="./assets/ai-pillars.svg?raw=true&v=1787578615" width="100%" alt="4-Pillar Core AI Engineering Domains" />
 
 </div>
 
 ---
 
-### 🌐 End-to-End AI Engineering Architecture
+### End-to-End AI Engineering Architecture
 
 <div align="center">
 
-<img src="./assets/ai-engineering-pipeline.svg" width="100%" alt="AI Engineering Architecture Diagram" />
+<img src="./assets/ai-engineering-pipeline.svg?raw=true&v=1787578615" width="100%" alt="AI Engineering Architecture Diagram" />
 
 <br/><br/>
 
@@ -41,12 +41,12 @@
 
 ---
 
-### 🏎️ Telemetry Velocity &amp; Real-Time System Activity
+### Telemetry Velocity &amp; Real-Time System Activity
 
 <div align="center">
 
 <!-- Cyber Speedster Racing Across Telemetry Waveform Track -->
-<img src="./assets/ai-telemetry-track.svg" width="100%" alt="AI Inference Velocity Track with Cyber Car" />
+<img src="./assets/ai-telemetry-track.svg?raw=true&v=1787578615" width="100%" alt="AI Inference Velocity Track with Cyber Car" />
 
 <br/><br/>
 
